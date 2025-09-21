@@ -1,36 +1,54 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #f4f7f9;
   color: #333;
-  text-align: center;
 }
 
 header {
-  background-color: #0077cc;
+  background-color: #005fa3;
   color: white;
-  padding: 30px 20px;
+  padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo {
-  width: 120px;
-  margin-bottom: 10px;
+  width: 100px;
+  margin-right: 20px;
+}
+
+.title-block h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
 .tagline {
   font-style: italic;
-  font-size: 1.2em;
-  margin-top: -10px;
+  margin-top: 5px;
 }
 
-main {
-  padding: 20px;
+nav {
+  text-align: center;
+  margin-top: 15px;
 }
 
-.mission, .cta, .contact {
-  margin: 30px auto;
-  max-width: 600px;
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #eaf2f8;
 }
 
 .donate-button {
@@ -41,11 +59,38 @@ main {
   border-radius: 6px;
   font-weight: bold;
   display: inline-block;
+  margin-top: 20px;
+}
+
+.impact {
+  padding: 30px 20px;
+  background-color: #ffffff;
+  max-width: 700px;
+  margin: auto;
+}
+
+.impact ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.impact li {
   margin-bottom: 10px;
 }
 
+.contact {
+  text-align: center;
+  padding: 30px 20px;
+}
+
 footer {
-  background-color: #eee;
-  padding: 15px;
+  background-color: #ddd;
+  text-align: center;
+  padding: 20px;
   font-size: 0.9em;
+}
+
+.footer-note {
+  font-style: italic;
+  margin-top: 5px;
 }
