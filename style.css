@@ -95,6 +95,32 @@ footer {
   margin-top: 5px;
 }
 
+/* About Page Specific Styles */
+.about-page .hero-about {
+  background-image: url('images/about.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.about-page .hero-about-content h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.about-page .hero-about-content p {
+  font-size: 1.5em;
+}
+
+.about-page .vision-for-change {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
 /* Donate Page Specific Styles */
 .donate-page .hero-donate {
   background-image: url('images/donate.jpg');
