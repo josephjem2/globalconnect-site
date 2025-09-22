@@ -94,3 +94,227 @@ footer {
   font-style: italic;
   margin-top: 5px;
 }
+
+/* Donate Page Specific Styles */
+.donate-page .hero-donate {
+  background-image: url('images/donate.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.donate-page .hero-donate-content h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.donate-page .hero-donate-content p {
+  font-size: 1.5em;
+}
+
+.donate-page .donate-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.donate-page .hope-in-action {
+  max-width: 500px;
+}
+
+.donate-page .donate-button-large {
+  background-color: #ff6600;
+  color: white;
+  padding: 20px 40px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.donate-page .donation-opportunities {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.donate-page .donation-opportunities ul {
+  list-style: none;
+  padding: 0;
+}
+
+.donate-page .donation-opportunities li {
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.donate-page .donation-opportunities li:before {
+  content: '\2022';
+  color: #ff6600;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.donate-page footer {
+  background-color: #f4f7f9;
+  border-top: 1px solid #ddd;
+}
+
+/* Contact Page Specific Styles */
+.contact-page .hero-contact {
+    background-image: url('images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.contact-page .hero-contact-content h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.contact-page .hero-contact-content p {
+    font-size: 1.5em;
+}
+
+.contact-page .reach-out {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.contact-page .reach-out-text {
+    max-width: 500px;
+}
+
+.contact-page .contact-info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+}
+
+.contact-page .volunteer-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+/* Programs Page Specific Styles */
+.programs-page .hero-programs {
+    background-image: url('images/programs.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+}
+
+.programs-page .hero-programs-content h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.programs-page .hero-programs-content p {
+    font-size: 1.5em;
+}
+
+.programs-page .program-highlight {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: white;
+}
+
+.programs-page .program-highlight-text {
+    max-width: 500px;
+}
+
+.programs-page .program-highlight-image {
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.programs-page .program-details {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Home Page Specific Styles */
+.home-page .hero-home {
+  background-image: url('images/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 150px 20px;
+  color: white;
+}
+
+.home-page .hero-home-content h2 {
+  font-size: 3.5em;
+  margin: 0;
+}
+
+.home-page .hero-home-content p {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+.home-page .hero-buttons .btn {
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0 10px;
+}
+
+.home-page .btn-primary {
+  background-color: #005fa3;
+  color: white;
+}
+
+.home-page .btn-secondary {
+  background-color: #ff6600;
+  color: white;
+}
+
+.home-page .our-mission {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.home-page .mission-details {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+}
+
+.home-page .mission-item {
+  text-align: center;
+  max-width: 300px;
+}
+
+.home-page .mission-item .icon {
+  font-size: 2em;
+}
+
+nav a.active {
+    border-bottom: 2px solid #ff6600;
+}
