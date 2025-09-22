@@ -51,17 +51,6 @@ nav a {
   background-color: #eaf2f8;
 }
 
-.donate-button {
-  background-color: #ff6600;
-  color: white;
-  padding: 12px 24px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 20px;
-}
-
 .impact {
   padding: 30px 20px;
   background-color: #ffffff;
@@ -93,6 +82,28 @@ footer {
 .footer-note {
   font-style: italic;
   margin-top: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #005fa3;
+}
+
+.btn-secondary {
+  background-color: #ff6600;
+}
+
+.btn-tertiary {
+  background-color: #28a745;
 }
 
 /* About Page Specific Styles */
@@ -150,16 +161,6 @@ footer {
 
 .donate-page .hope-in-action {
   max-width: 500px;
-}
-
-.donate-page .donate-button-large {
-  background-color: #ff6600;
-  color: white;
-  padding: 20px 40px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1.2em;
 }
 
 .donate-page .donation-opportunities {
@@ -297,25 +298,6 @@ footer {
   margin-bottom: 30px;
 }
 
-.home-page .hero-buttons .btn {
-  padding: 15px 30px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  font-size: 1.2em;
-  margin: 0 10px;
-}
-
-.home-page .btn-primary {
-  background-color: #005fa3;
-  color: white;
-}
-
-.home-page .btn-secondary {
-  background-color: #ff6600;
-  color: white;
-}
-
 .home-page .our-mission {
   text-align: center;
   padding: 50px 20px;
@@ -339,6 +321,51 @@ footer {
 
 .home-page .mission-item .icon {
   font-size: 2em;
+}
+
+/* Volunteer Page Specific Styles */
+.volunteer-page .hero-volunteer {
+  background-image: url('images/volunteer.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.volunteer-page .hero-volunteer-content h2 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.volunteer-page .hero-volunteer-content p {
+  font-size: 1.5em;
+}
+
+.volunteer-page .volunteer-options {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.volunteer-page .volunteer-option {
+  margin-bottom: 20px;
+}
+
+.volunteer-page .volunteer-form-section {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+  text-align: center;
+}
+
+.volunteer-page .volunteer-form input, .volunteer-page .volunteer-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 nav a.active {
