@@ -57,6 +57,7 @@ nav a.active {
   text-decoration: none;
   font-weight: bold;
   color: white;
+  cursor: pointer;
 }
 
 .btn-primary {
@@ -243,6 +244,91 @@ nav a.active {
 
 .programs-page .program-card-content .btn {
   margin-top: 15px;
+}
+
+/* Donate Page Specific Styles */
+.donate-page .hero-donate {
+  background-image: url('images/donate.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 150px 20px;
+  color: white;
+}
+
+.donate-page .hero-donate-content h2 {
+  font-size: 3.5em;
+  margin: 0;
+}
+
+.donate-page .hero-donate-content p {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+}
+
+.donate-page .donation-form-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.donate-page .donation-form-container {
+  flex: 2;
+  background: #f4f7f9;
+  padding: 40px;
+  border-radius: 8px;
+  margin-right: 40px;
+}
+
+.donate-page .donation-form-container h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #005fa3;
+}
+
+.donate-page .donation-amount .amount-options, .donate-page .donation-frequency .frequency-options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.donate-page .btn.amount-btn, .donate-page .btn.frequency-btn {
+  background: #e9ecef;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.donate-page .btn.amount-btn.active, .donate-page .btn.frequency-btn.active {
+  background: #005fa3;
+  color: white;
+  border-color: #005fa3;
+}
+
+.donate-page #custom-amount {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.donate-page .btn-donate {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.donate-page .donation-impact {
+  flex: 1;
+  text-align: center;
+}
+
+.donate-page .donation-impact img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
 }
 
 footer {

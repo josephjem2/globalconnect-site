@@ -19,6 +19,8 @@
       <a href="about.html">About Us</a>
       <a href="programs.html">Programs</a>
       <a href="donate.html" class="active">Donate</a>
+      <a href="volunteer.html">Get Involved</a>
+      <a href="events.html">Events</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
@@ -26,31 +28,65 @@
   <main>
     <section class="hero-donate">
       <div class="hero-donate-content">
-        <h2>Donate</h2>
-        <p>Your support can transform lives</p>
+        <h2>Make a Difference</h2>
+        <p>Your contribution empowers communities and changes lives.</p>
       </div>
     </section>
 
-    <section class="donate-content">
-      <div class="hope-in-action">
-        <h3>Hope in Action</h3>
-        <p>Your contribution helps uplift and energize communities. GlobalConnect can provide critical assistance to families in need and empower individuals to take positive steps toward a brighter future.</p>
+    <section class="donation-form-section">
+      <div class="donation-form-container">
+        <h3>Support Our Mission</h3>
+        <form id="donation-form">
+          <div class="donation-amount">
+            <label>Choose an amount:</label>
+            <div class="amount-options">
+              <button type="button" class="btn amount-btn" data-amount="25">$25</button>
+              <button type="button" class="btn amount-btn" data-amount="50">$50</button>
+              <button type="button" class="btn amount-btn active" data-amount="100">$100</button>
+              <button type="button" class="btn amount-btn" data-amount="250">$250</button>
+            </div>
+            <input type="number" id="custom-amount" placeholder="Or enter a custom amount">
+          </div>
+          <div class="donation-frequency">
+            <label>Donation Frequency:</label>
+            <div class="frequency-options">
+              <button type="button" class="btn frequency-btn active" data-frequency="one-time">One-Time</button>
+              <button type="button" class="btn frequency-btn" data-frequency="monthly">Monthly</button>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-donate">Donate Now</button>
+        </form>
       </div>
-      <a href="https://www.paypal.com/donate?hosted_button_id=YOUR_ID" class="donate-button-large">MAKE A DONATION</a>
-    </section>
-
-    <section class="donation-opportunities">
-      <h3>One Donation, Three Opportunities</h3>
-      <ul>
-        <li>Immediate relief for those in crisis</li>
-        <li>Education and vocational training for lasting empowerment</li>
-        <li>Community development projects that strengthen bonds</li>
-      </ul>
+      <div class="donation-impact">
+        <img src="images/donate-impact.jpg" alt="Donation Impact">
+        <h4>Your Impact</h4>
+        <p>With your support, we can provide vital resources, educational opportunities, and community-building programs to those who need them most.</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 GlobalConnect. All rights reserved, GlobalConnect is a nonprofit organization committed to empowering and inspiring communities</p>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>GlobalConnect is a nonprofit organization committed to empowering and inspiring communities worldwide.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: contact@globalconnect.org</p>
+            <p>Phone: 1-800-123-4567</p>
+        </div>
+    </div>
+    <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
   </footer>
 </body>
 </html>
