@@ -5,108 +5,115 @@
   <title>GlobalConnect | Empower to Inspire</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="home-page">
   <header>
     <div class="header-content">
-      <img src="logo.png" alt="GlobalConnect Logo" class="logo">
-      <div class="title-block">
-        <h1>GlobalConnect</h1>
-        <p class="tagline">Empower to Inspire</p>
-      </div>
+      <img src="logo.png" alt="GlobalConnect Logo" class="logo" data-aos="fade-down">
+      <nav data-aos="fade-down" data-aos-delay="100">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programs.html">Programs</a>
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Get Involved</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="programs.html">Programs</a>
-      <a href="donate.html">Donate</a>
-      <a href="volunteer.html">Get Involved</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact</a>
-    </nav>
   </header>
 
   <main>
-    <section class="hero-home">
+    <section class="hero-home" data-aos="fade-up">
+      <img src="images/home.jpg" alt="GlobalConnect Hero" style="max-width:100%; height:auto;">
       <div class="hero-home-content">
-        <h2>Everyone Deserves Opportunity</h2>
-        <p>We uplift a global community of local changemakers, helping them build a better world from the ground up.</p>
-        <div class="hero-buttons">
+        <h1 data-aos="zoom-in">Everyone Deserves Opportunity</h1>
+        <p data-aos="fade-up" data-aos-delay="100">We uplift communities and energize positive change through connection, compassion, and action.</p>
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
           <a href="about.html" class="btn btn-primary">LEARN MORE</a>
+          <a href="donate.html" class="btn btn-secondary">MAKE A DONATION</a>
+          <a href="volunteer.html" class="btn btn-tertiary">GET INVOLVED</a>
         </div>
       </div>
-    </section>
-
-    <section class="our-mission">
-      <h2>Our Mission</h2>
-      <p>GlobalConnect provides hope and critical support to underserved families. We empower individuals with resources and opportunities that catalyze lasting, positive transformation.</p>
     </section>
 
     <section class="mission-details">
-      <div class="mission-item">
-        <img src="images/mission-1.jpg" alt="Compassion">
-        <h3>Compassion in Action</h3>
-        <p>We provide direct support to families in need, helping them navigate challenges and build resilience.</p>
+      <div class="mission-item" data-aos="fade-up">
+        <h2><span class="icon">❤</span> Our Mission</h2>
+        <p>GlobalConnect empowers underserved communities through education, outreach, and volunteer-led programs. We believe every individual deserves access to opportunity, dignity, and the tools to thrive.</p>
       </div>
-      <div class="mission-item">
-        <img src="images/mission-2.jpg" alt="Education">
-        <h3>Empowerment Through Education</h3>
-        <p>We offer educational assistance, vocational training, and community-building initiatives.</p>
+      <div class="mission-item" data-aos="fade-up" data-aos-delay="100">
+        <h2><span class="icon">✴</span> What We Do</h2>
+        <p>We deliver care kits, mentor youth, and provide vocational training to help families build resilience and long-term stability.</p>
       </div>
-      <div class="mission-item">
-        <img src="images/mission-3.jpg" alt="Outreach">
-        <h3>Volunteer-Led Outreach</h3>
-        <p>Our volunteers lead care kit distribution, mentorship, and local engagement efforts.</p>
+      <div class="mission-item" data-aos="fade-up" data-aos-delay="200">
+        <h2><span class="icon">📊</span> Our Impact</h2>
+        <ul>
+          <li>12,500 care kits delivered</li>
+          <li>3,800 students supported</li>
+          <li>420+ volunteers engaged</li>
+          <li>94% program satisfaction</li>
+        </ul>
       </div>
     </section>
 
-    <section class="how-to-help">
-      <h2>How You Can Help</h2>
-      <div class="help-options">
-        <div class="help-card">
-          <img src="images/help-1.jpg" alt="Donate">
-          <h3>Make a Donation</h3>
+    <section class="how-to-help" style="background-color:#eef6fb; padding:40px 20px;" data-aos="fade-up">
+      <h2 style="text-align:center;">How You Can Help</h2>
+      <p style="text-align:center; max-width:600px; margin:0 auto;">
+        Every action counts. Whether you give, serve, or share—your support fuels transformation.
+      </p>
+      <div class="help-options" style="display:flex; flex-wrap:wrap; justify-content:center; margin-top:30px;">
+        <div class="help-card" data-aos="zoom-in">
+          <h3>🧡 Make a Donation</h3>
           <p>Support our programs and help us reach more families in need.</p>
           <a href="donate.html" class="btn btn-secondary">Donate Now</a>
         </div>
-        <div class="help-card">
-          <img src="images/help-2.jpg" alt="Volunteer">
-          <h3>Volunteer</h3>
+        <div class="help-card" data-aos="zoom-in" data-aos-delay="100">
+          <h3>🙌 Volunteer</h3>
           <p>Join our outreach efforts and make a hands-on impact in your community.</p>
           <a href="volunteer.html" class="btn btn-tertiary">Get Involved</a>
         </div>
-        <div class="help-card">
-          <img src="images/help-3.jpg" alt="Spread the word">
-          <h3>Spread the Word</h3>
+        <div class="help-card" data-aos="zoom-in" data-aos-delay="200">
+          <h3>📣 Spread the Word</h3>
           <p>Share our mission online and help us grow the GlobalConnect movement.</p>
           <a href="https://www.tiktok.com/@globalconnectgc" class="btn btn-primary">Share on TikTok</a>
         </div>
       </div>
     </section>
+
+    <section class="featured-event" style="background-color:#f9f9f9; padding:20px;" data-aos="fade-up">
+      <h2>🌟 Upcoming Event</h2>
+      <h3>Community Health Drive</h3>
+      <p><strong>Date:</strong> Saturday, Oct 12 · 10:00 AM – 2:00 PM CST</p>
+      <p><strong>Location:</strong> Virtual (Zoom)</p>
+      <p><strong>Description:</strong> Join us to distribute care kits and share resources with families in need.</p>
+      <a href="events.html" class="btn btn-secondary">VIEW ALL EVENTS</a>
+    </section>
+
+    <section class="news-preview" data-aos="fade-up">
+      <h2>📰 Latest Updates</h2>
+      <p>GlobalConnect volunteers reached 1,000 families this month. Read more in our <a href="news.html">Newsroom →</a></p>
+    </section>
   </main>
 
-  <footer>
-    <div class="footer-content">
-        <div class="footer-section">
-            <h4>About Us</h4>
-            <p>GlobalConnect is a nonprofit organization committed to empowering and inspiring communities worldwide.</p>
-        </div>
-        <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="volunteer.html">Get Involved</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Contact Us</h4>
-            <p>Email: contact@globalconnect.org</p>
-            <p>Phone: 1-800-123-4567</p>
-        </div>
+  <footer data-aos="fade-up">
+    <div class="footer-links">
+      <a href="about.html">About</a> |
+      <a href="programs.html">Programs</a> |
+      <a href="donate.html">Donate</a> |
+      <a href="volunteer.html">Volunteer</a> |
+      <a href="contact.html">Contact</a>
     </div>
     <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
+    <p><em>GlobalConnect is a nonprofit organization committed to empowering and inspiring communities worldwide.</em></p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 </body>
 </html>
