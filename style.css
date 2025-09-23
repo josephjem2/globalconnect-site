@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f7f9;
+  background-color: #ffffff;
   color: #333;
 }
 
@@ -45,43 +45,8 @@ nav a {
   font-weight: bold;
 }
 
-.hero {
-  text-align: center;
-  padding: 40px 20px;
-  background-color: #eaf2f8;
-}
-
-.impact {
-  padding: 30px 20px;
-  background-color: #ffffff;
-  max-width: 700px;
-  margin: auto;
-}
-
-.impact ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.impact li {
-  margin-bottom: 10px;
-}
-
-.contact {
-  text-align: center;
-  padding: 30px 20px;
-}
-
-footer {
-  background-color: #ddd;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-}
-
-.footer-note {
-  font-style: italic;
-  margin-top: 5px;
+nav a.active {
+    border-bottom: 2px solid #ff6600;
 }
 
 .btn {
@@ -104,178 +69,6 @@ footer {
 
 .btn-tertiary {
   background-color: #28a745;
-}
-
-/* About Page Specific Styles */
-.about-page .hero-about {
-  background-image: url('images/about.jpg');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 100px 20px;
-  color: white;
-}
-
-.about-page .hero-about-content h2 {
-  font-size: 3em;
-  margin: 0;
-}
-
-.about-page .hero-about-content p {
-  font-size: 1.5em;
-}
-
-.about-page .vision-for-change {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
-  text-align: center;
-}
-
-/* Donate Page Specific Styles */
-.donate-page .hero-donate {
-  background-image: url('images/donate.jpg');
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 100px 20px;
-  color: white;
-}
-
-.donate-page .hero-donate-content h2 {
-  font-size: 3em;
-  margin: 0;
-}
-
-.donate-page .hero-donate-content p {
-  font-size: 1.5em;
-}
-
-.donate-page .donate-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 40px 20px;
-  background-color: white;
-}
-
-.donate-page .hope-in-action {
-  max-width: 500px;
-}
-
-.donate-page .donation-opportunities {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.donate-page .donation-opportunities ul {
-  list-style: none;
-  padding: 0;
-}
-
-.donate-page .donation-opportunities li {
-  margin-bottom: 15px;
-  font-size: 1.1em;
-}
-
-.donate-page .donation-opportunities li:before {
-  content: '\2022';
-  color: #ff6600;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.donate-page footer {
-  background-color: #f4f7f9;
-  border-top: 1px solid #ddd;
-}
-
-/* Contact Page Specific Styles */
-.contact-page .hero-contact {
-    background-image: url('images/contact.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 100px 20px;
-    color: white;
-}
-
-.contact-page .hero-contact-content h2 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.contact-page .hero-contact-content p {
-    font-size: 1.5em;
-}
-
-.contact-page .reach-out {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 40px 20px;
-    background-color: white;
-}
-
-.contact-page .reach-out-text {
-    max-width: 500px;
-}
-
-.contact-page .contact-info-section {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px 20px;
-}
-
-.contact-page .volunteer-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: white;
-}
-
-/* Programs Page Specific Styles */
-.programs-page .hero-programs {
-    background-image: url('images/programs.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 100px 20px;
-    color: white;
-}
-
-.programs-page .hero-programs-content h2 {
-    font-size: 3em;
-    margin: 0;
-}
-
-.programs-page .hero-programs-content p {
-    font-size: 1.5em;
-}
-
-.programs-page .program-highlight {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 40px 20px;
-    background-color: white;
-}
-
-.programs-page .program-highlight-text {
-    max-width: 500px;
-}
-
-.programs-page .program-highlight-image {
-    max-width: 400px;
-    border-radius: 8px;
-}
-
-.programs-page .program-details {
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
 }
 
 /* Home Page Specific Styles */
@@ -309,65 +102,101 @@ footer {
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
-  background-color: white;
 }
 
 .home-page .mission-item {
   text-align: center;
-  max-width: 300px;
+  max-width: 350px;
 }
 
-.home-page .mission-item .icon {
-  font-size: 2em;
+.home-page .mission-item img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
 }
 
-/* Volunteer Page Specific Styles */
-.volunteer-page .hero-volunteer {
-  background-image: url('images/volunteer.jpg');
-  background-size: cover;
-  background-position: center;
+.home-page .how-to-help {
+  background-color: #f4f7f9;
+  padding: 50px 20px;
   text-align: center;
-  padding: 100px 20px;
-  color: white;
 }
 
-.volunteer-page .hero-volunteer-content h2 {
-  font-size: 3em;
-  margin: 0;
+.home-page .help-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-.volunteer-page .hero-volunteer-content p {
-  font-size: 1.5em;
+.home-page .help-card {
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  margin: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden;
 }
 
-.volunteer-page .volunteer-options {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
+.home-page .help-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.volunteer-page .volunteer-option {
+.home-page .help-card h3 {
+  margin-top: 20px;
+}
+
+.home-page .help-card p {
+  padding: 0 20px;
+}
+
+.home-page .help-card .btn {
   margin-bottom: 20px;
 }
 
-.volunteer-page .volunteer-form-section {
+
+footer {
+  background-color: #333;
+  color: white;
   padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
-  background-color: white;
-  text-align: center;
 }
 
-.volunteer-page .volunteer-form input, .volunteer-page .volunteer-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
 }
 
-nav a.active {
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h4 {
     border-bottom: 2px solid #ff6600;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 2;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 40px;
 }
