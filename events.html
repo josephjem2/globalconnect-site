@@ -3,70 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <title>Events | GlobalConnect</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="events-page">
   <header>
-    <img src="logo.png" alt="GlobalConnect Logo" class="logo">
+    <div class="header-content">
+      <img src="logo.png" alt="GlobalConnect Logo" class="logo">
+      <div class="title-block">
+        <h1>GlobalConnect</h1>
+        <p class="tagline">Empower to Inspire</p>
+      </div>
+    </div>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="programs.html">Programs</a>
       <a href="donate.html">Donate</a>
       <a href="volunteer.html">Get Involved</a>
-      <a href="contact.html">Contact</a>
       <a href="events.html" class="active">Events</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero-home">
-      <img src="images/events.jpg" alt="GlobalConnect Events" style="max-width:100%; height:auto;">
-      <h2>Upcoming Events</h2>
-      <p>Join GlobalConnect events to support and energize communities.</p>
-    </section>
-
-    <section class="event-listing">
-      <h3>Community Health Drive</h3>
-      <p><strong>Date:</strong> Saturday, Oct 12 · 10:00 AM – 2:00 PM CST</p>
-      <p><strong>Location:</strong> Virtual (Zoom)</p>
-      <p><strong>Description:</strong> Join us to distribute care kits and share resources with families in need. Volunteers will help organize supplies, greet participants, and offer support.</p>
-      <a href="mailto:events@globalconnectgc.com" class="donate-button" style="background-color:#ff6600;">Sign Up Now</a>
-    </section>
-
-    <section class="testimonials">
-      <h3>What Our Volunteers Say</h3>
-      <div class="testimonial">
-        <p>"Volunteering with GlobalConnect has been a life-changing experience. I've met so many amazing people and made a real difference in my community."</p>
-        <p class="author">- Jane Doe, Volunteer</p>
-      </div>
-      <div class="testimonial">
-        <p>"I'm so proud to be a part of an organization that is making a positive impact on the world. GlobalConnect is truly changing lives."</p>
-        <p class="author">- John Smith, Donor</p>
+    <section class="hero-events">
+      <div class="hero-events-content">
+        <h2>Upcoming Events</h2>
+        <p>Join us to learn, connect, and make a difference.</p>
       </div>
     </section>
 
-    <section class="statistics">
-      <h3>Our Impact</h3>
-      <div class="stat">
-        <h4>10,000+</h4>
-        <p>People Served</p>
+    <section class="event-list">
+      <div class="event-card">
+        <img src="images/event-gala.jpg" alt="Annual Gala">
+        <div class="event-details">
+          <h4>Annual Fundraising Gala</h4>
+          <p><strong>Date:</strong> November 15, 2025</p>
+          <p><strong>Location:</strong> The Grand Ballroom, City Center</p>
+          <p>An evening of inspiration, featuring keynote speakers, a silent auction, and opportunities to support our cause.</p>
+          <a href="#" class="btn btn-secondary">Learn More & RSVP</a>
+        </div>
       </div>
-      <div class="stat">
-        <h4>500+</h4>
-        <p>Volunteers</p>
-      </div>
-      <div class="stat">
-        <h4>20+</h4>
-        <p>Countries Reached</p>
+      <div class="event-card">
+        <img src="images/event-webinar.jpg" alt="Webinar">
+        <div class="event-details">
+          <h4>Webinar: The Future of Education</h4>
+          <p><strong>Date:</strong> October 20, 2025</p>
+          <p><strong>Location:</strong> Online</p>
+          <p>A deep dive into innovative educational models that are transforming communities around the world.</p>
+          <a href="#" class="btn btn-secondary">Register Now</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>About Us</h4>
+            <p>GlobalConnect is a nonprofit organization committed to empowering and inspiring communities worldwide.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="volunteer.html">Get Involved</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: contact@globalconnect.org</p>
+            <p>Phone: 1-800-123-4567</p>
+        </div>
+    </div>
     <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
-    <p><em>GlobalConnect is a nonprofit organization committed to empowering and inspiring communities worldwide.</em></p>
   </footer>
 </body>
 </html>

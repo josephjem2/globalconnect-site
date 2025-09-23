@@ -331,6 +331,121 @@ nav a.active {
   margin-bottom: 20px;
 }
 
+/* Volunteer Page Specific Styles */
+.volunteer-page .hero-volunteer {
+    background-image: url('images/volunteer.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 20px;
+    color: white;
+}
+
+.volunteer-page .hero-volunteer-content h2 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.volunteer-page .hero-volunteer-content p {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.volunteer-page .volunteer-options {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.volunteer-page .volunteer-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.volunteer-page .volunteer-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 320px;
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow: hidden;
+}
+
+.volunteer-page .volunteer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.volunteer-page .volunteer-card h4 {
+    margin-top: 20px;
+}
+
+.volunteer-page .volunteer-card p {
+    padding: 0 20px;
+}
+
+.volunteer-page .volunteer-card .btn {
+    margin-bottom: 20px;
+}
+
+/* Events Page Specific Styles */
+.events-page .hero-events {
+    background-image: url('images/events.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 20px;
+    color: white;
+}
+
+.events-page .hero-events-content h2 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.events-page .hero-events-content p {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+}
+
+.events-page .event-list {
+    padding: 50px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.events-page .event-card {
+    display: flex;
+    background: white;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.events-page .event-card img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.events-page .event-details {
+    padding: 30px;
+}
+
+.events-page .event-details h4 {
+    margin-top: 0;
+    color: #005fa3;
+}
+
+.events-page .event-details .btn {
+    margin-top: 15px;
+}
+
 footer {
   background-color: #333;
   color: white;
