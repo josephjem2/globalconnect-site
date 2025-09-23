@@ -10,6 +10,7 @@ header {
   background-color: #005fa3;
   color: white;
   padding: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-content {
@@ -21,6 +22,11 @@ header {
 .logo {
   width: 100px;
   margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .title-block h1 {
@@ -43,6 +49,11 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ff6600;
 }
 
 nav a.active {
@@ -58,6 +69,12 @@ nav a.active {
   font-weight: bold;
   color: white;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-primary {
@@ -74,7 +91,7 @@ nav a.active {
 
 /* Home Page Specific Styles */
 .home-page .hero-home {
-  background-image: url('images/hero.jpg');
+  background: url('images/hero-2.jpg') no-repeat center center/cover;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -113,19 +130,13 @@ nav a.active {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  animation: fadeIn 2s;
+  transition: all 0.3s ease-in-out;
 }
 
 .home-page .mission-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 
 .home-page .mission-item img {
   width: 100%;
@@ -156,6 +167,12 @@ nav a.active {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: center;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-page .help-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .home-page .help-card img {
@@ -240,6 +257,12 @@ nav a.active {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   overflow: hidden;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.programs-page .program-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .programs-page .program-card img {
@@ -388,6 +411,12 @@ nav a.active {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.volunteer-page .volunteer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .volunteer-page .volunteer-card img {
@@ -441,6 +470,12 @@ nav a.active {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.events-page .event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .events-page .event-card img {
@@ -465,6 +500,7 @@ footer {
   background-color: #333;
   color: white;
   padding: 40px 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .footer-content {
@@ -494,6 +530,11 @@ footer {
     color: white;
     text-decoration: none;
     line-height: 2;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6600;
 }
 
 footer p {
