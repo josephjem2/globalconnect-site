@@ -1,126 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pact</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>GlobalConnect | Everyone Deserves Opportunity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="/"><img src="logo.png" alt="Pact logo"></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/about">About Us</a></li>
-                    <li><a href="/our-work">Our Work</a></li>
-                    <li><a href="/where-we-work">Where We Work</a></li>
-                    <li><a href="/news-and-insights">News & Insights</a></li>
-                    <li><a href="/careers">Careers</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-right">
-                <a href="/donate" class="donate-button">Donate</a>
-            </div>
+  <header>
+    <div class="header-brand" data-aos="fade-down">
+      <img src="images/logo.png" alt="GlobalConnect Logo" style="height:48px; vertical-align:middle;">
+      <span style="font-size:1.8rem; font-weight:bold; margin-left:12px;">GlobalConnect</span>
+    </div>
+    <nav data-aos="fade-down" data-aos-delay="100">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="programs.html">Programs</a>
+      <a href="donate.html">Donate</a>
+      <a href="volunteer.html">Get Involved</a>
+      <a href="events.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" data-aos="fade-up">
+      <img src="images/home.jpg" alt="Food distribution scene" style="width:100%; height:auto;">
+      <div class="hero-overlay">
+        <h1>Everyone Deserves Opportunity</h1>
+        <p>We uplift communities through compassion, connection, and collective action.</p>
+        <div class="hero-buttons">
+          <a href="about.html" class="btn btn-primary">Learn More</a>
+          <a href="donate.html" class="btn btn-secondary">Donate</a>
+          <a href="volunteer.html" class="btn btn-tertiary">Get Involved</a>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>A just world where everyone owns their future.</h1>
-                <p>For 50 years, Pact has been helping people who are poor and marginalized build prosperous, healthy and resilient lives. We do it by partnering with local organizations, businesses and governments to create lasting solutions.</p>
-                <a href="/our-work" class="cta-button">Learn More About Our Work</a>
-            </div>
-        </section>
-
-        <section class="what-we-do">
-            <div class="container">
-                <h2>What We Do</h2>
-                <div class="what-we-do-grid">
-                    <div class="what-we-do-item">
-                        <img src="images/what-we-do.jpg" alt="Strengthening civil society">
-                        <h3>Strengthening civil society</h3>
-                        <p>We help local communities gain the skills and knowledge to solve their own problems.</p>
-                    </div>
-                    <div class="what-we-do-item">
-                        <img src="images/mission.jpg" alt="Improving health">
-                        <h3>Improving health</h3>
-                        <p>We work to improve health outcomes for women, children and families around the world.</p>
-                    </div>
-                    <div class="what-we-do-item">
-                        <img src="images/programs.jpg" alt="Building livelihoods">
-                        <h3>Building livelihoods</h3>
-                        <p>We help people build sustainable livelihoods and escape poverty.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="where-we-work">
-            <div class="container">
-                <h2>Where We Work</h2>
-                <p>Pact works in nearly 40 countries around the world. We go where we are needed most, and we stay to see lasting change.</p>
-                <a href="/where-we-work" class="cta-button">See Where We Work</a>
-            </div>
-        </section>
-
-        <section class="news-and-insights">
-            <div class="container">
-                <h2>News & Insights</h2>
-                <div class="news-grid">
-                    <div class="news-item">
-                        <img src="images/featured-event.jpg" alt="News story 1">
-                        <h3>Pact statement on the crisis in Ukraine</h3>
-                        <p>Pact is deeply concerned about the escalating crisis in Ukraine. We stand in solidarity with the people of Ukraine and are committed to supporting their efforts to build a peaceful and democratic future.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                    <div class="news-item">
-                        <img src="images/event-gala.jpg" alt="News story 2">
-                        <h3>New report on the impact of Covid-19 on women's empowerment</h3>
-                        <p>Pact's new report, "The Shadow Pandemic," examines the devastating impact of the Covid-19 pandemic on women's empowerment and offers recommendations for a more equitable recovery.</p>
-                        <a href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>About Us</h4>
-                    <ul>
-                        <li><a href="/our-mission">Our Mission</a></li>
-                        <li><a href="/our-team">Our Team</a></li>
-                        <li><a href="/financials">Financials</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Our Work</h4>
-                    <ul>
-                        <li><a href="/what-we-do">What We Do</a></li>
-                        <li><a href="/where-we-work">Where We Work</a></li>
-                        <li><a href="/our-impact">Our Impact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Pact. All rights reserved.</p>
-            </div>
+    <!-- Mission Section -->
+    <section class="mission" data-aos="fade-up">
+      <div class="mission-content">
+        <div class="mission-text">
+          <h2>Our Mission</h2>
+          <p>GlobalConnect empowers underserved communities through education, outreach, and volunteer-led programs. We believe every individual deserves access to dignity, opportunity, and the tools to thrive.</p>
         </div>
-    </footer>
+        <div class="mission-image">
+          <img src="images/mission.jpg" alt="Street food distribution scene" style="width:100%; height:auto;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Highlights -->
+    <section class="impact" data-aos="fade-up">
+      <h2>Our Impact</h2>
+      <div class="impact-grid">
+        <div class="impact-item">🎒 <strong>3,800</strong> students supported</div>
+        <div class="impact-item">🧺 <strong>12,500</strong> care kits delivered</div>
+        <div class="impact-item">🙌 <strong>420+</strong> volunteers engaged</div>
+        <div class="impact-item">📈 <strong>94%</strong> program satisfaction</div>
+      </div>
+    </section>
+
+    <!-- Programs Preview -->
+    <section class="programs-preview" data-aos="fade-up">
+      <h2>What We Do</h2>
+      <div class="programs-grid">
+        <div class="program-card">
+          <h3>🎓 Education & Training</h3>
+          <p>We provide tutoring, digital literacy, and job-readiness workshops.</p>
+          <a href="programs.html">Learn More →</a>
+        </div>
+        <div class="program-card">
+          <h3>🧺 Care Kit Distribution</h3>
+          <p>We deliver hygiene kits, school supplies, and essentials to families in need.</p>
+          <a href="programs.html">Learn More →</a>
+        </div>
+        <div class="program-card">
+          <h3>🤝 Mentorship & Outreach</h3>
+          <p>Volunteers lead one-on-one mentorship and community conversations.</p>
+          <a href="programs.html">Learn More →</a>
+        </div>
+        <div class="program-card">
+          <h3>🏘️ Community Resilience</h3>
+          <p>We co-create solutions with local leaders to build lasting impact.</p>
+          <a href="programs.html">Learn More →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How You Can Help -->
+    <section class="how-to-help" data-aos="fade-up">
+      <h2>How You Can Help</h2>
+      <div class="help-grid">
+        <div class="help-card">
+          <h3>🧡 Donate</h3>
+          <p>Support our programs and help us reach more families.</p>
+          <a href="donate.html" class="btn btn-secondary">Donate Now</a>
+        </div>
+        <div class="help-card">
+          <h3>🙌 Volunteer</h3>
+          <p>Join our outreach efforts and make a hands-on impact.</p>
+          <a href="volunteer.html" class="btn btn-tertiary">Get Involved</a>
+        </div>
+        <div class="help-card">
+          <h3>📣 Share</h3>
+          <p>Spread the word and grow the GlobalConnect movement.</p>
+          <a href="https://www.tiktok.com/@globalconnectgc" class="btn btn-primary">Share on TikTok</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Event -->
+    <section class="featured-event" data-aos="fade-up">
+      <h2>🌟 Featured Event</h2>
+      <h3>Community Health Drive</h3>
+      <p><strong>Date:</strong> Saturday, Oct 12 · 10:00 AM – 2:00 PM CST</p>
+      <p><strong>Location:</strong> Virtual (Zoom)</p>
+      <p><strong>Description:</strong> Join us to distribute care kits and share resources with families in need.</p>
+      <a href="events.html" class="btn btn-secondary">View All Events</a>
+    </section>
+
+    <!-- News Preview -->
+    <section class="news-preview" data-aos="fade-up">
+      <h2>📰 Latest Update</h2>
+      <img src="images/news.jpg" alt="Children holding banner" style="width:100%; max-height:300px; object-fit:cover;">
+      <p>GlobalConnect volunteers reached 1,000 families this month. Read more in our <a href="news.html">Newsroom →</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-image:url('images/footer-bg.jpg'); background-size:cover;" data-aos="fade-up">
+    <div class="footer-content">
+      <img src="images/logo.png" alt="GlobalConnect Logo" style="height:40px;">
+      <p><strong>GlobalConnect</strong> | Empower to Inspire</p>
+      <div class="footer-links">
+        <a href="about.html">About</a> |
+        <a href="programs.html">Programs</a> |
+        <a href="donate.html">Donate</a> |
+        <a href="volunteer.html">Volunteer</a> |
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
 </html>
