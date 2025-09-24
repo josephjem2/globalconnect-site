@@ -3,82 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <title>Events | GlobalConnect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="events-page">
+<body>
   <header>
-    <div class="header-content">
-      <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
-      <div class="title-block">
-        <h1>GlobalConnect</h1>
-        <p class="tagline">Empower to Inspire</p>
-      </div>
+    <div class="header-content" data-aos="fade-down">
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="programs.html">Programs</a>
-      <a href="donate.html">Donate</a>
-      <a href="volunteer.html">Get Involved</a>
-      <a href="events.html" class="active">Events</a>
-      <a href="contact.html">Contact</a>
+    <nav data-aos="fade-down" data-aos-delay="100">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programs.html">Our Work</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="volunteer.html">Get Involved</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="btn btn-primary">Donate</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero-events">
-      <div class="hero-events-content">
-        <h2>Upcoming Events</h2>
+    <section class="hero-events" style="background-image: url('images/event-gala.jpg'); background-size: cover; background-position: center; text-align: center; color: white; padding: 5rem 0;">
+      <div class="hero-overlay" data-aos="fade-up">
+        <h1>Upcoming Events</h1>
         <p>Join us to learn, connect, and make a difference.</p>
       </div>
     </section>
 
-    <section class="event-list">
-      <div class="event-card">
-        <img src="images/event-gala.jpg" alt="Annual Gala">
-        <div class="event-details">
-          <h4>Annual Fundraising Gala</h4>
-          <p><strong>Date:</strong> November 15, 2025</p>
-          <p><strong>Location:</strong> The Grand Ballroom, City Center</p>
-          <p>An evening of inspiration, featuring keynote speakers, a silent auction, and opportunities to support our cause.</p>
-          <a href="#" class="btn btn-secondary">Learn More & RSVP</a>
+    <section class="event-list-section" data-aos="fade-up" style="padding: 5rem 5%;">
+        <h2>Our Events</h2>
+        <div class="event-list-grid">
+
+            <div class="event-card-item">
+                <img src="images/event-gala.jpg" alt="Annual Gala" class="responsive-img">
+                <div class="event-card-content">
+                    <h3>Annual Fundraising Gala</h3>
+                    <p class="event-date"><strong>Date:</strong> November 15, 2025</p>
+                    <p class="event-location"><strong>Location:</strong> The Grand Ballroom, City Center</p>
+                    <p>An evening of inspiration, featuring keynote speakers, a silent auction, and opportunities to support our cause.</p>
+                    <a href="#" class="btn btn-secondary">Learn More & RSVP</a>
+                </div>
+            </div>
+
+            <div class="event-card-item">
+                <img src="images/event-webinar.jpg" alt="Webinar" class="responsive-img">
+                <div class="event-card-content">
+                    <h3>Webinar: The Future of Education</h3>
+                    <p class="event-date"><strong>Date:</strong> October 20, 2025</p>
+                    <p class="event-location"><strong>Location:</strong> Online</p>
+                    <p>A deep dive into innovative educational models that are transforming communities around the world.</p>
+                    <a href="#" class="btn btn-secondary">Register Now</a>
+                </div>
+            </div>
+
+            <div class="event-card-item">
+                <img src="images/community-cleanup.jpg" alt="Community Cleanup" class="responsive-img">
+                <div class="event-card-content">
+                    <h3>Community Cleanup Day</h3>
+                    <p class="event-date"><strong>Date:</strong> September 28, 2025</p>
+                    <p class="event-location"><strong>Location:</strong> Northside Community Park</p>
+                    <p>Join us for a day of service as we partner with local residents to beautify public spaces.</p>
+                    <a href="volunteer.html" class="btn btn-secondary">Volunteer</a>
+                </div>
+            </div>
+
         </div>
-      </div>
-      <div class="event-card">
-        <img src="images/event-webinar.jpg" alt="Webinar">
-        <div class="event-details">
-          <h4>Webinar: The Future of Education</h4>
-          <p><strong>Date:</strong> October 20, 2025</p>
-          <p><strong>Location:</strong> Online</p>
-          <p>A deep dive into innovative educational models that are transforming communities around the world.</p>
-          <a href="#" class="btn btn-secondary">Register Now</a>
-        </div>
-      </div>
     </section>
+
   </main>
 
-  <footer>
+  <footer data-aos="fade-up">
     <div class="footer-content">
-        <div class="footer-section">
-            <h4>About Us</h4>
-            <p>GlobalConnect is a nonprofit organization committed to empowering and inspiring communities worldwide.</p>
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo-footer">
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Our Work</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
         </div>
-        <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="volunteer.html">Get Involved</a></li>
-            </ul>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
         </div>
-        <div class="footer-section">
-            <h4>Contact Us</h4>
-            <p>Email: contact@globalconnect.org</p>
-            <p>Phone: 1-800-123-4567</p>
-        </div>
+        <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
     </div>
-    <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
 </html>

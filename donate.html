@@ -3,91 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <title>Donate | GlobalConnect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="donate-page">
+<body>
   <header>
-    <div class="header-content">
-      <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
-      <div class="title-block">
-        <h1>GlobalConnect</h1>
-        <p class="tagline">Empower to Inspire</p>
-      </div>
+    <div class="header-content" data-aos="fade-down">
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
     </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="programs.html">Programs</a>
-      <a href="donate.html" class="active">Donate</a>
-      <a href="volunteer.html">Get Involved</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact</a>
+    <nav data-aos="fade-down" data-aos-delay="100">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programs.html">Our Work</a>
+        <a href="events.html">Events</a>
+        <a href="volunteer.html">Get Involved</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="btn btn-primary active">Donate</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero-donate">
-      <div class="hero-donate-content">
-        <h2>Make a Difference</h2>
-        <p>Your contribution empowers communities and changes lives.</p>
+    <section class="hero-donate" style="background-image: url('images/donate-hero.jpg'); background-size: cover; background-position: center; text-align: center; color: white; padding: 5rem 0;">
+      <div class="hero-overlay" data-aos="fade-up">
+        <h1>Support Our Mission</h1>
+        <p>Your contribution empowers communities and changes lives. Every gift, no matter the size, makes a difference.</p>
       </div>
     </section>
 
-    <section class="donation-form-section">
-      <div class="donation-form-container">
-        <h3>Support Our Mission</h3>
-        <form id="donation-form">
-          <div class="donation-amount">
-            <label>Choose an amount:</label>
-            <div class="amount-options">
-              <button type="button" class="btn amount-btn" data-amount="25">$25</button>
-              <button type="button" class="btn amount-btn" data-amount="50">$50</button>
-              <button type="button" class="btn amount-btn active" data-amount="100">$100</button>
-              <button type="button" class="btn amount-btn" data-amount="250">$250</button>
+    <section class="donation-section" data-aos="fade-up" style="padding: 5rem 5%;">
+        <div class="donation-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; max-width: 1200px; margin: 0 auto; align-items: center;">
+            <div class="donation-form-container">
+                <h2>Make a Donation</h2>
+                <form id="donation-form">
+                    <div class="donation-amount" style="margin-bottom: 2rem;">
+                        <label style="display: block; margin-bottom: 1rem; font-weight: 600;">Choose an Amount:</label>
+                        <div class="amount-options" style="display: flex; gap: 1rem; margin-bottom: 1rem;">
+                            <button type="button" class="btn amount-btn" data-amount="25">$25</button>
+                            <button type="button" class="btn amount-btn" data-amount="50">$50</button>
+                            <button type="button" class="btn amount-btn active" data-amount="100">$100</button>
+                            <button type="button" class="btn amount-btn" data-amount="250">$250</button>
+                        </div>
+                        <input type="number" id="custom-amount" placeholder="Or enter a custom amount" style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc;">
+                    </div>
+                    <div class="donation-frequency" style="margin-bottom: 2rem;">
+                        <label style="display: block; margin-bottom: 1rem; font-weight: 600;">Frequency:</label>
+                        <div class="frequency-options" style="display: flex; gap: 1rem;">
+                            <button type="button" class="btn frequency-btn active" data-frequency="one-time">One-Time</button>
+                            <button type="button" class="btn frequency-btn" data-frequency="monthly">Monthly</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Donate Now</button>
+                </form>
             </div>
-            <input type="number" id="custom-amount" placeholder="Or enter a custom amount">
-          </div>
-          <div class="donation-frequency">
-            <label>Donation Frequency:</label>
-            <div class="frequency-options">
-              <button type="button" class="btn frequency-btn active" data-frequency="one-time">One-Time</button>
-              <button type="button" class="btn frequency-btn" data-frequency="monthly">Monthly</button>
+            <div class="donation-impact-info">
+                <h2>Your Impact</h2>
+                <p style="font-size: 1.1rem; line-height: 1.6;">
+                    <strong>$25</strong> can provide a student with essential school supplies for a year.<br><br>
+                    <strong>$50</strong> can deliver a comprehensive care kit to a family in crisis.<br><br>
+                    <strong>$100</strong> can fund a vocational training workshop for an aspiring entrepreneur.<br><br>
+                    <strong>$250</strong> can support a community-led resilience project.
+                </p>
             </div>
-          </div>
-          <button type="submit" class="btn btn-primary btn-donate">Donate Now</button>
-        </form>
-      </div>
-      <div class="donation-impact">
-        <img src="images/donate-impact.jpg" alt="Donation Impact">
-        <h4>Your Impact</h4>
-        <p>With your support, we can provide vital resources, educational opportunities, and community-building programs to those who need them most.</p>
-      </div>
+        </div>
     </section>
+
   </main>
 
-  <footer>
+  <footer data-aos="fade-up">
     <div class="footer-content">
-        <div class="footer-section">
-            <h4>About Us</h4>
-            <p>GlobalConnect is a nonprofit organization committed to empowering and inspiring communities worldwide.</p>
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo-footer">
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Our Work</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
         </div>
-        <div class="footer-section">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="volunteer.html">Get Involved</a></li>
-            </ul>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
         </div>
-        <div class="footer-section">
-            <h4>Contact Us</h4>
-            <p>Email: contact@globalconnect.org</p>
-            <p>Phone: 1-800-123-4567</p>
-        </div>
+        <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
     </div>
-    <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="donate.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
 </html>

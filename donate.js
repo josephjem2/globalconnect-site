@@ -24,7 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (currentActive) {
             currentActive.classList.remove('active');
         }
-        selectedAmount = Number(customAmountInput.value);
+        const customAmount = Number(customAmountInput.value);
+        if (!isNaN(customAmount) && customAmount > 0) {
+            selectedAmount = customAmount;
+        } else {
+            // Handle invalid input, perhaps by showing an error message
+            // or resetting to a default value. For now, we'll just log it.
+            console.error("Invalid custom amount");
+        }
     });
 
     frequencyButtons.forEach(button => {
@@ -46,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             frequency: selectedFrequency
         });
 
-        alert(`Thank you for your interest in donating $${selectedAmount} ${selectedFrequency}! To fully enable payments, you'll need to follow the instructions to add your Stripe API keys.`);
+        alert(`Thank you for your interest in donating $${selectedAmount} ${selectedFrequency}! To fully enable payments, you\'ll need to follow the instructions to add your Stripe API keys.`);
 
         // Example of what the call to a Cloud Function might look like
         /*

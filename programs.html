@@ -2,54 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Programs | GlobalConnect</title>
+  <title>Our Work | GlobalConnect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="programs.html" class="active">Programs</a>
-      <a href="donate.html">Donate</a>
-      <a href="volunteer.html">Get Involved</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact</a>
+    <div class="header-content" data-aos="fade-down">
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
+    </div>
+    <nav data-aos="fade-down" data-aos-delay="100">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programs.html" class="active">Our Work</a>
+        <a href="events.html">Events</a>
+        <a href="volunteer.html">Get Involved</a>
+        <a href="contact.html">Contact</a>
+        <a href="donate.html" class="btn btn-primary">Donate</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero-programs">
-      <img src="images/programs.jpg" alt="GlobalConnect Programs" style="max-width:100%; height:auto;">
-      <h1>Our Programs</h1>
-      <p>We design scalable, community-led initiatives that activate opportunity and build resilience.</p>
+    <section class="hero-programs" style="background-image: url('images/programs.jpg'); background-size: cover; background-position: center; text-align: center; color: white; padding: 5rem 0;">
+      <div class="hero-overlay" data-aos="fade-up">
+        <h1>Our Work</h1>
+        <p>We design scalable, community-led initiatives that activate opportunity and build resilience.</p>
+      </div>
     </section>
 
-    <section class="program-block">
-      <h2>🎓 Education & Vocational Training</h2>
-      <p>We provide tutoring, digital literacy, and job-readiness workshops to help individuals gain skills and confidence. Over 1,200 graduates have completed our certification tracks in 2025 alone.</p>
+    <section class="programs-page" data-aos="fade-up" style="padding: 5rem 5%;">
+        <div class="program-detail-card">
+            <img src="images/program-education.jpg" alt="Education Program" class="responsive-img">
+            <div class="program-text">
+                <h2>🎓 Education & Vocational Training</h2>
+                <p>We believe education is the key to unlocking potential. Our programs provide everything from tutoring and digital literacy workshops for youth to job-readiness training and certification for adults. By equipping individuals with critical skills and confidence, we create pathways to stable employment and brighter futures. In 2025 alone, over 1,200 graduates have earned certifications through our vocational tracks.</p>
+            </div>
+        </div>
+
+        <div class="program-detail-card">
+            <img src="images/help-1.jpg" alt="Care Kit Program" class="responsive-img">
+            <div class="program-text">
+                <h2>🧺 Care Kit Distribution</h2>
+                <p>Access to essential supplies is a fundamental need. We assemble and deliver hygiene kits, school supplies, and emergency provisions to families facing hardship. This direct support alleviates immediate burdens and ensures that children can focus on their education while parents can focus on finding stability. This year, we have delivered more than 12,500 kits to homes across six regions.</p>
+            </div>
+        </div>
+
+        <div class="program-detail-card">
+            <img src="images/program-outreach.jpg" alt="Mentorship Program" class="responsive-img">
+            <div class="program-text">
+                <h2>🧑‍🤝‍🧑 Mentorship & Outreach</h2>
+                <p>Change happens when people feel seen and supported. Our dedicated volunteers lead one-on-one mentorship sessions, host community conversations, and offer crucial emotional support. These connections build trust and create a safe space for individuals to share their challenges and aspirations. We’ve facilitated over 2,100 outreach sessions in 2025, fostering a strong sense of community.</p>
+            </div>
+        </div>
+
+        <div class="program-detail-card">
+            <img src="images/program-collaboration.jpg" alt="Community Resilience Program" class="responsive-img">
+            <div class="program-text">
+                <h2>🏘️ Community Resilience Projects</h2>
+                <p>Sustainable change must be driven by the community itself. We partner with local leaders to co-create solutions tailored to their unique needs—from establishing pop-up health clinics to organizing youth leadership summits. These collaborative projects empower residents to take ownership of their future and build lasting resilience. Our events have engaged over 9,300 participants this year.</p>
+            </div>
+        </div>
     </section>
 
-    <section class="program-block">
-      <h2>🧺 Care Kit Distribution</h2>
-      <p>We assemble and deliver hygiene kits, school supplies, and emergency essentials to families in need. More than 12,500 kits have reached homes across six regions this year.</p>
-    </section>
-
-    <section class="program-block">
-      <h2>🧑‍🤝‍🧑 Mentorship & Outreach</h2>
-      <p>Our volunteers lead one-on-one mentorship sessions, host community conversations, and offer emotional support. We’ve facilitated over 2,100 outreach sessions in 2025.</p>
-    </section>
-
-    <section class="program-block">
-      <h2>🏘️ Community Resilience Projects</h2>
-      <p>We partner with local leaders to co-create solutions—from pop-up clinics to youth summits. Our events have engaged over 9,300 participants this year.</p>
-    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
+  <footer data-aos="fade-up">
+    <div class="footer-content">
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo-footer">
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Our Work</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
 </html>

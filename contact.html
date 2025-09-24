@@ -4,37 +4,95 @@
   <meta charset="UTF-8">
   <title>Contact | GlobalConnect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="programs.html">Programs</a>
-      <a href="donate.html">Donate</a>
-      <a href="volunteer.html">Get Involved</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html" class="active">Contact</a>
+    <div class="header-content" data-aos="fade-down">
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
+    </div>
+    <nav data-aos="fade-down" data-aos-delay="100">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programs.html">Our Work</a>
+        <a href="events.html">Events</a>
+        <a href="volunteer.html">Get Involved</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="donate.html" class="btn btn-primary">Donate</a>
     </nav>
   </header>
 
   <main>
-    <section class="hero-contact">
-      <img src="images/contact.jpg" alt="GlobalConnect Contact" style="max-width:100%; height:auto;">
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you. Reach out with questions, ideas, or partnership inquiries.</p>
+    <section class="hero-contact" style="background-image: url('images/contact-hero.jpg'); background-size: cover; background-position: center; text-align: center; color: white; padding: 5rem 0;">
+      <div class="hero-overlay" data-aos="fade-up">
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you. Reach out with questions, ideas, or partnership inquiries.</p>
+      </div>
     </section>
 
-    <section class="contact-details">
-      <p><strong>Email:</strong> <a href="mailto:hello@globalconnectgc.com">hello@globalconnectgc.com</a></p>
-      <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@globalconnectgc">@globalconnectgc</a></p>
+    <section class="contact-form-section" data-aos="fade-up" style="padding: 5rem 5%;">
+        <div class="contact-container" style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post">
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Full Name</label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address</label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Subject</label>
+                        <input type="text" id="subject" name="subject" required style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc;">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
+                        <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong><br><a href="mailto:hello@globalconnectgc.com">hello@globalconnectgc.com</a></p>
+                <p><strong>Phone:</strong><br>1-800-123-4567</p>
+                <p><strong>Address:</strong><br>123 Philanthropy Lane<br>Humanity City, HC 54321</p>
+                <h3 style="margin-top: 2rem;">Follow Us</h3>
+                <div class="social-links-contact" style="font-size: 1.5rem;">
+                  <a href="#" style="margin-right: 1rem;">Facebook</a>
+                  <a href="#" style="margin-right: 1rem;">Twitter</a>
+                  <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
     </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
+  <footer data-aos="fade-up">
+    <div class="footer-content">
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo-footer">
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Our Work</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
 </html>
