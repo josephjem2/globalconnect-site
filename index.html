@@ -6,52 +6,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="our-work.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="header-content" data-aos="fade-down">
-      <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
-      <div class="title-block">
-        <h1>GlobalConnect</h1>
-        <p class="tagline">Empower to Inspire</p>
+    <div class="header-main" data-aos="fade-down">
+      <div class="header-content">
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
+        <div class="title-block">
+          <h1><a href="index.html">GlobalConnect</a></h1>
+        </div>
       </div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programs.html">Programs</a>
+        <a href="volunteer.html">Get Involved</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a href="donate.html" class="btn btn-primary">Donate</a>
     </div>
-    <nav data-aos="fade-down" data-aos-delay="100">
-      <a href="index.html" class="active">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="programs.html">Programs</a>
-      <a href="donate.html">Donate</a>
-      <a href="volunteer.html">Get Involved</a>
-      <a href="events.html">Events</a>
-      <a href="contact.html">Contact</a>
-    </nav>
   </header>
 
   <main>
     <!-- Hero Section -->
     <section class="hero" data-aos="fade-up">
-      <img src="images/hero.jpg" alt="Woman receiving food beside the road" class="responsive-img">
-      <div class="hero-overlay">
-        <h1>Everyone Deserves Opportunity</h1>
-        <p>We uplift communities through compassion, connection, and collective action.</p>
-        <div class="hero-buttons">
-          <a href="about.html" class="btn btn-primary">Learn More</a>
-          <a href="donate.html" class="btn btn-secondary">Donate</a>
-          <a href="volunteer.html" class="btn btn-tertiary">Get Involved</a>
+      <div class="hero-content-wrapper">
+        <div class="hero-text-overlay">
+          <h1>Together we're making a difference</h1>
+          <p>We uplift communities through compassion, connection, and collective action.</p>
+          <a href="donate.html" class="btn btn-primary">Donate Now</a>
+        </div>
+      </div>
+      <img src="images/hero-2.jpg" alt="Woman receiving food beside the road" class="responsive-img">
+    </section>
+
+    <!-- Our Work in Action Section -->
+    <section class="our-work-in-action" data-aos="fade-up">
+      <h2>Our Work in Action</h2>
+      <div class="work-grid">
+        <div class="work-card">
+          <img src="images/our-work-1.jpg" alt="A group of bright young girls, empowered by our educational programs, hold up their learning materials." class="responsive-img">
+          <div class="work-card-content">
+            <p>A group of bright young girls, empowered by our educational programs, hold up their learning materials. We believe in providing every child with the tools they need to succeed.</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="images/our-work-2.jpg" alt="A mother and child receive a warm meal from one of our dedicated volunteers." class="responsive-img">
+          <div class="work-card-content">
+            <p>A mother and child receive a warm meal from one of our dedicated volunteers. Our street outreach program provides essential food and supplies to those in need.</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="images/our-work-3.jpg" alt="A volunteer provides a meal to an elderly man, ensuring he has access to nutritious food." class="responsive-img">
+          <div class="work-card-content">
+            <p>A volunteer provides a meal to an elderly man, ensuring he has access to nutritious food. We are committed to supporting the most vulnerable members of our community.</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="images/our-work-4.jpg" alt="A woman in a vibrant pink headscarf gratefully accepts a meal." class="responsive-img">
+          <div class="work-card-content">
+            <p>A woman in a vibrant pink headscarf gratefully accepts a meal. Our food distribution program reaches hundreds of people every week.</p>
+          </div>
+        </div>
+        <div class="work-card">
+          <img src="images/our-work-5.jpg" alt="A group of girls stands proudly with their mentor." class="responsive-img">
+          <div class="work-card-content">
+            <p>A group of girls stands proudly with their mentor. Our mentorship programs provide guidance and support to young people, helping them build a brighter future.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Mission Section -->
     <section class="mission" data-aos="fade-up">
+      <h2>Our Mission</h2>
       <div class="mission-content">
         <div class="mission-text">
-          <h2>Our Mission</h2>
           <p>GlobalConnect empowers underserved communities through education, outreach, and volunteer-led programs. We believe every individual deserves access to dignity, opportunity, and the tools to thrive.</p>
         </div>
         <div class="mission-image">
-          <img src="images/volunteer.jpg" alt="Street outreach with Royal Stallion rice bag" class="responsive-img">
+          <img src="images/mission.jpg" alt="Street outreach with Royal Stallion rice bag" class="responsive-img">
         </div>
       </div>
     </section>
@@ -97,16 +134,14 @@
     <!-- How You Can Help -->
     <section class="how-to-help" data-aos="fade-up">
       <h2>How You Can Help</h2>
-      <div class="help-grid">
-        <div class="help-card">
-          <h3>🧡 Donate</h3>
-          <p>Support our programs and help us reach more families.</p>
-          <a href="donate.html" class="btn btn-secondary">Donate Now</a>
-        </div>
-        <div class="help-card">
-          <h3>🙌 Volunteer</h3>
-          <p>Join our outreach efforts and make a hands-on impact.</p>
-          <a href="volunteer.html" class="btn btn-tertiary">Get Involved</a>
+      <div class="help-grid-2-col">
+        <div class="help-card-large">
+          <h3>🧡 Donate or Volunteer</h3>
+          <p>Support our programs and make a hands-on impact. Your contribution of time or money can help us reach more families.</p>
+          <div class="help-buttons">
+            <a href="donate.html" class="btn btn-secondary">Donate Now</a>
+            <a href="volunteer.html" class="btn btn-tertiary">Get Involved</a>
+          </div>
         </div>
         <div class="help-card">
           <h3>📣 Share</h3>
@@ -151,7 +186,12 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 800, once: true });
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100
+    });
   </script>
 </body>
 </html>

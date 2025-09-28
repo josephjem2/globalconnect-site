@@ -46,10 +46,6 @@ h2 {
 
 /* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 5%;
     background-color: white;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -57,12 +53,42 @@ header {
     z-index: 1000;
 }
 
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
-    height: 70px; /* Increased logo size */
+    height: 50px;
+    margin-right: 1rem;
+}
+
+.title-block h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.title-block h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: center;
 }
 
 header nav a {
-    margin: 0 1.2rem;
+    margin: 0 1.5rem;
     color: #555;
     font-weight: 600;
     text-decoration: none;
@@ -73,151 +99,149 @@ header nav a:hover, header nav a.active {
     color: #e67e22;
 }
 
-header nav .btn-primary {
-    margin-left: 1.2rem;
-}
 
 /* Hero Section */
-.hero-main {
-    position: relative;
-    text-align: center;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.hero {
+  position: relative;
+  width: 100%;
+  height: 550px; 
+  display: flex;
+  align-items: center;
 }
 
-.hero-overlay {
-    background: rgba(0, 0, 0, 0.55);
-    padding: 3rem;
-    border-radius: 15px;
+.hero-content-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+  display: flex;
+  align-items: center;
 }
 
-.hero-overlay h1 {
-    font-size: 3.8rem;
-    margin: 0;
+.hero-text-overlay {
+  color: white;
+  padding: 5%;
 }
 
-.hero-overlay p {
-    font-size: 1.6rem;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+.hero-text-overlay h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-/* Our Approach Section */
-.our-approach {
+.hero-text-overlay p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.hero .responsive-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mission Section */
+.mission {
     padding: 5rem 10%;
-    text-align: center;
     background-color: #f9f9f9;
 }
 
-.approach-content h2 {
-    color: #2c3e50;
+.mission-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
 }
 
-.approach-content p {
+.mission-text p {
     font-size: 1.2rem;
     line-height: 1.7;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
-/* Impact Stats Section */
-.impact-stats {
+/* Impact Highlights */
+.impact {
     padding: 5rem 5%;
-    background-color: #2c3e50;
-    color: white;
 }
 
-.impact-stats h2 {
-    color: white;
-}
-
-.stats-grid {
+.impact-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     text-align: center;
     margin-top: 3rem;
 }
 
-.stat-item h3 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.stat-item p {
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
-}
-
-/* Our Work Preview Section */
-.our-work-preview {
-    padding: 5rem 5%;
-}
-
-.work-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.work-card {
-    position: relative;
-    color: white;
-    border-radius: 12px;
-    overflow: hidden;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: flex-end;
-}
-
-.work-card-content {
-    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 100%);
+.impact-item {
+    background-color: #f9f9f9;
     padding: 2rem;
-    width: 100%;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
-.work-card-content h3 {
-    font-size: 1.8rem;
-    margin: 0;
-}
-
-/* Get Involved Section */
-.get-involved {
+/* Programs Preview */
+.programs-preview {
     padding: 5rem 5%;
     background-color: #f9f9f9;
 }
 
-.involved-grid {
+.programs-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.involved-card {
+.program-card {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
     text-align: center;
-    padding-bottom: 2rem;
 }
 
-.involved-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 12px 12px 0 0;
-}
-
-
-.involved-card h3 {
+.program-card h3 {
     font-size: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.program-card a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* How You Can Help */
+.how-to-help {
+    padding: 5rem 5%;
+}
+
+.help-grid-2-col {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.help-card-large {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.help-card {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Footer */
@@ -228,13 +252,13 @@ footer {
     padding: 4rem 5%;
 }
 
-.logo-footer {
-    height: 80px;
-    margin-bottom: 1.5rem;
+.footer-content .logo {
+    height: 60px;
+    margin-bottom: 1rem;
 }
 
 .footer-links {
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
 }
 
 .footer-links a {
@@ -242,42 +266,4 @@ footer {
     text-decoration: none;
     margin: 0 1rem;
     font-weight: 500;
-}
-
-.social-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 0.8rem;
-    font-size: 1.2rem;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 480px; /* Adjust height as needed */
-  overflow: hidden;
-}
-
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: brightness(0.85);
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 40px 20px;
-  background: rgba(0, 0, 0, 0.4);
 }
