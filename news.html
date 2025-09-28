@@ -1,33 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsroom - GlobalConnect</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Newsroom | GlobalConnect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="our-work.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html" class="logo">GlobalConnect</a>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <h1>Newsroom</h1>
-            <p>Stay up-to-date with the latest news and announcements from GlobalConnect.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 GlobalConnect. All rights reserved.</p>
-    </footer>
+  <!-- Header -->
+  <header>
+    <div class="header-top" data-aos="fade-down">
+      <div class="social-links">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="https://www.tiktok.com/@globalconnectgc">TikTok</a>
+      </div>
+      <a href="donate.html" class="btn btn-primary">Donate</a>
+    </div>
+    <div class="header-main" data-aos="fade-down" data-aos-delay="100">
+      <div class="header-content">
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
+        <div class="title-block">
+          <h1>GlobalConnect</h1>
+          <p class="tagline">Empower to Inspire</p>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="programs.html">Programs</a>
+        <a href="volunteer.html">Get Involved</a>
+        <a href="events.html">Events</a>
+        <a href="contact.html">Contact</a>
+        <a href="news.html" class="active">News</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-news" style="background-image: url('images/news-hero.jpg'); background-size: cover; background-position: center; text-align: center; color: white; padding: 5rem 0;">
+      <div class="hero-overlay" data-aos="fade-up">
+        <h1>Newsroom</h1>
+        <p>Stay informed about our latest initiatives, impact stories, and announcements.</p>
+      </div>
+    </section>
+
+    <section class="news-list-section" data-aos="fade-up" style="padding: 5rem 5%;">
+        <h2>Latest News</h2>
+        <div class="news-list-grid">
+
+            <div class="news-card-item">
+                <img src="images/news-1.jpg" alt="Literacy Program Launch" class="responsive-img">
+                <div class="news-card-content">
+                    <h3>GlobalConnect Launches Digital Literacy Program for Adults</h3>
+                    <p class="news-date"><strong>Date:</strong> October 28, 2025</p>
+                    <p>We are thrilled to announce the launch of our new Digital Literacy Program, designed to equip adults with essential tech skills for today’s job market...</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+            </div>
+
+            <div class="news-card-item">
+                <img src="images/news-2.jpg" alt="Community Partnership" class="responsive-img">
+                <div class="news-card-content">
+                    <h3>New Partnership with Local Businesses to Combat Food Insecurity</h3>
+                    <p class="news-date"><strong>Date:</strong> October 15, 2025</p>
+                    <p>GlobalConnect is proud to partner with five local businesses to expand our food distribution network, ensuring more families have access to nutritious meals...</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+            </div>
+
+            <div class="news-card-item">
+                <img src="images/news-3.jpg" alt="Volunteer Award" class="responsive-img">
+                <div class="news-card-content">
+                    <h3>Volunteer Spotlight: Maria Hernandez Honored for a Decade of Service</h3>
+                    <p class="news-date"><strong>Date:</strong> September 30, 2025</p>
+                    <p>This month, we celebrate Maria Hernandez, a dedicated volunteer who has been with us for over 10 years. Her commitment has inspired hundreds...</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+  </main>
+
+  <footer data-aos="fade-up">
+    <div class="footer-content">
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo-footer">
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Our Work</a>
+            <a href="events.html">Events</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+  </script>
 </body>
 </html>
