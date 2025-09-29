@@ -11,20 +11,12 @@
 <body>
   <!-- Header -->
   <header>
-    <div class="header-top" data-aos="fade-down">
-      <div class="social-links">
-        <a href="#">Facebook</a>
-        <a href="#">Twitter</a>
-        <a href="https://www.tiktok.com/@globalconnectgc">TikTok</a>
-      </div>
-      <a href="donate.html" class="btn btn-primary">Donate</a>
-    </div>
-    <div class="header-main" data-aos="fade-down" data-aos-delay="100">
+    <div class="header-main" data-aos="fade-down">
       <div class="header-content">
-        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
+        <a href="index.html"><img src="images/logo.png" alt="GlobalConnect Logo" class="logo"></a>
         <div class="title-block">
-          <h1>GlobalConnect</h1>
-          <p class="tagline">Empower to Inspire</p>
+          <h1><a href="index.html">GlobalConnect</a></h1>
+          <p class="tagline"><strong>Empower to Inspire</strong></p>
         </div>
       </div>
       <nav>
@@ -35,6 +27,7 @@
         <a href="events.html">Events</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
+      <a href="donate.html" class="btn btn-primary">Donate</a>
     </div>
   </header>
 
@@ -46,26 +39,26 @@
       </div>
     </section>
 
-    <section class="contact-form-section" data-aos="fade-up" style="padding: 5rem 5%;">
-        <div class="contact-container" style="display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto;">
+    <section class="contact-form-section" data-aos="fade-up">
+        <div class="contact-container">
             <div class="contact-form">
                 <h2>Send Us a Message</h2>
                 <form action="#" method="post">
-                    <div class="form-group" style="margin-bottom: 1.5rem;">
-                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Full Name</label>
-                        <input type="text" id="name" name="name" required style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc;">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                    <div class="form-group" style="margin-bottom: 1.5rem;">
-                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address</label>
-                        <input type="email" id="email" name="email" required style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc;">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
                     </div>
-                    <div class="form-group" style="margin-bottom: 1.5rem;">
-                        <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Subject</label>
-                        <input type="text" id="subject" name="subject" required style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc;">
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
-                    <div class="form-group" style="margin-bottom: 1.5rem;">
-                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
-                        <textarea id="message" name="message" rows="6" required style="width: 100%; padding: 0.8rem; border-radius: 6px; border: 1px solid #ccc;"></textarea>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -75,10 +68,10 @@
                 <p><strong>Email:</strong><br><a href="mailto:hello@globalconnectgc.com">hello@globalconnectgc.com</a></p>
                 <p><strong>Phone:</strong><br>1-800-123-4567</p>
                 <p><strong>Address:</strong><br>123 Philanthropy Lane<br>Humanity City, HC 54321</p>
-                <h3 style="margin-top: 2rem;">Follow Us</h3>
-                <div class="social-links-contact" style="font-size: 1.5rem;">
-                  <a href="#" style="margin-right: 1rem;">Facebook</a>
-                  <a href="#" style="margin-right: 1rem;">Twitter</a>
+                <h3>Follow Us</h3>
+                <div class="social-links-contact">
+                  <a href="#">Facebook</a>
+                  <a href="#">Twitter</a>
                   <a href="#">Instagram</a>
                 </div>
             </div>
@@ -87,27 +80,30 @@
 
   </main>
 
+  <!-- Footer -->
   <footer data-aos="fade-up">
     <div class="footer-content">
-        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo-footer">
-        <div class="footer-links">
-            <a href="about.html">About Us</a>
-            <a href="programs.html">Our Work</a>
-            <a href="events.html">Events</a>
-            <a href="contact.html">Contact</a>
-        </div>
-        <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-            <a href="#">Instagram</a>
-        </div>
-        <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
+      <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
+      <p><strong>GlobalConnect</strong> | <strong>Empower to Inspire</strong></p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="donate.html">Donate</a>
+        <a href="volunteer.html">Volunteer</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
     </div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 800, once: true });
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      offset: 100
+    });
   </script>
 </body>
 </html>
