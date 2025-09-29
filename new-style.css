@@ -158,12 +158,8 @@ section h2::after {
   justify-content: center;
 }
 
+.mission-image,
 .mission-text {
-  flex: 1;
-  min-width: 300px;
-}
-
-.mission-image {
   flex: 1;
   min-width: 300px;
 }
@@ -171,6 +167,7 @@ section h2::after {
 .responsive-img {
   width: 100%;
   border-radius: 8px;
+  display: block;
 }
 
 /* Impact Section */
