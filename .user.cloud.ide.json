@@ -1,0 +1,9 @@
+{
+    "preview": {
+        "port": 8080,
+        "hmr": false,
+        "driver": "web",
+        "autoOpen": true,
+        "root": ""
+    }
+}

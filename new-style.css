@@ -40,8 +40,9 @@ a {
 }
 
 .logo {
-  height: 48px;
+  height: 2.2rem; /* Matches the h1 font size */
   width: auto;
+  vertical-align: middle;
   object-fit: contain;
 }
 
@@ -52,15 +53,15 @@ a {
 }
 
 .title-block h1 {
-  font-size: 3rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin: 0;
   color: var(--primary-color);
 }
 
 .tagline {
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
   color: var(--primary-color);
   margin-top: 4px;
 }
