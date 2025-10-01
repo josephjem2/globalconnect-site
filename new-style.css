@@ -40,7 +40,7 @@ a {
 }
 
 .logo {
-  height: 60px; /* Adjust as needed to match text height */
+  height: 48px;
   width: auto;
   object-fit: contain;
 }
@@ -52,7 +52,7 @@ a {
 }
 
 .title-block h1 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
   margin: 0;
   color: var(--primary-color);
