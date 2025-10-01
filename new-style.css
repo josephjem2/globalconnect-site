@@ -40,19 +40,27 @@ a {
 }
 
 .logo {
-  height: 48px;
+  height: 60px; /* Adjust as needed to match text height */
+  width: auto;
+  object-fit: contain;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .title-block h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
   color: var(--primary-color);
 }
 
 .tagline {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--primary-color);
   margin-top: 4px;
 }
