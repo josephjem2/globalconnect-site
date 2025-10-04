@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "globalconnect-project",
     "public": ".",
     "ignore": [
       "firebase.json",
