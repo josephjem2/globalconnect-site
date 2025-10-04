@@ -115,7 +115,7 @@ nav a.active {
 }
 
 /* Hero Sections */
-.hero, .about-hero, .programs-hero {
+.hero, .about-hero, .programs-hero, .volunteer-hero {
   position: relative;
   width: 100%;
   background-size: cover;
@@ -128,6 +128,7 @@ nav a.active {
 .hero { height: 100vh; }
 .about-hero { height: 60vh; }
 .programs-hero { height: 50vh; }
+.volunteer-hero { height: 50vh; }
 
 
 .hero-overlay, .about-overlay {
@@ -238,7 +239,7 @@ section p {
 }
 
 /* Programs Intro & List */
-.programs-intro {
+.programs-intro, .volunteer-intro {
   text-align: center;
 }
 
@@ -350,9 +351,39 @@ footer {
   background-color: #fff;
 }
 
+/* Volunteer Roles */
+.volunteer-roles h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Volunteer Process */
+.volunteer-process {
+  padding: 4rem 6%;
+  background-color: #f9f9f9;
+}
+
+.volunteer-process h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.volunteer-process ul {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.volunteer-process ul li {
+  margin-bottom: 1rem;
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .about-hero, .programs-hero {
+    .about-hero, .programs-hero, .volunteer-hero {
         height: 40vh;
     }
     .about-overlay h1 {
@@ -373,54 +404,4 @@ footer {
     .logo {
         height: 3rem;
     }
-}
-
-/* Programs Hero */
-.programs-hero {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Programs Intro */
-.programs-intro {
-  text-align: center;
-}
-
-/* Program Cards */
-.programs-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  padding: 2rem 6%;
-}
-
-.program-card {
-  background-color: #f9f9f9;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.program-card:hover {
-  transform: translateY(-5px);
-}
-
-.program-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
-.program-card p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: var(--text-dark);
 }
