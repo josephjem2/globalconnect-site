@@ -609,6 +609,18 @@ footer {
 }
 
 /* Donate Hero */
+.donate-hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .donate-hero .about-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
@@ -646,7 +658,7 @@ footer {
   margin: 0 auto 1rem;
 }
 
-/* Giving Tiers */
+/* Impact Tiers */
 .donate-tiers {
   padding: 4rem 6%;
   background-color: #f9f9f9;
@@ -705,10 +717,35 @@ footer {
   color: var(--text-dark);
 }
 
-/* Transparency */
+.donate-monthly ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 2rem;
+  max-width: 600px;
+  text-align: left;
+}
+
+.donate-monthly ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.donate-monthly ul li::before {
+  content: "✔";
+  color: var(--accent-green);
+  position: absolute;
+  left: 0;
+}
+
+.donate-monthly .btn {
+  font-size: 1.1rem;
+}
+
+/* Transparency Section */
 .donate-transparency {
   padding: 4rem 6%;
-  background-color: #fff;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
@@ -716,4 +753,25 @@ footer {
   font-size: 2rem;
   margin-bottom: 1.5rem;
   color: var(--primary-color);
+}
+
+.transparency-breakdown {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.transparency-breakdown div {
+  background: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.transparency-breakdown div strong {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  display: block;
 }
