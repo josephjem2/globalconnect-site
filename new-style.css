@@ -115,7 +115,7 @@ nav a.active {
 }
 
 /* Hero Sections */
-.hero, .about-hero, .programs-hero, .volunteer-hero, .events-hero {
+.hero, .about-hero, .programs-hero, .volunteer-hero, .events-hero, .donate-hero {
   position: relative;
   width: 100%;
   background-size: cover;
@@ -130,6 +130,7 @@ nav a.active {
 .programs-hero { height: 50vh; }
 .volunteer-hero { height: 50vh; }
 .events-hero { height: 50vh; }
+.donate-hero { height: 50vh; }
 
 
 .hero-overlay, .about-overlay {
@@ -605,4 +606,114 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+}
+
+/* Donate Hero */
+.donate-hero .about-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.donate-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.donate-hero p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* Intro */
+.donate-intro {
+  text-align: center;
+  padding: 4rem 6%;
+}
+
+.donate-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.donate-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+  max-width: 800px;
+  margin: 0 auto 1rem;
+}
+
+/* Giving Tiers */
+.donate-tiers {
+  padding: 4rem 6%;
+  background-color: #f9f9f9;
+}
+
+.donate-tiers h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.tier-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.tier-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.tier-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.tier-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+/* Monthly Giving */
+.donate-monthly {
+  text-align: center;
+  padding: 4rem 6%;
+}
+
+.donate-monthly h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.donate-monthly p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: var(--text-dark);
+}
+
+/* Transparency */
+.donate-transparency {
+  padding: 4rem 6%;
+  background-color: #fff;
+  text-align: center;
+}
+
+.donate-transparency h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
 }
