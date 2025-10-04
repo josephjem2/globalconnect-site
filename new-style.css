@@ -35,33 +35,32 @@ a {
 
 .header-content {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  align-items: center; /* Vertically centers logo and text */
+  gap: 1rem; /* Adds space between logo and title block */
 }
 
 .logo {
-  height: 2.2rem; /* Matches the h1 font size */
+  height: 3.5rem; /* Scales up the logo */
   width: auto;
-  vertical-align: middle;
   object-fit: contain;
 }
 
 .title-block {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* Vertically centers text beside logo */
 }
 
 .title-block h1 {
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
   margin: 0;
   color: var(--primary-color);
 }
 
 .tagline {
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: var(--primary-color);
   margin-top: 4px;
 }
