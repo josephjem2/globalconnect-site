@@ -115,7 +115,7 @@ nav a.active {
 }
 
 /* Hero Sections */
-.hero, .about-hero, .programs-hero, .volunteer-hero {
+.hero, .about-hero, .programs-hero, .volunteer-hero, .events-hero {
   position: relative;
   width: 100%;
   background-size: cover;
@@ -129,6 +129,7 @@ nav a.active {
 .about-hero { height: 60vh; }
 .programs-hero { height: 50vh; }
 .volunteer-hero { height: 50vh; }
+.events-hero { height: 50vh; }
 
 
 .hero-overlay, .about-overlay {
@@ -239,18 +240,18 @@ section p {
 }
 
 /* Programs Intro & List */
-.programs-intro, .volunteer-intro {
+.programs-intro, .volunteer-intro, .events-intro {
   text-align: center;
 }
 
-.programs-list {
+.programs-list, .events-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 2rem 6%;
 }
 
-.program-card {
+.program-card, .event-card {
   background-color: #f9f9f9;
   padding: 2rem;
   border-radius: 8px;
@@ -258,17 +259,17 @@ section p {
   transition: transform 0.3s ease;
 }
 
-.program-card:hover {
+.program-card:hover, .event-card:hover {
   transform: translateY(-5px);
 }
 
-.program-card h3 {
+.program-card h3, .event-card h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
 
-.program-card p {
+.program-card p, .event-card p {
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--text-dark);
@@ -381,9 +382,36 @@ footer {
   margin-bottom: 1rem;
 }
 
+/* Past Highlights */
+.events-past {
+  padding: 4rem 6%;
+  background-color: #f9f9f9;
+}
+
+.events-past h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.events-past ul {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  padding-left: 1.2rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-dark);
+}
+
+.events-past a {
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .about-hero, .programs-hero, .volunteer-hero {
+    .about-hero, .programs-hero, .volunteer-hero, .events-hero {
         height: 40vh;
     }
     .about-overlay h1 {
