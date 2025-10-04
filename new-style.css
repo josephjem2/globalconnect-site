@@ -129,7 +129,18 @@ nav a.active {
 .about-hero { height: 60vh; }
 .programs-hero { height: 50vh; }
 .volunteer-hero { height: 50vh; }
-.events-hero { height: 50vh; }
+
+.events-hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 .hero-overlay, .about-overlay {
@@ -240,18 +251,29 @@ section p {
 }
 
 /* Programs Intro & List */
-.programs-intro, .volunteer-intro, .events-intro {
+.programs-intro, .volunteer-intro {
   text-align: center;
 }
 
-.programs-list, .events-list {
+.events-intro {
+  text-align: center;
+  padding: 4rem 6%;
+}
+
+
+.programs-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 2rem 6%;
 }
 
-.program-card, .event-card {
+.events-list {
+  padding: 2rem 6%;
+}
+
+
+.program-card {
   background-color: #f9f9f9;
   padding: 2rem;
   border-radius: 8px;
@@ -259,20 +281,47 @@ section p {
   transition: transform 0.3s ease;
 }
 
-.program-card:hover, .event-card:hover {
+.event-card {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+
+.program-card:hover {
   transform: translateY(-5px);
 }
 
-.program-card h3, .event-card h3 {
+.program-card h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
 
-.program-card p, .event-card p {
+.event-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+
+.program-card p {
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--text-dark);
+}
+
+.event-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.event-card .btn {
+  margin-top: 1rem;
+  display: inline-block;
 }
 
 /* CTA Section */
@@ -393,12 +442,29 @@ footer {
   margin-bottom: 1.5rem;
 }
 
-.events-past ul {
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
-  padding-left: 1.2rem;
-  font-size: 1.05rem;
-  line-height: 1.8;
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.highlight-item {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.highlight-item h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.highlight-item p {
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--text-dark);
 }
 
@@ -407,6 +473,7 @@ footer {
   font-weight: 600;
   text-decoration: underline;
 }
+
 
 
 /* Responsive Adjustments */
