@@ -428,3 +428,208 @@ section ul li::before {
     font-size: 1rem;
   }
 }
+/* Header */
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.logo {
+  height: 4rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.title-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.title-block h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.tagline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 4px;
+  position: relative;
+  left: 0.6rem;
+}
+
+/* Hero Banner */
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 3rem;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  max-width: 800px;
+}
+
+.about-overlay h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-overlay p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Section Layout */
+section {
+  padding: 5rem 6%;
+  background-color: #fff;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+section p {
+  font-size: 1.15rem;
+  color: var(--text-dark);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Core Values */
+.core-values ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.core-values ul li {
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-dark);
+}
+
+.core-values ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+/* CTA Section */
+.about-cta {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 5rem 6%;
+}
+
+.about-cta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-cta p {
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Footer */
+.footer-content {
+  text-align: center;
+  padding: 3rem 6%;
+  background-color: #f0f0f0;
+}
+
+.footer-content .logo {
+  height: 3rem;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  margin: 1rem 0;
+}
+
+.footer-links a {
+  margin: 0 0.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-hero {
+    height: 40vh;
+  }
+
+  .about-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .about-overlay p {
+    font-size: 1.1rem;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  section p,
+  .core-values ul li {
+    font-size: 1rem;
+  }
+
+  .about-cta h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-cta p {
+    font-size: 1rem;
+  }
+
+  .logo {
+    height: 3rem;
+  }
+}
