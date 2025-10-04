@@ -1,3 +1,4 @@
+
 /* Root Color Variables */
 :root {
   --primary-color: #005599;
@@ -311,7 +312,7 @@ footer {
   color: var(--primary-color);
 }
 
-/* About Us Page */
+
 .about-hero {
   position: relative;
   width: 100%;
