@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Donate | GlobalConnect</title>
+  <title>Donate – GlobalConnect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="new-style.css">
@@ -12,9 +12,7 @@
   <header>
     <div class="header-main" data-aos="fade-down">
       <div class="header-content">
-        <a href="index.html">
-          <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
-        </a>
+        <a href="index.html"><img src="images/logo.png" alt="GlobalConnect Logo" class="logo"></a>
         <div class="title-block">
           <h1><a href="index.html">GlobalConnect</a></h1>
           <p class="tagline"><strong>Empower to Inspire</strong></p>
@@ -24,60 +22,81 @@
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
         <a href="programs.html">Programs</a>
-        <a href="volunteer.html">Get Involved</a>
+        <a href="volunteer.html">Volunteer</a>
         <a href="events.html">Events</a>
+        <a href="get-involved.html">Get Involved</a>
+        <a href="donate.html" class="active">Donate</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <a href="donate.html" class="btn btn-primary active">Donate</a>
+      <a href="donate.html" class="btn btn-primary">Donate</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero-donate" style="background-image: url('images/donate-hero.jpg'); background-size: cover; background-position: center; text-align: center; color: white; padding: 5rem 0;">
-      <div class="hero-overlay" data-aos="fade-up">
-        <h1>Support Our Mission</h1>
-        <p>Your contribution empowers communities and changes lives. Every gift, no matter the size, makes a difference.</p>
+  <!-- Hero Section -->
+  <section class="donate-hero" style="background-image: url('images/donate.jpg');">
+    <div class="about-overlay" data-aos="fade-up">
+      <h1>Donate</h1>
+      <p>Your gift becomes someone’s turning point.</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <section class="donate-intro" data-aos="fade-up">
+    <h2>Why Give?</h2>
+    <p>Every donation to GlobalConnect fuels dignity, resilience, and shared humanity. You’re not just giving—you’re investing in transformation. Whether it’s a care kit, a mentorship cycle, or a digital literacy workshop, your support creates real change.</p>
+    <p>We honor every gift with transparency, stewardship, and impact. Let’s build a legacy—together.</p>
+  </section>
+
+  <!-- Giving Tiers -->
+  <section class="donate-tiers" data-aos="fade-up">
+    <h2>Impact Levels</h2>
+    <div class="tier-grid">
+      <div class="tier-card">
+        <h3>$25</h3>
+        <p>Provides a hygiene kit with essentials for one person</p>
       </div>
-    </section>
+      <div class="tier-card">
+        <h3>$100</h3>
+        <p>Funds a digital literacy workshop for 10 participants</p>
+      </div>
+      <div class="tier-card">
+        <h3>$250</h3>
+        <p>Supports a youth mentorship cycle for one student</p>
+      </div>
+      <div class="tier-card">
+        <h3>$500+</h3>
+        <p>Sponsors a community outreach event or care kit drive</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="donation-section" data-aos="fade-up">
-        <div class="donation-container">
-            <div class="donation-form-container">
-                <h2>Make a Donation</h2>
-                <form id="donation-form">
-                    <div class="donation-amount">
-                        <label>Choose an Amount:</label>
-                        <div class="amount-options">
-                            <button type="button" class="btn amount-btn" data-amount="25">$25</button>
-                            <button type="button" class="btn amount-btn" data-amount="50">$50</button>
-                            <button type="button" class="btn amount-btn active" data-amount="100">$100</button>
-                            <button type="button" class="btn amount-btn" data-amount="250">$250</button>
-                        </div>
-                        <input type="number" id="custom-amount" placeholder="Or enter a custom amount">
-                    </div>
-                    <div class="donation-frequency">
-                        <label>Frequency:</label>
-                        <div class="frequency-options">
-                            <button type="button" class="btn frequency-btn active" data-frequency="one-time">One-Time</button>
-                            <button type="button" class="btn frequency-btn" data-frequency="monthly">Monthly</button>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Donate Now</button>
-                </form>
-            </div>
-            <div class="donation-impact-info">
-                <h2>Your Impact</h2>
-                <p>
-                    <strong>$25</strong> can provide a student with essential school supplies for a year.<br><br>
-                    <strong>$50</strong> can deliver a comprehensive care kit to a family in crisis.<br><br>
-                    <strong>$100</strong> can fund a vocational training workshop for an aspiring entrepreneur.<br><br>
-                    <strong>$250</strong> can support a community-led resilience project.
-                </p>
-            </div>
-        </div>
-    </section>
+  <!-- Monthly Giving -->
+  <section class="donate-monthly" data-aos="fade-up">
+    <h2>Become a Monthly Donor</h2>
+    <p>Join our Circle of Impact and help us plan ahead, grow sustainably, and reach more lives. Monthly donors receive quarterly updates, behind-the-scenes stories, and exclusive invitations to virtual briefings.</p>
+    <a href="https://forms.globalconnect.org/monthly-giving" class="btn btn-primary">Join the Circle</a>
+  </section>
 
-  </main>
+  <!-- Transparency Section -->
+  <section class="donate-transparency" data-aos="fade-up">
+    <h2>Where Your Money Goes</h2>
+    <ul>
+      <li><strong>82%</strong> Direct program delivery</li>
+      <li><strong>12%</strong> Outreach, training, and volunteer support</li>
+      <li><strong>6%</strong> Operations and infrastructure</li>
+    </ul>
+    <p>We publish annual reports, impact dashboards, and real-time updates. Stewardship isn’t a promise—it’s a practice.</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="about-cta" data-aos="fade-up">
+    <h2>Ready to Give?</h2>
+    <p>Your generosity fuels our mission. Whether it’s a one-time gift or a monthly commitment, you’re helping us build a world of dignity and connection.</p>
+    <div class="cta-buttons">
+      <a href="https://forms.globalconnect.org/donate" class="btn btn-primary">Make a Donation</a>
+      <a href="contact.html" class="btn btn-secondary">Questions?</a>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer data-aos="fade-up">
@@ -96,14 +115,8 @@
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="donate.js"></script>
   <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true,
-      offset: 100
-    });
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
   </script>
 </body>
 </html>
