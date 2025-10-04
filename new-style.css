@@ -142,16 +142,17 @@ nav a.active {
   margin-bottom: 2rem;
 }
 
-.hero-overlay .btn {
-  font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-}
-
 .hero-buttons {
   display: flex;
-  justify-content: center;
   gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 1.5rem;
+}
+
+.hero-buttons .btn {
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
 }
 
 /* Section Headings */
