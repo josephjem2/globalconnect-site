@@ -5,92 +5,62 @@
   <title>Contact | GlobalConnect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="new-style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <div class="header-main" data-aos="fade-down">
-      <div class="header-content">
-        <a href="index.html">
-          <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
-        </a>
-        <div class="title-block">
-          <h1><a href="index.html">GlobalConnect</a></h1>
-          <p class="tagline"><strong>Empower to Inspire</strong></p>
-        </div>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="programs.html">Programs</a>
-        <a href="volunteer.html">Volunteer</a>
-        <a href="events.html">Events</a>
-        <a href="get-involved.html">Get Involved</a>
-        <a href="donate.html">Donate</a>
-        <a href="impact.html">Impact</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="contact.html" class="active">Contact</a>
-      </nav>
-      <a href="donate.html" class="btn">Donate</a>
-    </div>
-  </header>
+<header>
+  <nav class="main-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="programs.html">Programs</a>
+    <a href="volunteer.html">Volunteer</a>
+    <a href="events.html">Events</a>
+    <a href="get-involved.html">Get Involved</a>
+    <a href="donate.html">Donate</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
 
-  <section class="hero-banner" style="background-image: url('images/contact-hero.jpg');">
-    <div class="overlay" data-aos="fade-up">
-      <h1>Contact Us</h1>
-      <p>We’d love to hear from you.</p>
-    </div>
-  </section>
+<!-- Hero Section -->
+<section class="hero-banner" style="background-image: url('images/contact-hero.jpg');">
+  <div class="overlay" data-aos="fade-up">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you. Let’s connect, collaborate, and ripple outward.</p>
+  </div>
+</section>
 
-  <section data-aos="fade-up">
-    <div class="grid-contact">
-      <div class="card-form">
-        <h2>Send Us a Message</h2>
-        <form action="#" method="post">
-          <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email Address</label>
-          <input type="email" id="email" name="email" required>
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" required>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </div>
-      <div class="card-info">
-        <h2>Contact Information</h2>
-        <p><strong>Email:</strong> <a href="mailto:hello@globalconnect.org">hello@globalconnect.org</a></p>
-        <p><strong>Phone:</strong> 1-800-123-4567</p>
-        <p><strong>Address:</strong> 123 Philanthropy Lane, Humanity City, 54321</p>
-        <h3>Follow Us</h3>
-        <div class="social-links">
-          <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<!-- Contact Form -->
+<section data-aos="fade-up">
+  <h2>Send Us a Message</h2>
+  <form class="interest-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+  </form>
+</section>
 
-  <footer data-aos="fade-up">
-    <div class="footer-content">
-      <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
-      <p><strong>GlobalConnect</strong> | <strong>Empower to Inspire</strong></p>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="programs.html">Programs</a>
-        <a href="donate.html">Donate</a>
-        <a href="volunteer.html">Volunteer</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
-    </div>
-  </footer>
+<!-- Social & Workspace -->
+<section data-aos="fade-up">
+  <h2>Other Ways to Connect</h2>
+  <ul class="impact-list">
+    <li><strong>Email:</strong> hello@globalconnect.org</li>
+    <li><strong>Instagram:</strong> @globalconnectmovement</li>
+    <li><strong>LinkedIn:</strong> GlobalConnect</li>
+    <li><strong>Workspace:</strong> Google Drive & Meet (invite-only)</li>
+  </ul>
+</section>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
-  </script>
+<footer>
+  <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
+</script>
+
 </body>
 </html>

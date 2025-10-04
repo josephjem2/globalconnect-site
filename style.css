@@ -145,7 +145,7 @@ section {
   background: var(--accent-color);
   padding: 1rem;
   border-radius: 8px;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -157,6 +157,29 @@ blockquote {
   font-style: italic;
   max-width: 600px;
   margin: 2rem auto;
+}
+
+/* Forms */
+.interest-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.interest-form input,
+.interest-form select,
+.interest-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.interest-form button {
+  align-self: flex-start;
 }
 
 /* Footer */
