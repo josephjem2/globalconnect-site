@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Volunteer – GlobalConnect</title>
+  <title>Volunteer | GlobalConnect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="new-style.css?v=1.1">
+  <link rel="stylesheet" href="new-style.css">
 </head>
 <body>
+
   <!-- Header -->
   <header>
     <div class="header-main" data-aos="fade-down">
@@ -33,46 +34,45 @@
         <a href="testimonials.html">Testimonials</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <a href="donate.html" class="btn btn-primary">Donate</a>
+      <a href="donate.html" class="btn">Donate</a>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="volunteer-hero" style="background-image: url('images/volunteer.jpg');">
-    <div class="about-overlay" data-aos="fade-up">
+  <section class="hero-banner" style="background-image: url('images/volunteer.jpg');">
+    <div class="overlay" data-aos="fade-up">
       <h1>Get Involved</h1>
       <p>Your time. Your heart. Your impact.</p>
     </div>
   </section>
 
   <!-- Intro -->
-  <section class="volunteer-intro" data-aos="fade-up">
+  <section data-aos="fade-up">
     <h2>Why Volunteer?</h2>
     <p>Volunteering with GlobalConnect isn’t just about giving—it’s about growing. You’ll join a movement rooted in dignity, resilience, and shared humanity. Whether you mentor a student, pack a care kit, or help run an event, your presence becomes part of someone’s transformation story.</p>
-    <p>We believe in showing up. And when you do, lives change—including yours.</p>
   </section>
 
   <!-- Volunteer Roles -->
-  <section class="volunteer-roles" data-aos="fade-up">
+  <section data-aos="fade-up">
     <h2>Ways to Serve</h2>
-    <div class="programs-list">
-      <div class="program-card">
+    <div class="grid">
+      <div class="card">
         <h3>📦 Outreach & Distribution</h3>
         <p>Help assemble and deliver care kits, food packs, and seasonal supplies. Every delivery is a moment of connection.</p>
       </div>
-      <div class="program-card">
+      <div class="card">
         <h3>🎓 Mentorship & Tutoring</h3>
         <p>Support students through academic tutoring or life mentorship. No teaching degree required—just heart and consistency.</p>
       </div>
-      <div class="program-card">
+      <div class="card">
         <h3>🧠 Workshop Facilitation</h3>
         <p>Lead or assist in digital literacy, leadership, or wellness workshops. We provide the framework—you bring the energy.</p>
       </div>
-      <div class="program-card">
+      <div class="card">
         <h3>📣 Advocacy & Storytelling</h3>
         <p>Help us share impact stories, create content, or speak at events. Your voice helps amplify our mission.</p>
       </div>
-      <div class="program-card">
+      <div class="card">
         <h3>🛠 Logistics & Support</h3>
         <p>Behind every event is a team making it run smoothly. Help with setup, coordination, or tech support.</p>
       </div>
@@ -80,25 +80,22 @@
   </section>
 
   <!-- How It Works -->
-  <section class="volunteer-process" data-aos="fade-up">
+  <section data-aos="fade-up">
     <h2>How It Works</h2>
-    <ul>
-      <li><strong>Step 1:</strong> Fill out our volunteer interest form</li>
-      <li><strong>Step 2:</strong> Attend a virtual orientation</li>
-      <li><strong>Step 3:</strong> Get matched with a role or event</li>
-      <li><strong>Step 4:</strong> Start making an impact</li>
-    </ul>
+    <ol>
+      <li>Fill out our volunteer interest form.</li>
+      <li>Attend a virtual orientation.</li>
+      <li>Get matched with a role or event.</li>
+      <li>Start making an impact.</li>
+    </ol>
   </section>
 
   <!-- Call to Action -->
-  <section class="about-cta" data-aos="fade-up">
+  <section class="donate-cta" data-aos="fade-up">
     <h2>Ready to Join Us?</h2>
-    <p>Whether you have one hour or one day a week, your time matters. Let’s build something unforgettable—together.</p>
-    <div class="cta-buttons">
-      <a href="https://forms.globalconnect.org/volunteer" class="btn btn-primary">Sign Up to Volunteer</a>
-      <a href="contact.html" class="btn btn-secondary">Contact Us</a>
-    </div>
-</section>
+    <p>Whether you have one hour or one day a week, your time matters.</p>
+    <a href="https://forms.globalconnect.org/volunteer" class="btn">Sign Up to Volunteer</a>
+  </section>
 
   <!-- Footer -->
   <footer data-aos="fade-up">
@@ -118,12 +115,7 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true,
-      offset: 100
-    });
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
   </script>
 </body>
 </html>

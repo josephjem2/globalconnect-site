@@ -5,10 +5,10 @@
   <title>Contact | GlobalConnect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="new-style.css?v=1.1">
+  <link rel="stylesheet" href="new-style.css">
 </head>
 <body>
-  <!-- Header -->
+
   <header>
     <div class="header-main" data-aos="fade-down">
       <div class="header-content">
@@ -33,60 +33,46 @@
         <a href="testimonials.html">Testimonials</a>
         <a href="contact.html" class="active">Contact</a>
       </nav>
-      <a href="donate.html" class="btn btn-primary">Donate</a>
+      <a href="donate.html" class="btn">Donate</a>
     </div>
   </header>
 
-  <main>
-    <section class="hero-contact" style="background-image: url('images/contact-hero.jpg'); background-size: cover; background-position: center; text-align: center; color: white; padding: 5rem 0;">
-      <div class="hero-overlay" data-aos="fade-up">
-        <h1>Contact Us</h1>
-        <p>We’d love to hear from you. Reach out with questions, ideas, or partnership inquiries.</p>
+  <section class="hero-banner" style="background-image: url('images/contact-hero.jpg');">
+    <div class="overlay" data-aos="fade-up">
+      <h1>Contact Us</h1>
+      <p>We’d love to hear from you.</p>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <div class="grid-contact">
+      <div class="card-form">
+        <h2>Send Us a Message</h2>
+        <form action="#" method="post">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
       </div>
-    </section>
-
-    <section class="contact-form-section" data-aos="fade-up">
-        <div class="contact-container">
-            <div class="contact-form">
-                <h2>Send Us a Message</h2>
-                <form action="#" method="post">
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h2>Contact Information</h2>
-                <p><strong>Email:</strong><br><a href="mailto:hello@globalconnectgc.com">hello@globalconnectgc.com</a></p>
-                <p><strong>Phone:</strong><br>1-800-123-4567</p>
-                <p><strong>Address:</strong><br>123 Philanthropy Lane<br>Humanity City, HC 54321</p>
-                <h3>Follow Us</h3>
-                <div class="social-links-contact">
-                  <a href="#">Facebook</a>
-                  <a href="#">Twitter</a>
-                  <a href="#">Instagram</a>
-                </div>
-            </div>
+      <div class="card-info">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> <a href="mailto:hello@globalconnect.org">hello@globalconnect.org</a></p>
+        <p><strong>Phone:</strong> 1-800-123-4567</p>
+        <p><strong>Address:</strong> 123 Philanthropy Lane, Humanity City, 54321</p>
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-  </main>
-
-  <!-- Footer -->
   <footer data-aos="fade-up">
     <div class="footer-content">
       <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
@@ -104,12 +90,7 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true,
-      offset: 100
-    });
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
   </script>
 </body>
 </html>
