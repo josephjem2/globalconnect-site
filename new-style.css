@@ -35,12 +35,12 @@ a {
 
 .header-content {
   display: flex;
-  align-items: center; /* Vertically centers logo and text */
-  gap: 1rem; /* Adds space between logo and title block */
+  align-items: center;       /* Vertically aligns logo and text */
+  gap: 1.2rem;                /* Adds space between logo and title block */
 }
 
 .logo {
-  height: 3.5rem; /* Scales up the logo */
+  height: 4rem;               /* Increased from 3.5rem for stronger presence */
   width: auto;
   object-fit: contain;
 }
@@ -48,7 +48,7 @@ a {
 .title-block {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically centers text beside logo */
+  justify-content: center;   /* Vertically centers text beside logo */
 }
 
 .title-block h1 {
