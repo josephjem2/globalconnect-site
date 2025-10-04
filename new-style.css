@@ -132,8 +132,6 @@ nav a.active {
 .events-hero { height: 50vh; }
 .getinvolved-hero { height: 50vh; }
 
-
-
 .hero-overlay, .about-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3rem;
@@ -242,7 +240,7 @@ section p {
 }
 
 /* Programs Intro & List */
-.programs-intro, .volunteer-intro, .events-intro, .getinvolved-intro {
+.programs-intro, .volunteer-intro, .events-intro {
   text-align: center;
 }
 
@@ -429,16 +427,17 @@ footer {
 
 /* Get Involved Page */
 .getinvolved-intro {
+  text-align: center;
   padding: 4rem 6%;
 }
 
 .engagement-options {
-    padding: 2rem 6%;
+  padding: 4rem 6%;
 }
 
 .engagement-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -459,28 +458,14 @@ footer {
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--text-dark);
-  margin-bottom: 1rem;
 }
 
 .engagement-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-}
-
-.engagement-card ul li {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1rem;
   padding-left: 1.2rem;
-  position: relative;
-}
-
-.engagement-card ul li::before {
-  content: "›";
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
-  font-weight: bold;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-dark);
 }
 
 .engagement-card .btn {
@@ -489,10 +474,11 @@ footer {
 }
 
 .getinvolved-impact {
-    text-align: center;
-    background-color: #f9f9f9;
-    padding: 4rem 6%;
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 4rem 6%;
 }
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
