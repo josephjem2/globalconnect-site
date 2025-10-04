@@ -41,7 +41,7 @@ a {
 }
 
 .logo {
-  height: 4rem; /* Larger logo */
+  height: 4rem;
   width: auto;
   object-fit: contain;
 }
@@ -66,7 +66,7 @@ a {
   color: var(--primary-color);
   margin-top: 4px;
   position: relative;
-  left: 0.6rem; /* Nudges tagline under the “o” in GlobalConnect */
+  left: 0.6rem;
 }
 
 nav {
@@ -114,11 +114,10 @@ nav a.active {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Hero Section */
-.hero {
+/* Hero Sections */
+.hero, .about-hero, .programs-hero {
   position: relative;
   width: 100%;
-  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -126,8 +125,12 @@ nav a.active {
   align-items: center;
   justify-content: center;
 }
+.hero { height: 100vh; }
+.about-hero { height: 60vh; }
+.programs-hero { height: 50vh; }
 
-.hero-overlay {
+
+.hero-overlay, .about-overlay {
   background-color: rgba(0, 0, 0, 0.5);
   padding: 3rem;
   border-radius: 8px;
@@ -136,12 +139,12 @@ nav a.active {
   max-width: 700px;
 }
 
-.hero-overlay h1 {
+.hero-overlay h1, .about-overlay h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.hero-overlay p {
+.hero-overlay p, .about-overlay p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
@@ -159,7 +162,13 @@ nav a.active {
   padding: 0.75rem 1.5rem;
 }
 
-/* Section Headings */
+
+/* Generic Section Layout */
+section {
+  padding: 4rem 5%;
+  background-color: #fff;
+}
+
 section h2 {
   text-align: center;
   font-size: 2.4rem;
@@ -179,12 +188,18 @@ section h2::after {
   border-radius: 2px;
 }
 
+section p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+
 /* Mission Section */
 .mission {
   padding: 4rem 5%;
-  background-color: #fff;
 }
-
 .mission-content {
   display: flex;
   flex-wrap: wrap;
@@ -192,13 +207,11 @@ section h2::after {
   align-items: center;
   justify-content: center;
 }
-
 .mission-image,
 .mission-text {
   flex: 1;
   min-width: 300px;
 }
-
 .responsive-img {
   width: 100%;
   border-radius: 8px;
@@ -210,14 +223,12 @@ section h2::after {
   padding: 4rem 5%;
   background-color: var(--bg-light);
 }
-
 .impact-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   text-align: center;
 }
-
 .impact-item {
   background-color: #fff;
   padding: 1.5rem;
@@ -226,432 +237,11 @@ section h2::after {
   font-size: 1.2rem;
 }
 
-/* Programs Preview */
-.programs-preview {
-  padding: 4rem 5%;
-}
-
-.programs-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-}
-
-.program-card {
-  background-color: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease;
-}
-
-.program-card:hover {
-  transform: translateY(-4px);
-}
-
-/* Help Section */
-.how-to-help {
-  padding: 4rem 5%;
-  background-color: var(--bg-light);
-}
-
-.help-grid-2-col {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-}
-
-.help-card-large,
-.help-card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-.help-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-/* Featured Event */
-.featured-event {
-  padding: 4rem 5%;
-  text-align: center;
-  background-color: #fff;
-}
-
-/* News Preview */
-.news-preview {
-  padding: 3rem 5%;
-  text-align: center;
-}
-
-/* Footer */
-footer {
-  background-color: #f0f0f0;
-  padding: 2rem 5%;
-  text-align: center;
-}
-
-.footer-content .logo {
-  height: 48px;
-  margin-bottom: 1rem;
-}
-
-.footer-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.footer-links a {
-  font-weight: 500;
-  color: var(--primary-color);
-}
-
-
-.about-hero {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 3rem;
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-  max-width: 700px;
-}
-
-.about-overlay h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.about-overlay p {
-  font-size: 1.2rem;
-}
-
-/* Section Layout */
-section {
-  padding: 4rem 5%;
-  background-color: #fff;
-}
-
-section h2 {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-section p {
-  font-size: 1.1rem;
-  color: var(--text-dark);
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-
-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 700px;
-}
-
-section ul li {
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
-  padding-left: 1.2rem;
-  position: relative;
-  color: var(--text-dark);
-}
-
-section ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
-  font-size: 1.2rem;
-}
-
-/* CTA Section */
-.about-cta {
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 4rem 5%;
-}
-
-.about-cta h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.about-cta p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
-
-.about-cta .btn {
-  margin: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .about-hero {
-    height: 40vh;
-  }
-
-  .about-overlay h1 {
-    font-size: 2rem;
-  }
-
-  section h2 {
-    font-size: 1.6rem;
-  }
-
-  section p,
-  section ul li {
-    font-size: 1rem;
-  }
-}
-/* Header */
-.header-content {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-}
-
-.logo {
-  height: 4rem;
-  width: auto;
-  object-fit: contain;
-}
-
-.title-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-}
-
-.title-block h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin: 0;
-  color: var(--primary-color);
-}
-
-.tagline {
-  font-size: 1rem;
-  font-weight: 600;
-  color: var(--primary-color);
-  margin-top: 4px;
-  position: relative;
-  left: 0.6rem;
-}
-
-/* Hero Banner */
-.about-hero {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.about-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 3rem;
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-  max-width: 800px;
-}
-
-.about-overlay h1 {
-  font-size: 2.8rem;
-  margin-bottom: 1rem;
-}
-
-.about-overlay p {
-  font-size: 1.3rem;
-  line-height: 1.6;
-}
-
-/* Section Layout */
-section {
-  padding: 5rem 6%;
-  background-color: #fff;
-}
-
-section h2 {
-  font-size: 2.2rem;
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-section p {
-  font-size: 1.15rem;
-  color: var(--text-dark);
-  line-height: 1.8;
-  margin-bottom: 1.5rem;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* Core Values */
-.core-values ul {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 900px;
-}
-
-.core-values ul li {
-  font-size: 1.15rem;
-  margin-bottom: 1.2rem;
-  padding-left: 1.5rem;
-  position: relative;
-  color: var(--text-dark);
-}
-
-.core-values ul li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
-  font-size: 1.5rem;
-}
-
-/* CTA Section */
-.about-cta {
-  text-align: center;
-  background-color: #f9f9f9;
-  padding: 5rem 6%;
-}
-
-.about-cta h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1.5rem;
-}
-
-.about-cta p {
-  font-size: 1.15rem;
-  margin-bottom: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.cta-buttons .btn {
-  font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-}
-
-/* Footer */
-.footer-content {
-  text-align: center;
-  padding: 3rem 6%;
-  background-color: #f0f0f0;
-}
-
-.footer-content .logo {
-  height: 3rem;
-  margin-bottom: 1rem;
-}
-
-.footer-links {
-  margin: 1rem 0;
-}
-
-.footer-links a {
-  margin: 0 0.5rem;
-  color: var(--primary-color);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .about-hero {
-    height: 40vh;
-  }
-
-  .about-overlay h1 {
-    font-size: 2rem;
-  }
-
-  .about-overlay p {
-    font-size: 1.1rem;
-  }
-
-  section h2 {
-    font-size: 1.8rem;
-  }
-
-  section p,
-  .core-values ul li {
-    font-size: 1rem;
-  }
-
-  .about-cta h2 {
-    font-size: 1.8rem;
-  }
-
-  .about-cta p {
-    font-size: 1rem;
-  }
-
-  .logo {
-    height: 3rem;
-  }
-}
-/* Programs Hero */
-.programs-hero {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Programs Intro */
+/* Programs Intro & List */
 .programs-intro {
   text-align: center;
 }
 
-/* Program Cards */
 .programs-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -681,4 +271,106 @@ section p {
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--text-dark);
+}
+
+/* CTA Section */
+.about-cta {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 4rem 5%;
+}
+.about-cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about-cta p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.about-cta .btn {
+  margin: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+
+/* Footer */
+footer {
+  background-color: #f0f0f0;
+  padding: 2rem 5%;
+  text-align: center;
+}
+.footer-content .logo {
+  height: 48px;
+  margin-bottom: 1rem;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.footer-links a {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* Core Values (from about page) */
+.core-values ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 900px;
+}
+.core-values ul li {
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-dark);
+}
+.core-values ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+/* Featured Event */
+.featured-event {
+  padding: 4rem 5%;
+  text-align: center;
+  background-color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .about-hero, .programs-hero {
+        height: 40vh;
+    }
+    .about-overlay h1 {
+        font-size: 2rem;
+    }
+    section h2 {
+        font-size: 1.8rem;
+    }
+    section p, .core-values ul li {
+        font-size: 1rem;
+    }
+    .about-cta h2 {
+        font-size: 1.8rem;
+    }
+    .about-cta p {
+        font-size: 1rem;
+    }
+    .logo {
+        height: 3rem;
+    }
 }
