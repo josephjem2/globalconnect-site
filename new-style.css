@@ -115,7 +115,7 @@ nav a.active {
 }
 
 /* Hero Sections */
-.hero, .about-hero, .programs-hero, .volunteer-hero, .events-hero {
+.hero, .about-hero, .programs-hero, .volunteer-hero, .events-hero, .getinvolved-hero {
   position: relative;
   width: 100%;
   background-size: cover;
@@ -129,18 +129,9 @@ nav a.active {
 .about-hero { height: 60vh; }
 .programs-hero { height: 50vh; }
 .volunteer-hero { height: 50vh; }
+.events-hero { height: 50vh; }
+.getinvolved-hero { height: 50vh; }
 
-.events-hero {
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 
 .hero-overlay, .about-overlay {
@@ -251,29 +242,18 @@ section p {
 }
 
 /* Programs Intro & List */
-.programs-intro, .volunteer-intro {
+.programs-intro, .volunteer-intro, .events-intro, .getinvolved-intro {
   text-align: center;
 }
 
-.events-intro {
-  text-align: center;
-  padding: 4rem 6%;
-}
-
-
-.programs-list {
+.programs-list, .events-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   padding: 2rem 6%;
 }
 
-.events-list {
-  padding: 2rem 6%;
-}
-
-
-.program-card {
+.program-card, .event-card {
   background-color: #f9f9f9;
   padding: 2rem;
   border-radius: 8px;
@@ -281,47 +261,20 @@ section p {
   transition: transform 0.3s ease;
 }
 
-.event-card {
-  background-color: #f9f9f9;
-  padding: 2rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.05);
-}
-
-
-.program-card:hover {
+.program-card:hover, .event-card:hover {
   transform: translateY(-5px);
 }
 
-.program-card h3 {
+.program-card h3, .event-card h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
 
-.event-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
-}
-
-
-.program-card p {
+.program-card p, .event-card p {
   font-size: 1.05rem;
   line-height: 1.6;
   color: var(--text-dark);
-}
-
-.event-card p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  color: var(--text-dark);
-}
-
-.event-card .btn {
-  margin-top: 1rem;
-  display: inline-block;
 }
 
 /* CTA Section */
@@ -474,11 +427,76 @@ footer {
   text-decoration: underline;
 }
 
+/* Get Involved Page */
+.getinvolved-intro {
+  padding: 4rem 6%;
+}
 
+.engagement-options {
+    padding: 2rem 6%;
+}
+
+.engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.engagement-card {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.engagement-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.engagement-card p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.engagement-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.engagement-card ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.engagement-card ul li::before {
+  content: "›";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.engagement-card .btn {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.getinvolved-impact {
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 4rem 6%;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
-    .about-hero, .programs-hero, .volunteer-hero, .events-hero {
+    .about-hero, .programs-hero, .volunteer-hero, .events-hero, .getinvolved-hero {
         height: 40vh;
     }
     .about-overlay h1 {
