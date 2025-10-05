@@ -2,113 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Newsroom | GlobalConnect</title>
+  <title>News | GlobalConnect</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="new-style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/our-work.css">
 </head>
 <body>
+
   <!-- Header -->
   <header>
-    <div class="header-main" data-aos="fade-down">
-      <div class="header-content">
-        <a href="index.html">
-          <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
-        </a>
-        <div class="title-block">
-          <h1><a href="index.html">GlobalConnect</a></h1>
-          <p class="tagline"><strong>Empower to Inspire</strong></p>
-        </div>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="programs.html">Programs</a>
-        <a href="volunteer.html">Get Involved</a>
-        <a href="events.html">Events</a>
-        <a href="contact.html">Contact</a>
-        <a href="news.html" class="active">News</a>
-      </nav>
-      <a href="donate.html" class="btn btn-primary">Donate</a>
+  <nav class="main-nav">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="GlobalConnect Logo">
+    </a>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="events.html">Events</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="donate.html">Donate</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="contact.html">Contact</a>
     </div>
-  </header>
+  </nav>
+</header>
 
   <main>
-    <section class="hero-news" style="background-image: url('images/news-hero.jpg'); background-size: cover; background-position: center; text-align: center; color: white; padding: 5rem 0;">
-      <div class="hero-overlay" data-aos="fade-up">
-        <h1>Newsroom</h1>
-        <p>Stay informed about our latest initiatives, impact stories, and announcements.</p>
+    <!-- News Hero Section -->
+    <section class="hero-banner" style="background-image: url('images/news-hero.jpg');" data-aos="fade-up">
+      <div class="overlay">
+        <h1>Latest News</h1>
+        <p>Stories of impact, community, and forward momentum.</p>
       </div>
     </section>
 
-    <!-- Mission Section -->
-    <section class="mission" data-aos="fade-up">
-      <h2>Our Mission</h2>
-      <div class="mission-content">
-        <div class="mission-image">
-          <img src="images/mission-group.jpg" alt="Community outreach with children and supplies" class="responsive-img">
-        </div>
-        <div class="mission-text">
-          <p>GlobalConnect empowers underserved communities through education, outreach, and volunteer-led programs. We believe every individual deserves access to dignity, opportunity, and the tools to thrive.</p>
+    <!-- Featured Article -->
+    <section class="news-featured" data-aos="fade-up">
+      <h2>Featured Story</h2>
+      <div class="featured-article">
+        <img src="images/featured-news.jpg" alt="Featured News Story">
+        <div class="article-content">
+          <h3>Youth Summit 2025: A Resounding Success</h3>
+          <p class="article-meta">Published on October 28, 2025</p>
+          <p>This year’s Youth Summit brought together over 100 young leaders for a day of mentorship, skill-building, and powerful storytelling. The energy was electric as participants connected with mentors from leading tech companies, honed their public speaking skills, and shared their visions for a more equitable future...</p>
+          <a href="#" class="btn btn-secondary">Read More</a>
         </div>
       </div>
     </section>
 
-    <section class="news-list-section" data-aos="fade-up">
-        <h2>Latest News</h2>
-        <div class="news-list-grid">
-
-            <div class="news-card-item">
-                <img src="images/news-1.jpg" alt="Literacy Program Launch" class="responsive-img">
-                <div class="news-card-content">
-                    <h3>GlobalConnect Launches Digital Literacy Program for Adults</h3>
-                    <p class="news-date"><strong>Date:</strong> October 28, 2025</p>
-                    <p>We are thrilled to announce the launch of our new Digital Literacy Program, designed to equip adults with essential tech skills for today’s job market...</p>
-                    <a href="#" class="btn btn-secondary">Read More</a>
-                </div>
-            </div>
-
-            <div class="news-card-item">
-                <img src="images/news-2.jpg" alt="Community Partnership" class="responsive-img">
-                <div class="news-card-content">
-                    <h3>New Partnership with Local Businesses to Combat Food Insecurity</h3>
-                    <p class="news-date"><strong>Date:</strong> October 15, 2025</p>
-                    <p>GlobalConnect is proud to partner with five local businesses to expand our food distribution network, ensuring more families have access to nutritious meals...</p>
-                    <a href="#" class="btn btn-secondary">Read More</a>
-                </div>
-            </div>
-
-            <div class="news-card-item">
-                <img src="images/news-3.jpg" alt="Volunteer Award" class="responsive-img">
-                <div class="news-card-content">
-                    <h3>Volunteer Spotlight: Maria Hernandez Honored for a Decade of Service</h3>
-                    <p class="news-date"><strong>Date:</strong> September 30, 2025</p>
-                    <p>This month, we celebrate Maria Hernandez, a dedicated volunteer who has been with us for over 10 years. Her commitment has inspired hundreds...</p>
-                    <a href="#" class="btn btn-secondary">Read More</a>
-                </div>
-            </div>
-
+    <!-- Recent News Grid -->
+    <section class="news-grid" data-aos="fade-up">
+      <h2>Recent News</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/news-1.jpg" alt="Care Kit Drive">
+          <div class="card-content">
+            <h4>Winter Warmth Drive Exceeds Goals</h4>
+            <p class="article-meta">October 15, 2025</p>
+            <p>Thanks to our incredible volunteers and donors, we distributed over 1,000 care kits to local shelters, providing essential warmth and hygiene supplies to our neighbors in need.</p>
+            <a href="#" class="btn-link">Read More</a>
+          </div>
         </div>
+        <div class="card">
+          <img src="images/news-2.jpg" alt="Digital Literacy Program">
+          <div class="card-content">
+            <h4>Digital Literacy Program Launches in Partnership with TechForward</h4>
+            <p class="article-meta">September 20, 2025</p>
+            <p>We are thrilled to announce our partnership with TechForward to launch a new digital literacy program, offering free workshops on coding, online safety, and career skills.</p>
+            <a href="#" class="btn-link">Read More</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/news-3.jpg" alt="Volunteer Spotlight">
+          <div class="card-content">
+            <h4>Volunteer Spotlight: Meet Maria</h4>
+            <p class="article-meta">September 5, 2025</p>
+            <p>Maria, a dedicated mentor and volunteer, shares her journey with GlobalConnect and the profound impact of co-creating opportunities with young leaders in her community.</p>
+            <a href="#" class="btn-link">Read More</a>
+          </div>
+        </div>
+      </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
-  <footer data-aos="fade-up">
-    <div class="footer-content">
-      <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
-      <p><strong>GlobalConnect</strong> | <strong>Empower to Inspire</strong></p>
-      <div class="footer-links">
-        <a href="about.html">About</a>
-        <a href="programs.html">Programs</a>
-        <a href="donate.html">Donate</a>
-        <a href="volunteer.html">Volunteer</a>
-        <a href="contact.html">Contact</a>
-        <a href="news.html">News</a>
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+      <div class="footer-content">
+        <img src="images/logo.png" alt="GlobalConnect Logo" class="logo">
+        <p><strong>GlobalConnect</strong> | <strong>Empower to Inspire</strong></p>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="programs.html">Programs</a>
+          <a href="donate.html">Donate</a>
+          <a href="volunteer.html">Volunteer</a>
+          <a href="contact.html">Contact</a>
+          <a href="news.html">News</a>
+        </div>
+        <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
       </div>
-      <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
-    </div>
-  </footer>
+    </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>

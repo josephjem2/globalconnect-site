@@ -1,11 +1,12 @@
+
 :root {
-  --primary-color: #0056b3;
-  --secondary-color: #003f8a;
-  --accent-color: #e0e0e0;
-  --text-dark: #333;
-  --text-light: #fff;
-  --bg-light: #f9f9f9;
-  --bg-dark: #222;
+  --primary-color: #007b7f;       /* Deep Teal */
+  --secondary-color: #005f63;     /* Darker Teal */
+  --accent-color: #f4c542;        /* Warm Gold */
+  --text-dark: #2c2c2c;
+  --text-light: #ffffff;
+  --bg-light: #f5f5f5;
+  --bg-dark: #1a1a1a;
   --font-family: 'Segoe UI', sans-serif;
 }
 
@@ -41,19 +42,32 @@ img {
 /* Navigation */
 .main-nav {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--bg-dark);
   padding: 1rem 6%;
-  font-weight: 500;
+  flex-wrap: wrap;
 }
 
-.main-nav a {
+.logo img {
+  height: 48px;
+  width: auto;
+  max-width: 180px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
   color: var(--text-light);
+  font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.main-nav a:hover {
+.nav-links a:hover {
   color: var(--accent-color);
 }
 
@@ -64,12 +78,13 @@ img {
   font-size: 1rem;
   border-radius: 6px;
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--text-light);
   transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--accent-color);
+  color: var(--text-dark);
 }
 
 .btn-secondary {
@@ -78,7 +93,7 @@ img {
 }
 
 .btn-secondary:hover {
-  background-color: #ccc;
+  background-color: #e0b030;
 }
 
 /* Sections */
@@ -189,4 +204,33 @@ footer {
   text-align: center;
   padding: 2rem 6%;
   font-size: 0.9rem;
+}
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-toggle:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
 }
