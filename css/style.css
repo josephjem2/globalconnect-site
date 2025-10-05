@@ -440,11 +440,6 @@ footer {
     font-weight: 600;
 }
 
-.voices-cta {
-  text-align: center;
-  margin-top: 2rem;
-}
-
 /* Support Our Work Section */
 .support-work-section {
   background-color: var(--bg-light);
