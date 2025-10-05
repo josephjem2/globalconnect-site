@@ -245,6 +245,110 @@ footer {
   color: var(--text-light);
 }
 
+/* Special Section Styling */
+.mission-section h2,
+.work-section h2,
+.impact-section h2,
+.voices-section h2 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  position: relative;
+  animation: slideInFromLeft 1s ease-in-out;
+}
+
+.mission-section h2::after,
+.work-section h2::after,
+.impact-section h2::after,
+.voices-section h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--accent-color);
+  margin: 0.5rem auto 0;
+}
+
+.mission-section p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.work-section .grid .card {
+  background-color: var(--bg-light);
+  border-left: 5px solid var(--primary-color);
+}
+
+.work-section .grid .card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+.impact-section .impact-list li {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-light);
+    padding: 2rem;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.impact-section .impact-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.voices-section .card {
+  background-color: var(--bg-light);
+  border-top: 5px solid var(--accent-color);
+}
+
+.voices-section blockquote {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    text-align: center;
+    border: none;
+    padding: 0;
+}
+
+.voices-section p {
+    text-align: center;
+    font-style: italic;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
