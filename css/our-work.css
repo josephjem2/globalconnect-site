@@ -28,7 +28,7 @@
 .card h3 {
   font-size: 1.5rem;
   margin: 1rem 1.5rem 0.5rem;
-  color: #333;
+  color: var(--text-dark);
 }
 
 .card p {
@@ -43,13 +43,13 @@
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #2c3e50;
+  color: var(--text-dark);
 }
 
 #our-work > p {
   text-align: center;
   font-size: 1.1rem;
-  color: #7f8c8d;
+  color: #666;
   margin-bottom: 3rem;
 }
 
@@ -57,15 +57,9 @@
   display: block;
   width: fit-content;
   margin: 3rem auto 0;
-  background: #e74c3c;
-  color: #fff;
   padding: 12px 30px;
   border-radius: 50px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
-}
-
-#our-work .btn:hover {
-  background: #c0392b;
 }
