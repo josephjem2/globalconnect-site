@@ -316,7 +316,8 @@ footer {
 .mission-section h2,
 .work-section h2,
 .impact-section h2,
-.voices-section h2 {
+.voices-section h2,
+.support-work-section h2 {
   color: var(--primary-color);
   text-align: center;
   margin-bottom: 2rem;
@@ -328,7 +329,8 @@ footer {
 .mission-section h2::after,
 .work-section h2::after,
 .impact-section h2::after,
-.voices-section h2::after {
+.voices-section h2::after,
+.support-work-section h2::after {
   content: '';
   display: block;
   width: 80px;
@@ -354,6 +356,53 @@ footer {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* Our Work - Alternating Layout */
+.work-alternating {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.work-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Reverse layout for even-numbered items */
+.work-item:nth-child(even) {
+  grid-template-columns: 1fr 1fr; /* Keep the order for text on right */
+}
+
+.work-item:nth-child(even) .work-item-text {
+  order: 1; /* Move text to the right */
+}
+
+
+.work-item-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.work-item-image:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.work-item-text h3 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.work-item-text p {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
 
 .impact-section .impact-list li {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -390,6 +439,44 @@ footer {
     font-style: italic;
     color: var(--primary-color);
     font-weight: 600;
+}
+
+/* Support Our Work Section */
+.support-work-section {
+  background-color: var(--bg-light);
+  text-align: center;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.support-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.support-card h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.support-card p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 
@@ -433,6 +520,18 @@ footer {
   }
 
   .mission-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .work-item, .work-item:nth-child(even) {
+    grid-template-columns: 1fr;
+  }
+
+  .work-item:nth-child(even) .work-item-text {
+    order: 0; /* Reset order for mobile */
+  }
+
+  .support-grid {
     grid-template-columns: 1fr;
   }
 }
