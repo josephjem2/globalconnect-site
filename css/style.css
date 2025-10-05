@@ -268,7 +268,34 @@ footer {
 }
 
 /* Special Section Styling */
-.mission-section h2,
+.mission-section {
+    position: relative;
+    background: url('../images/program.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 6rem 6%;
+    text-align: center;
+}
+
+.mission-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 1;
+}
+
+.mission-section > * {
+    position: relative;
+    z-index: 2;
+}
+
+.mission-section h2 {
+    color: #fff;
+}
+
 .work-section h2,
 .impact-section h2,
 .voices-section h2 {
@@ -297,7 +324,7 @@ footer {
   max-width: 800px;
   margin: 0 auto 2rem auto;
   font-size: 1.1rem;
-  color: var(--text-dark);
+  color: #fff;
   animation: fadeIn 1.5s ease-in-out;
 }
 
