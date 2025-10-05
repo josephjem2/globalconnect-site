@@ -106,7 +106,7 @@ img {
   background-color: var(--accent-color);
   color: var(--primary-color);
   font-weight: 600;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid transparent;
 }
 
@@ -134,6 +134,18 @@ img {
 
 .btn-green:hover {
   background-color: #7CFC00;
+}
+
+.btn-red {
+  background-color: #ff6347; /* Light Red */
+  color: var(--text-light);
+  border: 1px solid #ff6347;
+}
+
+.btn-red:hover {
+  background-color: #ff4500; /* Darker Red on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
 }
 
 .btn-secondary {
