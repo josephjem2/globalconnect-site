@@ -50,11 +50,36 @@ img {
   flex-wrap: wrap;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo img {
   height: 48px;
   width: auto;
   max-width: 180px;
   object-fit: contain;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--text-light);
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-left: 20px;
 }
 
 .nav-links {
