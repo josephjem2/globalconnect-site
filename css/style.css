@@ -346,61 +346,60 @@ footer {
   animation: fadeIn 1.5s ease-in-out;
 }
 
-.work-section .grid .card {
-  background-color: var(--bg-light);
-  border-left: 5px solid var(--primary-color);
+/* Our Work Section */
+.work-section {
+  text-align: center;
 }
 
-.work-section .grid .card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+.work-header {
+  margin-bottom: 3rem;
 }
 
-/* Our Work - Alternating Layout */
-.work-alternating {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  margin-top: 2rem;
+.work-subtitle {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
 }
 
 .work-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Reverse layout for even-numbered items */
-.work-item:nth-child(even) {
-  grid-template-columns: 1fr 1fr; /* Keep the order for text on right */
+.work-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
-
-.work-item:nth-child(even) .work-item-text {
-  order: 1; /* Move text to the right */
-}
-
 
 .work-item-image img {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  height: 200px;
+  object-fit: cover;
 }
 
-.work-item-image:hover img {
-  transform: scale(1.05);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+.work-item-text {
+  padding: 1.5rem;
+  text-align: left;
 }
 
 .work-item-text h3 {
   color: var(--primary-color);
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .work-item-text p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--text-dark);
 }
 
@@ -523,12 +522,8 @@ footer {
     grid-template-columns: 1fr;
   }
   
-  .work-item, .work-item:nth-child(even) {
+  .work-grid {
     grid-template-columns: 1fr;
-  }
-
-  .work-item:nth-child(even) .work-item-text {
-    order: 0; /* Reset order for mobile */
   }
 
   .support-grid {
