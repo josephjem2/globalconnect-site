@@ -269,33 +269,27 @@ footer {
 
 /* Special Section Styling */
 .mission-section {
-    position: relative;
-    background: url('../images/program.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 6rem 6%;
-    text-align: center;
+  background-color: var(--bg-light);
 }
 
-.mission-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.6);
-    z-index: 1;
+.mission-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
 }
 
-.mission-section > * {
-    position: relative;
-    z-index: 2;
+.mission-text {
+  text-align: left;
 }
 
-.mission-section h2 {
-    color: #fff;
+.mission-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
+.mission-section h2,
 .work-section h2,
 .impact-section h2,
 .voices-section h2 {
@@ -320,11 +314,9 @@ footer {
 }
 
 .mission-section p {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 2rem auto;
+  text-align: left;
   font-size: 1.1rem;
-  color: #fff;
+  color: var(--text-dark);
   animation: fadeIn 1.5s ease-in-out;
 }
 
@@ -414,5 +406,9 @@ footer {
 
   #menu-toggle:checked + .menu-icon + .nav-links {
     display: flex;
+  }
+
+  .mission-content {
+    grid-template-columns: 1fr;
   }
 }
