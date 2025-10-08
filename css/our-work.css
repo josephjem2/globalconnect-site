@@ -1,93 +1,132 @@
-/* Basic Grid Styles */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+/* Our Work & Programs Page */
+
+.programs-section {
+    padding: 4rem 6%;
 }
 
-.card {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-.card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card h3 {
-  font-size: 1.5rem;
-  margin: 1rem 1.5rem 0.5rem;
-  color: var(--text-dark);
-}
-
-.card p {
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0 1.5rem 1.5rem;
-  color: #666;
-}
-
-/* Our Work Section Specifics */
-#our-work h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: var(--text-dark);
-}
-
-#our-work > p {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #666;
-  margin-bottom: 3rem;
-}
-
-#our-work .btn {
-  display: block;
-  width: fit-content;
-  margin: 3rem auto 0;
-  padding: 12px 30px;
-  border-radius: 50px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-/* Program items transitions */
 .program-item {
-  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
 }
 
-.program-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+.program-item:nth-child(even) .program-image {
+    order: 2;
 }
 
-/* Impact items transitions */
+.program-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.program-image:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.program-text h3 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.program-details {
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    border-left: 4px solid var(--accent-color);
+}
+
+.program-details h4 {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.impact {
+    text-align: center;
+    padding: 5rem 6%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-light);
+}
+
+.impact .section-title {
+    color: var(--text-light);
+    margin-bottom: 3rem;
+}
+
+.impact .section-title::after {
+    background-color: var(--accent-color);
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .impact-item {
-    transition: transform 0.3s ease, color 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5rem 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    border-top: 4px solid transparent;
 }
 
 .impact-item:hover {
     transform: translateY(-10px);
-    color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .impact-item i {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    display: block;
     transition: transform 0.3s ease;
 }
 
 .impact-item:hover i {
-    transform: scale(1.2) rotate(-15deg);
+    transform: scale(1.1);
+}
+
+.impact-item h3 {
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem;
+}
+
+.impact-item p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Assigning colors from the logo palette */
+.impact-item:nth-child(1) {
+    border-top-color: var(--accent-color); /* Yellow */
+}
+
+.impact-item:nth-child(1) i {
+    color: var(--accent-color);
+}
+
+.impact-item:nth-child(2) {
+    border-top-color: #A2D5F2; /* Lighter Blue - for variation */
+}
+
+.impact-item:nth-child(2) i {
+    color: #A2D5F2;
+}
+
+.impact-item:nth-child(3) {
+    border-top-color: var(--action-color); /* Red */
+}
+
+.impact-item:nth-child(3) i {
+    color: var(--action-color);
 }

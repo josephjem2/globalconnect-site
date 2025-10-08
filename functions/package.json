@@ -1,0 +1,13 @@
+{
+  "name": "globalconnect-functions",
+  "description": "Firebase Functions for GlobalConnect website",
+  "dependencies": {
+    "firebase-admin": "^11.0.0",
+    "firebase-functions": "^4.0.0",
+    "stripe": "^10.0.0"
+  },
+  "private": true,
+  "engines": {
+    "node": "16"
+  }
+}
