@@ -171,47 +171,16 @@
   <a href="donate.html" class="btn">Donate Now</a>
 </section>
 
-<footer data-aos="fade-up">
-    <div class="footer-container">
-        <div class="footer-about">
-            <h4>About GlobalConnect</h4>
-            <p>We are a non-profit organization dedicated to empowering underserved communities through education, mentorship, and direct outreach. Our mission is to create a world where everyone has the opportunity to thrive.</p>
-        </div>
-        <div class="footer-links">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-social">
-            <h4>Follow Us</h4>
-            <div class="social-icons">
-                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-            </div>
-        </div>
-        <div class="footer-newsletter">
-            <h4>Stay Updated</h4>
-            <p>Subscribe to our newsletter for the latest news and updates.</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Enter your email">
-                <button type="submit" class="btn">Subscribe</button>
-            </form>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 GlobalConnect. All rights reserved.</p>
-    </div>
-</footer>
+<div id="footer-placeholder"></div>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
+  fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
+    });
 </script>
 
 </body>

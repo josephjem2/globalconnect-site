@@ -95,20 +95,7 @@
   </main>
 
     <!-- Footer -->
-    <footer data-aos="fade-up">
-      <div class="footer-content">
-        <p><strong>GlobalConnect</strong> | <strong>Empower to Inspire</strong></p>
-        <div class="footer-links">
-          <a href="about.html">About</a>
-          <a href="programs.html">Programs</a>
-          <a href="donate.html">Donate</a>
-          <a href="volunteer.html">Volunteer</a>
-          <a href="contact.html">Contact</a>
-          <a href="news.html">News</a>
-        </div>
-        <p>&copy; 2025 GlobalConnect. All rights reserved.</p>
-      </div>
-    </footer>
+    <div id="footer-placeholder"></div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
@@ -117,6 +104,11 @@
       easing: 'ease-in-out',
       once: true,
       offset: 100
+    });
+    fetch('footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer-placeholder').innerHTML = data;
     });
   </script>
 </body>
