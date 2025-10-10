@@ -1,144 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Testimonials | GlobalConnect</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/footer.css">
+    <meta charset="UTF-8">
+    <title>Testimonials | GlobalConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/testimonials.css?v=1.1">
 </head>
 <body>
 
 <header>
-  <nav class="main-nav">
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="GlobalConnect Logo">
-      <div class="logo-text">
-        <span class="logo-title">GlobalConnect</span>
-        <span class="tagline">Empower to Inspire</span>
-      </div>
-    </a>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <div class="nav-links">
-      <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="events.html">Events</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="donate.html">Donate</a>
-      <a href="testimonials.html" class="active">Testimonials</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+    <nav class="main-nav">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="GlobalConnect Logo">
+            <div class="logo-text">
+                <span class="logo-title">GlobalConnect</span>
+                <span class="tagline">Empower to Inspire</span>
+            </div>
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="events.html">Events</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="donate.html">Donate</a>
+            <a href="testimonials.html" class="active">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 </header>
 
 <!-- Hero Section -->
 <section class="hero-banner" style="background-image: url('images/testimonials-hero.jpg');">
-  <div class="overlay" data-aos="fade-up">
-    <h1>Real Voices</h1>
-    <p>Stories of dignity, resilience, and shared humanity.</p>
-  </div>
+    <div class="overlay" data-aos="fade-up">
+        <h1>Voices of Hope</h1>
+        <p>Discover the real stories of dignity, resilience, and connection that fuel our mission.</p>
+        <a href="#stories" class="btn btn-secondary">Read Stories</a>
+    </div>
 </section>
 
-<!-- Testimonials -->
-<section class="voices-section" data-aos="fade-up">
-  <h2>What People Are Saying</h2>
-  <div class="grid">
-    <div class="card">
-      <blockquote>“GlobalConnect helped me believe in myself again.”</blockquote>
-      <p>— Malik, Youth Mentee</p>
-    </div>
-    <div class="card">
-      <blockquote>“Volunteering here gave me purpose and community.”</blockquote>
-      <p>— Aisha, Care Kit Coordinator</p>
-    </div>
+<!-- Testimonials Section -->
+<section id="stories" class="testimonials-section" data-aos="fade-up">
+    <h2>Heartfelt Stories</h2>
+    <div class="testimonial-container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card" data-aos="fade-right">
+            <img src="images/gallery/smiling-boy.jpg" alt="Malik's Portrait">
+            <div class="testimonial-content">
+                <h3>“A Beacon of Hope”</h3>
+                <p>“After losing everything, I felt invisible. GlobalConnect didn’t just give me a care kit; they gave me back my dignity. The volunteers listened without judgment and helped me find the resources to get back on my feet. I’m now in stable housing and feel hopeful for the first time in years.”</p>
+                <cite>— Fatima, Community Member</cite>
+            </div>
+        </div>
 
-    <div class="card">
-      <blockquote>“I learned how to use a computer for the first time.”</blockquote>
-      <p>— Jorge, Digital Literacy Participant</p>
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card" data-aos="fade-left">
+            <img src="images/gallery/girl-looking-at-camera.jpg" alt="Aisha's Portrait">
+            <div class="testimonial-content">
+                <h3>“More Than Just Volunteering”</h3>
+                <p>“I started volunteering to give back, but I’ve received so much more in return. Being part of the care kit assembly team connects me with incredible people from all walks of life. We’re not just packing supplies; we’re building a community of compassion. It’s the most fulfilling part of my week.”</p>
+                <cite>— David, Volunteer</cite>
+            </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card" data-aos="fade-right">
+            <img src="images/gallery/boy-in-yellow-shirt.jpg" alt="Jorge's Portrait">
+            <div class="testimonial-content">
+                <h3>“Unlocking My Potential”</h3>
+                <p>“I always felt left behind because I didn’t know how to use a computer. The digital literacy workshop was patient, encouraging, and tailored to my pace. Now, I can email my grandkids, apply for jobs online, and feel connected to the world. It’s been life-changing.”</p>
+                <cite>— Maria, Digital Literacy Graduate</cite>
+            </div>
+        </div>
     </div>
-  </div>
 </section>
 
 <!-- Impact Dashboard -->
-<section class="impact-section" data-aos="fade-up">
-  <h2>Impact Snapshot</h2>
-  <ul class="impact-list">
-    <li><strong>5,000+</strong> care kits distributed</li>
-    <li><strong>300+</strong> youth mentored</li>
-    <li><strong>20+</strong> community events hosted</li>
-    <li><strong>80+</strong> digital learners trained</li>
-  </ul>
+<section class="impact-dashboard" data-aos="fade-up">
+    <h2>Our Collective Impact</h2>
+    <div class="impact-grid">
+        <div class="impact-item" data-aos="zoom-in">
+            <div class="impact-icon">🤝</div>
+            <div class="impact-number">5,000+</div>
+            <div class="impact-label">Care Kits Distributed</div>
+        </div>
+        <div class="impact-item" data-aos="zoom-in" data-aos-delay="100">
+            <div class="impact-icon">🎓</div>
+            <div class="impact-number">300+</div>
+            <div class="impact-label">Youth Mentored</div>
+        </div>
+        <div class="impact-item" data-aos="zoom-in" data-aos-delay="200">
+            <div class="impact-icon">🎉</div>
+            <div class="impact-number">20+</div>
+            <div class="impact-label">Community Events</div>
+        </div>
+        <div class="impact-item" data-aos="zoom-in" data-aos-delay="300">
+            <div class="impact-icon">💻</div>
+            <div class="impact-number">80+</div>
+            <div class="impact-label">Digital Learners</div>
+        </div>
+    </div>
 </section>
 
-<!-- Gallery -->
-<section data-aos="fade-up">
-  <h2>Gallery Moments</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="images/gallery-carekits.jpg" alt="Care Kit Assembly">
+<!-- Share Your Story Section -->
+<section class="share-story-section" data-aos="fade-up">
+    <div class="share-story-content">
+        <h2>You Have a Story to Tell</h2>
+        <p>Your experience matters. Whether you're a volunteer, participant, or supporter, your voice can inspire others to join our cause.</p>
+        <a href="contact.html?subject=My-Story" class="btn btn-primary">Share Your Story</a>
     </div>
-    <div class="card">
-      <img src="images/gallery-mentorship.jpg" alt="Mentorship Circle">
-    </div>
-    <div class="card">
-      <img src="images/gallery-events.jpg" alt="Community Celebration">
-    </div>
-    <div class="card">
-      <img src="images/gallery/child-with-bag.jpg" alt="Child with bag">
-    </div>
-    <div class="card">
-      <img src="images/gallery/woman-and-child.jpg" alt="Woman and child">
-    </div>
-    <div class="card">
-      <img src="images/gallery/excited-child.jpg" alt="Excited child">
-    </div>
-    <div class="card">
-      <img src="images/gallery/smiling-boy.jpg" alt="Smiling boy">
-    </div>
-    <div class="card">
-      <img src="images/gallery/group-of-children.jpg" alt="Group of children">
-    </div>
-    <div class="card">
-      <img src="images/gallery/girl-looking-at-camera.jpg" alt="Girl looking at camera">
-    </div>
-    <div class="card">
-      <img src="images/gallery/another-group-of-children.jpg" alt="Another group of children">
-    </div>
-    <div class="card">
-      <img src="images/gallery/boy-in-yellow-shirt.jpg" alt="Boy in yellow shirt">
-    </div>
-    <div class="card">
-      <img src="images/gallery/children-in-front-of-building.jpg" alt="Children in front of building">
-    </div>
-    <div class="card">
-      <img src="images/gallery/more-children-and-woman.jpg" alt="More children and woman">
-    </div>
-    <div class="card">
-      <img src="images/gallery/children-being-taught.jpg" alt="Children being taught">
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="donate-cta" data-aos="fade-up">
-  <h2>Want to Share Your Story?</h2>
-  <p>We welcome testimonials from volunteers, participants, and partners.</p>
-  <a href="contact.html" class="btn btn-primary">Submit a Story</a>
 </section>
 
 <div id="footer-placeholder"></div>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
-  fetch('footer.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('footer-placeholder').innerHTML = data;
-    });
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
 </script>
 
 </body>
