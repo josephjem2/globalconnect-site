@@ -1,0 +1,87 @@
+
+.involvement-options-section {
+    padding: 4rem 2rem;
+}
+
+.involvement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.involvement-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem;
+    text-align: center;
+    border-top: 6px solid transparent;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-top-color 0.4s ease;
+}
+
+.involvement-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    border-top-color: var(--secondary-color);
+}
+
+.involvement-card .icon {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    line-height: 1;
+}
+
+.involvement-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.quick-start-guide {
+    background: var(--bg-light);
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.quick-start-guide .step {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: #fff;
+    border-left: 5px solid var(--accent-color);
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.quick-start-guide h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.featured-opportunity-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    padding: 5rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+}
+
+.featured-opportunity-section img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.featured-opportunity-content h2 {
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .featured-opportunity-section {
+        grid-template-columns: 1fr;
+    }
+}
