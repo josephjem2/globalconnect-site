@@ -1,3 +1,12 @@
+/* Global Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* About Page Specifics */
 .our-journey-section, .how-we-work-section, .impact-section {
     padding: 6rem 2rem;
