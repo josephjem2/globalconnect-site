@@ -1,84 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Donate | GlobalConnect</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/footer.css">
+    <meta charset="UTF-8">
+    <title>Donate | GlobalConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/donate.css">
 </head>
 <body>
 
 <header>
-  <nav class="main-nav">
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="GlobalConnect Logo">
-      <div class="logo-text">
-        <span class="logo-title">GlobalConnect</span>
-        <span class="tagline">Empower to Inspire</span>
-      </div>
-    </a>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <div class="nav-links">
-      <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="events.html">Events</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="donate.html" class="active">Donate</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+    <nav class="main-nav">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="GlobalConnect Logo">
+            <div class="logo-text">
+                <span class="logo-title">GlobalConnect</span>
+                <span class="tagline">Empower to Inspire</span>
+            </div>
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="events.html">Events</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="donate.html" class="active">Donate</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 </header>
 
-<section class="hero-banner" style="background-image: url('images/donate-impact.jpg');">
-  <div class="overlay" data-aos="fade-up">
-    <h1>Your Gift Becomes a Ripple</h1>
-    <p>Every donation activates dignity, resilience, and shared humanity.</p>
-    <a href="#tiers" class="btn btn-primary">Choose Your Impact</a>
-  </div>
+<section class="hero-banner" style="background-image: url('images/donate-hero.jpg');">
+    <div class="overlay" data-aos="fade-up">
+        <h1>Support Our Mission</h1>
+        <p>Your contribution fuels our work and empowers communities.</p>
+    </div>
 </section>
 
-<section id="tiers" class="donate-tiers" data-aos="fade-up">
-  <h2>Choose Your Impact</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>$25</h3>
-      <p>Provides 1 care kit with hygiene essentials</p>
+<section class="donate-section">
+    <div class="donation-container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Make a Donation</h2>
+        <div class="amount-selection">
+            <button class="amount-btn" data-amount="25">$25</button>
+            <button class="amount-btn selected" data-amount="50">$50</button>
+            <button class="amount-btn" data-amount="100">$100</button>
+            <button class="amount-btn" data-amount="250">$250</button>
+        </div>
+        <input type="number" class="custom-amount-input" placeholder="Or enter a custom amount">
+        <a href="#" class="btn btn-primary">Donate Now</a>
     </div>
-    <div class="card">
-      <h3>$50</h3>
-      <p>Supports 1 youth mentorship session</p>
-    </div>
-    <div class="card">
-      <h3>$100</h3>
-      <p>Funds a digital literacy workshop</p>
-    </div>
-    <div class="card">
-      <h3>$250+</h3>
-      <p>Launches a community activation event</p>
-    </div>
-  </div>
 </section>
 
-<section class="donate-breakdown" data-aos="fade-up">
-  <h2>Where Your Gift Goes</h2>
-  <ul class="impact-list">
-    <li><strong>40%</strong> Program delivery</li>
-    <li><strong>30%</strong> Volunteer support & logistics</li>
-    <li><strong>20%</strong> Outreach & storytelling</li>
-    <li><strong>10%</strong> Platform & security</li>
-  </ul>
-  <p>We believe in transparency. Every dollar is a step toward shared humanity.</p>
+<section class="impact-tiers-section" data-aos="fade-up">
+    <h2 class="section-title">See Your Impact</h2>
+    <div class="grid">
+        <div class="card" data-aos="zoom-in" data-aos-delay="100">
+            <h3>$25</h3>
+            <p>Provides a student with essential school supplies for a year.</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="200">
+            <h3>$50</h3>
+            <p>Funds a digital literacy workshop for five seniors.</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="300">
+            <h3>$100</h3>
+            <p>Sponsors a mentorship pair for three months.</p>
+        </div>
+        <div class="card" data-aos="zoom-in" data-aos-delay="400">
+            <h3>$250</h3>
+            <p>Contributes to the setup of a community computer lab.</p>
+        </div>
+    </div>
 </section>
 
-<section class="donate-cta" data-aos="fade-up">
-  <h2>Ready to Ripple?</h2>
-  <p>Click below to donate securely. You’ll receive a confirmation and impact update.</p>
-  <button id="donate-button" class="btn btn-primary">Donate Now</button>
+<section class="breakdown-section">
+    <h2 class="section-title">Where Your Money Goes</h2>
+    <div class="breakdown-container">
+        <div class="breakdown-chart" data-aos="fade-right">
+            <canvas id="donationBreakdownChart"></canvas>
+        </div>
+        <div class="breakdown-list" data-aos="fade-left">
+            <h3>Our Financial Commitment</h3>
+            <ul>
+                <li><span class="dot" style="background-color: #103A71;"></span>85% - Programs & Community Services</li>
+                <li><span class="dot" style="background-color: #0D2C54;"></span>10% - Administrative Costs</li>
+                <li><span class="dot" style="background-color: #F4B942;"></span>5% - Fundraising & Outreach</li>
+            </ul>
+            <p>We are dedicated to maximizing the impact of every dollar by keeping our administrative and fundraising costs low.</p>
+        </div>
+    </div>
 </section>
 
 <footer>
@@ -101,10 +116,10 @@
         <div class="footer-social">
             <h4>Follow Us</h4>
             <div class="social-icons">
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
             </div>
         </div>
     </div>
@@ -114,61 +129,9 @@
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/donate.js"></script>
 <script>
-  AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
-</script>
-
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-functions-compat.js"></script>
-
-<script>
-  // **IMPORTANT**: Replace with your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_AUTH_DOMAIN",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_STORAGE_BUCKET",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
-  };
-
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  const auth = firebase.auth();
-  const functions = firebase.functions();
-
-  // Handle anonymous sign-in for donation
-  auth.signInAnonymously().catch(function(error) {
-    console.error("Anonymous sign-in failed:", error);
-  });
-</script>
-
-<script src="https://js.stripe.com/v3/"></script>
-<script>
-  // **IMPORTANT**: Replace with your live Stripe publishable key
-  const stripe = Stripe('pk_live_REPLACE_WITH_YOUR_PUBLISHABLE_KEY');
-  const donateButton = document.getElementById('donate-button');
-
-  donateButton.addEventListener('click', async () => {
-    // For simplicity, we'll use a fixed amount. You can add a UI to select the amount.
-    const amount = 2500; // $25.00 in cents
-
-    const createCheckoutSession = functions.httpsCallable('createCheckoutSession');
-    
-    try {
-      const session = await createCheckoutSession({
-        amount: amount,
-        success_url: window.location.href, // Redirect back to the donate page on success
-        cancel_url: window.location.href // Redirect back to the donate page on cancellation
-      });
-
-      stripe.redirectToCheckout({ sessionId: session.data.id });
-    } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred. Please try again.');
-    }
-  });
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
 </script>
 
 </body>
