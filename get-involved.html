@@ -113,6 +113,51 @@
     </div>
 </section>
 
+<section class="community-voices-section">
+    <h2 class="section-title" data-aos="fade-up">Voices of Our Community</h2>
+    <div class="testimonial-grid">
+        <div class="testimonial-card-voice" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/community-voice-1.jpg" alt="Community Member">
+            <p class="quote-text">“Being a part of this community has been life-changing. I've connected with people from all over the world.”</p>
+            <p class="quote-author">- Maria S., Volunteer</p>
+        </div>
+        <div class="testimonial-card-voice" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/community-voice-2.jpg" alt="Community Member">
+            <p class="quote-text">“The support from GlobalConnect has been instrumental in our local project's success. They truly empower from within.”</p>
+            <p class="quote-author">- David L., Partner Organization</p>
+        </div>
+        <div class="testimonial-card-voice" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/community-voice-3.jpg" alt="Community Member">
+            <p class="quote-text">“As a donor, seeing the direct impact of my contributions has been incredibly fulfilling. I know my support matters.”</p>
+            <p class="quote-author">- Sarah K., Donor</p>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section">
+    <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
+    <div class="faq-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="faq-item">
+            <div class="faq-question">What is the time commitment for volunteering?</div>
+            <div class="faq-answer">
+                <p>Time commitments vary depending on the role. We have opportunities ranging from a few hours a month to more intensive, project-based work. We are flexible and work to match your availability.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I volunteer remotely?</div>
+            <div class="faq-answer">
+                <p>Yes! Many of our volunteer opportunities are fully remote, allowing you to contribute from anywhere in the world. Check our volunteer page for specific remote roles.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How are donations used?</div>
+            <div class="faq-answer">
+                <p>We are committed to financial transparency. 85% of all donations go directly to program services. You can find detailed financial reports in our annual statements.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="cta-section" data-aos="zoom-in">
     <h2>Ready to Make a Difference?</h2>
     <p>Your journey of a thousand miles begins with a single step. Take that step with us today.</p>
@@ -154,6 +199,24 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init({ duration: 1000, easing: 'ease-in-out', once: true, offset: 150 });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+
+                faqItems.forEach(i => i.classList.remove('active'));
+
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    });
 </script>
 
 </body>
