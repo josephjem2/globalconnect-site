@@ -1,131 +1,157 @@
-
-.involvement-options-section {
-    padding: 5rem 2rem;
-    background-color: var(--bg-light);
+/* === Hero Banner === */
+.hero-banner .overlay h1 {
+    font-size: 3.8rem;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
-.involvement-grid {
+/* === Involvement Section: Ways to Engage === */
+.ways-to-engage-section {
+    padding: 6rem 2rem;
+    background-color: #fdfdfd;
+}
+
+.engage-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2.5rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 3rem;
+    margin-top: 3.5rem;
 }
 
-.involvement-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    padding: 2.5rem;
+.engage-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
     text-align: center;
-    border-top: 6px solid var(--accent-color);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.involvement-card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 22px 45px rgba(0, 0, 0, 0.15);
+.engage-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-.involvement-card .icon {
-    font-size: 4rem;
-    color: var(--primary-color);
-    margin-bottom: 1.5rem;
-    line-height: 1;
-    display: block;
+.engage-card .card-banner {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
-.involvement-card h3 {
-    font-size: 1.6rem;
+.engage-card .card-content {
+    padding: 2rem;
+}
+
+.engage-card h3 {
+    font-size: 1.8rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
-.involvement-card p {
-    font-size: 1.05rem;
-    margin-bottom: 1.5rem;
-}
-
-.why-involved-section {
-    padding: 5rem 2rem;
+/* === Impact Spotlight Section === */
+.impact-spotlight-section {
+    padding: 6rem 2rem;
+    background: var(--bg-light);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr;
     align-items: center;
     gap: 4rem;
 }
 
-.why-involved-section img {
+.impact-spotlight-section .spotlight-image img {
     width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
-.why-involved-content h2 {
-    font-size: 2.5rem;
-    color: var(--primary-color);
+.spotlight-content h2 {
+    font-size: 2.8rem;
     margin-bottom: 1.5rem;
+    color: var(--primary-color);
 }
 
-.journey-section {
-    background: var(--bg-light);
-    padding: 5rem 2rem;
+.spotlight-content .quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 1.5rem;
+}
+
+/* === Vertical Journey Section === */
+.journey-section-vertical {
+    padding: 6rem 2rem;
     text-align: center;
 }
 
-.journey-timeline {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 3rem;
-    flex-wrap: wrap;
-}
-
-.journey-step {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
-    width: 280px;
-    text-align: center;
+.journey-timeline-vertical {
     position: relative;
-}
-
-.journey-step .step-number {
-    position: absolute;
-    top: -25px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--secondary-color);
-    color: #fff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: 4px solid #fff;
-}
-
-.partner-section {
-    padding: 5rem 2rem;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: #fff;
-    text-align: center;
-}
-
-.partner-section .section-title {
-    color: #fff;
-}
-
-.partner-section p {
     max-width: 800px;
-    margin: 1rem auto 2rem;
-    font-size: 1.1rem;
+    margin: 4rem auto 0;
+}
+
+.journey-timeline-vertical::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: var(--accent-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    z-index: 1;
+}
+
+.journey-container {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.journey-container.left {
+    left: -25%; /* Adjust to align */
+}
+
+.journey-container.right {
+    left: 25%; /* Adjust to align */
+}
+
+.journey-container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12px;
+    background-color: white;
+    border: 4px solid var(--secondary-color);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.journey-container.right::after { left: -13px; }
+
+.journey-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
 }
 
 @media (max-width: 992px) {
-    .why-involved-section {
-        grid-template-columns: 1fr;
-    }
+    .impact-spotlight-section { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .journey-timeline-vertical::after { left: 31px; }
+    .journey-container { width: 100%; padding-left: 70px; padding-right: 15px; }
+    .journey-container.left, .journey-container.right { left: 0%; }
+    .journey-container::after { left: 19px; }
 }
