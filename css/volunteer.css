@@ -7,65 +7,60 @@
 /* === Volunteer Impact Section === */
 .volunteer-impact-section {
     padding: 6rem 2rem;
-    background: var(--bg-light);
+    background-color: var(--bg-light);
     text-align: center;
 }
 
 .impact-stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 3rem;
-    margin-top: 3rem;
+    margin-top: 3.5rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .impact-stat {
     background: #fff;
     padding: 2.5rem;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
 }
 
-.impact-stat .stat-number {
+.stat-number {
     font-size: 3.5rem;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--secondary-color);
-    margin-bottom: 0.5rem;
 }
 
-.impact-stat .stat-description {
+.stat-description {
     font-size: 1.1rem;
     color: #555;
 }
 
-/* === Find Your Fit Quiz === */
+/* === Find Your Fit Section === */
 .find-your-fit-section {
     padding: 6rem 2rem;
-    background: #fff;
     text-align: center;
 }
 
 .quiz-container {
     max-width: 800px;
     margin: 3rem auto 0;
-    background-color: var(--bg-light);
+    background: #fff;
     padding: 3rem;
     border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
 .quiz-question {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    color: var(--primary-color);
 }
 
 .quiz-options .btn {
     margin: 0.5rem;
-}
-
-.quiz-results {
-    margin-top: 2rem;
-    font-size: 1.2rem;
 }
 
 /* === Featured Opportunities Section === */
@@ -77,43 +72,39 @@
 .opportunities-grid-featured {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 3rem;
+    gap: 2.5rem;
     margin-top: 3.5rem;
 }
 
 .opportunity-card-featured {
     background: #fff;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.opportunity-card-featured:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
 .opportunity-card-featured img {
+    width: 100%;
     height: 220px;
     object-fit: cover;
 }
 
 .opportunity-card-featured .card-content {
     padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.opportunity-card-featured h3 {
-    color: var(--primary-color);
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
 }
 
 .opportunity-card-featured .tags {
     margin-bottom: 1rem;
 }
 
-.opportunity-card-featured .tags .tag {
-    background-color: var(--accent-color);
+.opportunity-card-featured .tag {
+    background: var(--accent-color);
     color: #fff;
     padding: 0.3rem 0.8rem;
     border-radius: 20px;
@@ -124,18 +115,19 @@
 /* === Volunteer Stories Section === */
 .volunteer-stories-section {
     padding: 6rem 2rem;
-    background: #fff;
 }
 
 .story-slider {
-    max-width: 900px;
+    max-width: 800px;
     margin: 3rem auto 0;
-    position: relative;
+    text-align: center;
 }
 
 .story-card {
-    text-align: center;
-    padding: 2rem;
+    background: #fff;
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
 .story-card img {
@@ -143,8 +135,8 @@
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid var(--accent-color);
     margin-bottom: 1.5rem;
+    border: 5px solid var(--accent-color);
 }
 
 .story-card .quote {
@@ -154,37 +146,28 @@
     margin-bottom: 1rem;
 }
 
-.story-card .author {
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
 /* === Getting Started Guide === */
 .getting-started-guide {
     padding: 6rem 2rem;
-    background: var(--bg-light);
+    background-color: var(--bg-light);
 }
 
 .steps-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem;
+    gap: 2.5rem;
     margin-top: 3.5rem;
-    text-align: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .step-card {
-    padding: 2rem;
+    text-align: center;
 }
 
-.step-card .step-icon {
+.step-icon {
     font-size: 3rem;
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
-}
-
-.step-card h3 {
-    font-size: 1.5rem;
     color: var(--primary-color);
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
