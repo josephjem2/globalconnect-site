@@ -1,91 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Events | GlobalConnect</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/footer.css">
+    <meta charset="UTF-8">
+    <title>Events | GlobalConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/events.css">
 </head>
 <body>
 
 <header>
-  <nav class="main-nav">
-    <a href="index.html" class="logo">
-      <img src="images/logo.png" alt="GlobalConnect Logo">
-      <div class="logo-text">
-        <span class="logo-title">GlobalConnect</span>
-        <span class="tagline">Empower to Inspire</span>
-      </div>
-    </a>
-    <input type="checkbox" id="menu-toggle">
-    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-    <div class="nav-links">
-      <a href="about.html">About</a>
-      <a href="programs.html">Programs</a>
-      <a href="volunteer.html">Volunteer</a>
-      <a href="events.html" class="active">Events</a>
-      <a href="get-involved.html">Get Involved</a>
-      <a href="donate.html">Donate</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+    <nav class="main-nav">
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="GlobalConnect Logo">
+            <div class="logo-text">
+                <span class="logo-title">GlobalConnect</span>
+                <span class="tagline">Empower to Inspire</span>
+            </div>
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="events.html" class="active">Events</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="donate.html">Donate</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 </header>
 
-<!-- Hero Section -->
 <section class="hero-banner" style="background-image: url('images/events-hero.jpg');">
-  <div class="overlay" data-aos="fade-up">
-    <h1>Events & Activations</h1>
-    <p>We gather, celebrate, and activate dignity—together.</p>
-  </div>
+    <div class="overlay" data-aos="fade-up">
+        <h1>Connect, Celebrate, & Create Change</h1>
+        <p>Join our vibrant community at events designed to inspire action and foster connection.</p>
+    </div>
 </section>
 
-<!-- Upcoming Events -->
-<section data-aos="fade-up">
-  <h2>Upcoming Events</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>🎄 Christmas Outreach</h3>
-      <p>December 21, 2025<br>Care kit distribution, hot meals, and winter warmth drive.</p>
-      <a href="get-involved.html" class="btn btn-secondary">Volunteer</a>
+<section class="featured-event-section">
+    <div class="featured-event-details" data-aos="fade-right">
+        <h2>Featured Event: Annual Charity Gala</h2>
+        <p class="event-date">November 15, 2025 | Virtual & In-Person</p>
+        <p>Our biggest night of the year! Join us for an evening of inspiring stories, special guest speakers, and an exclusive silent auction. All proceeds go directly to funding our core programs for the upcoming year.</p>
+        <a href="#" class="btn btn-primary">Register Now</a>
+        <a href="#" class="btn btn-secondary">Learn More</a>
     </div>
-    <div class="card">
-      <h3>💻 Digital Literacy Webinar</h3>
-      <p>November 10, 2025<br>Free online training for underserved learners.</p>
-      <a href="get-involved.html" class="btn btn-secondary">Register</a>
+    <div class="featured-event-image" data-aos="fade-left" data-aos-delay="100">
+        <img src="images/featured-event-gala.jpg" alt="Annual Charity Gala">
     </div>
-  </div>
 </section>
 
-<!-- Past Events -->
-<section data-aos="fade-up">
-  <h2>Past Highlights</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="images/event-youthsummit.jpg" alt="Youth Summit">
-      <h3>Youth Summit</h3>
-      <p>Over 100 young leaders gathered for mentorship, workshops, and storytelling.</p>
+<section class="event-calendar-section">
+    <h2 class="section-title" data-aos="fade-up">Upcoming Events Calendar</h2>
+    <div class="event-grid">
+        <div class="event-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-header">Digital Skills Workshop</div>
+            <div class="card-body">
+                <p class="event-date">October 28, 2025</p>
+                <p>An interactive online workshop focused on advanced digital marketing skills for non-profits.</p>
+                <a href="#" class="btn btn-secondary">Details & RSVP</a>
+            </div>
+        </div>
+        <div class="event-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-header">Community Leader Conference</div>
+            <div class="card-body">
+                <p class="event-date">December 5, 2025</p>
+                <p>A two-day conference bringing together community leaders from around the globe to share best practices.</p>
+                <a href="#" class="btn btn-secondary">Details & RSVP</a>
+            </div>
+        </div>
+        <div class="event-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-header">Youth Empowerment Summit</div>
+            <div class="card-body">
+                <p class="event-date">January 20, 2026</p>
+                <p>A dynamic virtual summit for young activists and aspiring leaders to network and learn from experts.</p>
+                <a href="#" class="btn btn-secondary">Details & RSVP</a>
+            </div>
+        </div>
     </div>
-    <div class="card">
-      <img src="images/event-winterdrive.jpg" alt="Winter Drive">
-      <h3>Winter Warmth Drive</h3>
-      <p>500+ care kits distributed across shelters and community centers.</p>
-    </div>
-    <div class.card">
-      <img src="images/event-literacylab.jpg" alt="Digital Literacy Lab">
-      <h3>Digital Literacy Lab</h3>
-      <p>Hands-on training for 80+ learners in tech basics and online safety.</p>
-    </div>
-  </div>
 </section>
 
-<!-- CTA -->
-<section class="donate-cta" data-aos="fade-up">
-  <h2>Want to Host or Join an Event?</h2>
-  <p>We welcome partners, volunteers, and storytellers. Let’s activate together.</p>
-  <a href="get-involved.html" class="btn btn-primary">Get Involved</a>
+<section class="past-events-gallery">
+    <h2 class="section-title" data-aos="fade-up">Highlights from Past Events</h2>
+    <div class="gallery-filter-buttons" data-aos="fade-up">
+        <button class="btn btn-primary" data-filter="all">All</button>
+        <button class="btn btn-secondary" data-filter="workshops">Workshops</button>
+        <button class="btn btn-secondary" data-filter="community">Community</button>
+        <button class="btn btn-secondary" data-filter="fundraising">Fundraising</button>
+    </div>
+    <div class="gallery-grid">
+        <div class="gallery-item fundraising" data-aos="fade-up" data-aos-delay="100">
+            <img src="images/gallery-fundraising-1.jpg" alt="Fundraising Gala">
+            <div class="overlay-content"><h3>Annual Gala 2024</h3><p>A night of giving.</p></div>
+        </div>
+        <div class="gallery-item community" data-aos="fade-up" data-aos-delay="200">
+            <img src="images/gallery-community-1.jpg" alt="Community Cleanup">
+            <div class="overlay-content"><h3>Community Cleanup</h3><p>Making a local impact.</p></div>
+        </div>
+        <div class="gallery-item workshops" data-aos="fade-up" data-aos-delay="300">
+            <img src="images/gallery-workshops-1.jpg" alt="Digital Skills Workshop">
+            <div class="overlay-content"><h3>Digital Skills Workshop</h3><p>Empowering through education.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="host-event-section">
+    <h2 class="section-title" data-aos="fade-up">Host Your Own Event</h2>
+    <p data-aos="fade-up" data-aos-delay="100">Interested in supporting GlobalConnect by hosting a fundraiser or awareness event?<br>We provide resources, support, and guidance to help make your event a success.</p>
+    <a href="contact.html" class="btn btn-accent" data-aos="fade-up" data-aos-delay="200">Partner With Us</a>
 </section>
 
 <footer>
@@ -108,10 +134,10 @@
         <div class="footer-social">
             <h4>Follow Us</h4>
             <div class="social-icons">
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
             </div>
         </div>
     </div>
@@ -122,7 +148,33 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-  AOS.init({ duration: 800, easing: 'ease-in-out', once: true, offset: 100 });
+    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true, offset: 150 });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const filterButtons = document.querySelectorAll('.gallery-filter-buttons .btn');
+        const galleryItems = document.querySelectorAll('.gallery-grid .gallery-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+
+                // Button active state
+                filterButtons.forEach(btn => btn.classList.remove('btn-primary'));
+                filterButtons.forEach(btn => btn.classList.add('btn-secondary'));
+                button.classList.add('btn-primary');
+                button.classList.remove('btn-secondary');
+
+                // Filter gallery items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.classList.contains(filter)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    });
 </script>
 
 </body>
