@@ -1,130 +1,120 @@
+/* === Hero Banner === */
+.hero-banner .overlay h1 {
+    font-size: 3.8rem;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
 
-.programs-section {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
+/* === Program Overview Section === */
+.program-overview-section {
+    padding: 6rem 2rem;
+    background: var(--bg-light);
     text-align: center;
 }
 
-.programs-grid {
+.program-intro-text {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+
+/* === Detailed Program Sections === */
+.program-detail-section {
+    padding: 6rem 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.program-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+.program-detail-section:nth-child(even) {
+    background-color: #fdfdfd;
 }
 
-.program-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.program-card-img {
+.program-detail-section .program-image img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
 }
 
-.program-card-content {
-    padding: 25px;
-}
-
-.program-card-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.program-card-content p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.btn-secondary {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.btn-secondary:hover {
-    background-color: #0056b3;
-}
-
-.impact {
-    padding: 60px 20px;
-    background-color: #fff;
-}
-
-.section-title {
-    text-align: center;
+.program-detail-section .program-description h2 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #333;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
 }
 
-.impact-grid {
-    display: flex;
-    justify-content: space-around;
+.program-detail-section .program-description .program-meta {
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* === Impact Metrics Section === */
+.impact-metrics-section {
+    padding: 6rem 2rem;
+    background-color: var(--primary-color);
+    color: #fff;
     text-align: center;
 }
 
-.impact-item i {
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 3.5rem;
+}
+
+.metric-item .metric-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+/* === How We Work Section === */
+.how-we-work-section {
+    padding: 6rem 2rem;
+    background: var(--bg-light);
+}
+
+.process-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3.5rem;
+}
+
+.step {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.07);
+}
+
+.step .step-number {
     font-size: 3rem;
-    color: #007bff;
-    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
 }
 
-.impact-item h3 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #333;
+/* === Success Stories Section === */
+.success-stories-section {
+    padding: 6rem 2rem;
 }
 
-.impact-item p {
-    font-size: 1.2rem;
-    color: #666;
+/* === CTA Section override === */
+.cta-section.program-cta {
+    background-color: var(--secondary-color);
 }
 
-.cta-section {
-    padding: 60px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-}
+@media (max-width: 992px) {
+    .program-detail-section {
+        grid-template-columns: 1fr;
+    }
 
-.cta-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.cta-section p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.btn-primary {
-    padding: 15px 30px;
-    background-color: #fff;
-    color: #007bff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-primary:hover {
-    background-color: #f0f0f0;
-    color: #0056b3;
+    .program-detail-section:nth-child(odd) .program-image {
+        order: -1;
+    }
 }
