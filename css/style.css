@@ -387,3 +387,68 @@ main {
     padding-top: 1rem;
     border-top: 1px solid #444;
 }
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--primary-color);
+    margin: 6px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: var(--white);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 1rem 0;
+        border-bottom: 1px solid var(--light-gray);
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .content-grid,
+    .timeline-grid,
+    .values-grid,
+    .program-grid,
+    .highlight-grid,
+    .roles-grid,
+    .give-grid,
+    .gallery-grid,
+    .testimonial-grid,
+    .donation-container,
+    .contact-container,
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+}
