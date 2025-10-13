@@ -126,27 +126,27 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
-    color: var(--white);
-    border: 2px solid var(--primary-color);
+    background-color: var(--accent-color);
+    color: var(--dark-gray);
+    border: 2px solid var(--accent-color);
 }
 
 .btn-primary:hover {
-    background-color: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background-color: #ffdb58;
+    border-color: #ffdb58;
 }
 
 .btn-secondary {
-    background-color: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: 2px solid var(--secondary-color);
 }
 
 .btn-secondary:hover {
     background-color: var(--primary-color);
     color: var(--white);
+    border-color: var(--primary-color);
 }
-
 
 .btn-tertiary {
     background-color: var(--accent-color);
