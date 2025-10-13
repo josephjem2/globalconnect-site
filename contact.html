@@ -1,13 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact Us | GlobalConnect</title>
+    <title>Contact | GlobalConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=1.3">
-    <link rel="stylesheet" href="css/contact.css?v=1.3">
+    <link rel="stylesheet" href="css/style.css?v=1.5">
 </head>
 <body>
 
@@ -35,73 +35,41 @@
 
 <section class="hero-banner" style="background-image: linear-gradient(rgba(0, 80, 158, 0.7), rgba(0, 80, 158, 0.7)), url('images/contact.jpg');">
     <div class="hero-content" data-aos="fade-up">
-        <h1>Get in Touch</h1>
-        <p>We're here to answer your questions and help you get involved.</p>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you. Reach out with any questions or comments.</p>
     </div>
 </section>
 
 <main>
-    <section class="section contact-section">
+    <section class="section">
         <div class="section-header" data-aos="fade-up">
-            <h2>Connect With Us</h2>
-            <p>Have a question, a proposal, or want to learn more? Reach out through any of the channels below.</p>
+            <h2>Get in Touch</h2>
         </div>
-        <div class="contact-grid">
-            <div class="contact-details" data-aos="fade-right" data-aos-delay="100">
-                <ul class="contact-info-list">
-                    <li class="contact-info-item">
-                        <i class="fas fa-envelope icon"></i>
-                        <div>
-                            <h4>Email Us</h4>
-                            <p>For general inquiries, partnerships, or program questions, please email <a href="mailto:hello@globalconnect.org">hello@globalconnect.org</a>.</p>
-                        </div>
-                    </li>
-                    <li class="contact-info-item">
-                        <i class="fas fa-phone-alt icon"></i>
-                        <div>
-                            <h4>Call Us</h4>
-                            <p>Speak to a member of our team during office hours (Mon-Fri, 9am-5pm) at <a href="tel:+1234567890">+1 (234) 567-890</a>.</p>
-                        </div>
-                    </li>
-                    <li class="contact-info-item">
-                        <i class="fas fa-map-marker-alt icon"></i>
-                        <div>
-                            <h4>Our Office</h4>
-                            <p>123 Global Avenue, Innovation City, 12345. Visits by appointment only.</p>
-                        </div>
-                    </li>
-                </ul>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-right">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, Anytown, USA 12345</p>
+                <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@globalconnect.org</p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.618012613139!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1678886400000!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
             </div>
-            <div class="contact-form-container" data-aos="fade-left" data-aos-delay="200">
+            <div class="contact-form-container" data-aos="fade-left">
+                <h3>Send Us a Message</h3>
                 <form class="contact-form">
                     <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" name="subject">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
             </div>
-        </div>
-    </section>
-
-    <section class="section map-section bg-light">
-        <div class="section-header" data-aos="fade-up">
-            <h2>Find Our Location</h2>
-        </div>
-        <div class="map-container" data-aos="fade-up" data-aos-delay="100">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.618090598822!2d-73.9856729845941!3d40.74844097932824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e196218134d1!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1633383344170!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 </main>
@@ -138,11 +106,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-    AOS.init({
-        duration: 1000,
-        once: true,
-        easing: 'ease-in-out'
-    });
+  AOS.init({
+    duration: 1200,
+    once: true,
+    easing: 'ease-in-out-cubic'
+  });
 </script>
 
 </body>

@@ -1,13 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Testimonials | GlobalConnect</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css?v=1.3">
-  <link rel="stylesheet" href="css/testimonials.css?v=1.3">
+    <meta charset="UTF-8">
+    <title>Testimonials | GlobalConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=1.5">
 </head>
 <body>
 
@@ -36,76 +36,61 @@
 <section class="hero-banner" style="background-image: linear-gradient(rgba(0, 80, 158, 0.7), rgba(0, 80, 158, 0.7)), url('images/testimonials.jpg');">
     <div class="hero-content" data-aos="fade-up">
         <h1>Voices of Impact</h1>
-        <p>Real stories from the individuals and communities we serve.</p>
+        <p>Stories of transformation, resilience, and hope from our community.</p>
     </div>
 </section>
 
 <main>
-    <section class="section testimonials-section">
+    <section class="section">
         <div class="section-header" data-aos="fade-up">
-            <h2>What People Are Saying</h2>
+            <h2>From Our Community</h2>
         </div>
         <div class="testimonials-grid">
+            <div class="testimonial-card" data-aos="fade-up">
+                <p>"GlobalConnect gave me the tools and confidence to pursue my dreams. I'm now enrolled in college and mentoring younger students in my community."</p>
+                <footer>- Maria S., Mentee & Volunteer</footer>
+            </div>
             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="testimonial-card-header">
-                    <img src="images/community-voice-1.jpg" alt="Maria S.">
-                    <div class="testimonial-card-author">
-                        <h4>Maria S.</h4>
-                        <span>Youth Mentee</span>
-                    </div>
-                </div>
-                <div class="testimonial-card-body">
-                    <p>“GlobalConnect’s mentorship program changed my life. I have a newfound confidence that I never thought was possible.”</p>
-                </div>
+                <p>"The care kits from GlobalConnect were a lifeline for my family during a difficult time. It's more than just food; it's knowing that someone cares."</p>
+                <footer>- David R., Community Member</footer>
             </div>
-
             <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="testimonial-card-header">
-                    <img src="images/community-voice-2.jpg" alt="David L.">
-                    <div class="testimonial-card-author">
-                        <h4>David L.</h4>
-                        <span>Senior Participant</span>
-                    </div>
-                </div>
-                <div class="testimonial-card-body">
-                    <p>“The digital literacy course opened up a new world for me. I can now connect with my grandchildren online.”</p>
-                </div>
-            </div>
-
-            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="testimonial-card-header">
-                    <img src="images/community-voice-3.jpg" alt="Fatima K.">
-                    <div class="testimonial-card-author">
-                        <h4>Fatima K.</h4>
-                        <span>Community Volunteer</span>
-                    </div>
-                </div>
-                <div class="testimonial-card-body">
-                    <p>“Volunteering with GlobalConnect has been a deeply rewarding experience. I’ve met so many inspiring people.”</p>
-                </div>
+                <p>"Volunteering with GlobalConnect has been a life-changing experience. I've seen firsthand the incredible impact we can have when we work together."</p>
+                <footer>- Sarah L., Volunteer</footer>
             </div>
         </div>
     </section>
 
-    <section class="section story-submission-section bg-light">
+    <section class="section video-testimonials" style="background-color: var(--light-gray);">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Video Testimonials</h2>
+        </div>
+        <div class="video-grid">
+            <div class="video-item" data-aos="fade-up">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="video-item" data-aos="fade-up" data-aos-delay="100">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="section form-section">
         <div class="section-header" data-aos="fade-up">
             <h2>Share Your Story</h2>
-            <p>Your experience can inspire others to get involved. We welcome testimonials from volunteers, participants, and partners.</p>
+            <p>Have you been impacted by GlobalConnect? We'd love to hear from you.</p>
         </div>
-        <form class="story-submission-form" data-aos="fade-up" data-aos-delay="100">
+        <form class="contact-form" data-aos="fade-up">
             <div class="form-group">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" name="name" placeholder="Your Name" required>
             </div>
             <div class="form-group">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" name="email" placeholder="Your Email" required>
             </div>
             <div class="form-group">
-                <label for="story">Your Story</label>
-                <textarea id="story" name="story" rows="6" required></textarea>
+                <textarea name="message" placeholder="Your Story" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Submit Your Story</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </section>
 </main>
@@ -142,11 +127,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-    AOS.init({
-        duration: 1000,
-        once: true,
-        easing: 'ease-in-out'
-    });
+  AOS.init({
+    duration: 1200,
+    once: true,
+    easing: 'ease-in-out-cubic'
+  });
 </script>
 
 </body>
