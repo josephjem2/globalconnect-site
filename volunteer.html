@@ -1,17 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Volunteer | GlobalConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/volunteer.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=1.3">
+    <link rel="stylesheet" href="css/volunteer.css?v=1.3">
 </head>
 <body>
 
-<header>
+<header class="main-header">
     <nav class="main-nav">
         <a href="index.html" class="logo">
             <img src="images/logo.png" alt="GlobalConnect Logo">
@@ -20,8 +21,6 @@
                 <span class="tagline">Empower to Inspire</span>
             </div>
         </a>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <div class="nav-links">
             <a href="about.html">About</a>
             <a href="programs.html">Programs</a>
@@ -35,146 +34,102 @@
     </nav>
 </header>
 
-<section class="hero-banner" style="background-image: url('images/volunteer-hero.jpg');">
-    <div class="overlay" data-aos="fade-up">
+<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 80, 158, 0.7), rgba(0, 80, 158, 0.7)), url('images/volunteer.jpg');">
+    <div class="hero-content" data-aos="fade-up">
         <h1>Become a Catalyst for Change</h1>
         <p>Your passion, skills, and time can empower communities and change lives. Join us.</p>
     </div>
 </section>
 
-<section class="volunteer-impact-section">
-    <h2 class="section-title" data-aos="fade-up">Our Volunteers, Our Impact</h2>
-    <div class="impact-stats-grid">
-        <div class="impact-stat" data-aos="fade-up" data-aos-delay="100">
-            <div class="stat-number" data-target="1200">0</div>
-            <div class="stat-description">Active Volunteers Globally</div>
+<main>
+    <section class="section opportunities-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Find Your Perfect Fit</h2>
+            <p>We offer a variety of ways to get involved, both in-person and remotely.</p>
         </div>
-        <div class="impact-stat" data-aos="fade-up" data-aos-delay="200">
-            <div class="stat-number" data-target="25000">0</div>
-            <div class="stat-description">Hours Contributed Annually</div>
-        </div>
-        <div class="impact-stat" data-aos="fade-up" data-aos-delay="300">
-            <div class="stat-number" data-target="50">0</div>
-            <div class="stat-description">Countries with Active Programs</div>
-        </div>
-    </div>
-</section>
-
-<section class="find-your-fit-section">
-    <h2 class="section-title" data-aos="fade-up">Find Your Perfect Fit</h2>
-    <div class="quiz-container" data-aos="fade-up" data-aos-delay="100">
-        <div id="quiz-question-container">
-            <p class="quiz-question">What type of impact do you want to make?</p>
-            <div class="quiz-options">
-                <button class="btn btn-secondary" data-answer="hands-on">Direct, Hands-On Work</button>
-                <button class="btn btn-secondary" data-answer="remote">Remote, Skills-Based</button>
-                <button class="btn btn-secondary" data-answer="advocacy">Advocacy & Awareness</button>
+        <div class="opportunities-grid">
+            <div class="opportunity-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/volunteer-local.jpg" alt="Local Volunteering">
+                <div class="opportunity-card-content">
+                    <h3>Local Community Support</h3>
+                    <p>Join our teams on the ground to assist with direct outreach, event support, and local projects.</p>
+                </div>
+            </div>
+            <div class="opportunity-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/volunteer-remote.jpg" alt="Remote Volunteering">
+                <div class="opportunity-card-content">
+                    <h3>Remote Skills-Based Roles</h3>
+                    <p>Use your professional skills in areas like mentoring, marketing, or tech to support our mission from anywhere.</p>
+                </div>
+            </div>
+            <div class="opportunity-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/volunteer-advocate.jpg" alt="Advocacy">
+                <div class="opportunity-card-content">
+                    <h3>Become an Advocate</h3>
+                    <p>Spread awareness, run fundraisers, and be a voice for our cause in your community and online.</p>
+                </div>
             </div>
         </div>
-        <div id="quiz-results-container" class="quiz-results" style="display: none;"></div>
-    </div>
-</section>
+    </section>
 
-<section class="featured-opportunities-section">
-    <h2 class="section-title" data-aos="fade-up">Featured Opportunities</h2>
-    <div class="opportunities-grid-featured">
-        <div class="opportunity-card-featured" data-aos="fade-up" data-aos-delay="100">
-            <img src="images/opportunity-mentor.jpg" alt="Virtual Mentor">
-            <div class="card-content">
-                <h3>Virtual Digital Mentor</h3>
-                <div class="tags"><span class="tag">Remote</span><span class="tag">Skills-Based</span></div>
-                <p>Guide aspiring learners in developing crucial digital skills through one-on-one virtual mentorship.</p>
-                <a href="#" class="btn btn-primary">View Details</a>
+    <section class="section getting-started-section bg-light">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Your Journey Starts Here</h2>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="step-icon"><i class="fas fa-search"></i></div>
+                <h3>1. Explore</h3>
+                <p>Find a role that matches your skills and passion.</p>
+            </div>
+            <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="step-icon"><i class="fas fa-paper-plane"></i></div>
+                <h3>2. Apply</h3>
+                <p>Fill out our simple online form to express your interest.</p>
+            </div>
+            <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="step-icon"><i class="fas fa-user-friends"></i></div>
+                <h3>3. Connect</h3>
+                <p>Our team will reach out to find the perfect fit for you.</p>
+            </div>
+            <div class="step-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="step-icon"><i class="fas fa-hands-helping"></i></div>
+                <h3>4. Impact</h3>
+                <p>Begin your volunteer journey and start making a difference.</p>
             </div>
         </div>
-        <div class="opportunity-card-featured" data-aos="fade-up" data-aos-delay="200">
-            <img src="images/opportunity-fundraiser.jpg" alt="Community Fundraiser">
-            <div class="card-content">
-                <h3>Community Fundraiser</h3>
-                <div class="tags"><span class="tag">Advocacy</span><span class="tag">Local</span></div>
-                <p>Lead a local fundraising campaign or event to support our global programs. We provide the tools, you bring the passion.</p>
-                <a href="#" class="btn btn-primary">Get Started</a>
-            </div>
-        </div>
-        <div class="opportunity-card-featured" data-aos="fade-up" data-aos-delay="300">
-            <img src="images/opportunity-builder.jpg" alt="Field Project Assistant">
-            <div class="card-content">
-                <h3>Field Project Assistant</h3>
-                <div class="tags"><span class="tag">Hands-On</span><span class="tag">International</span></div>
-                <p>Join our team on the ground for a short-term project building infrastructure or delivering essential resources.</p>
-                <a href="#" class="btn btn-primary">Apply Now</a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="volunteer-stories-section">
-    <h2 class="section-title" data-aos="fade-up">Stories from Our Volunteers</h2>
-    <div class="story-slider" data-aos="fade-up" data-aos-delay="100">
-        <div class="story-card">
-            <img src="images/volunteer-story-1.jpg" alt="Volunteer Testimonial">
-            <p class="quote">"Mentoring a student in another country has been the most fulfilling experience of my life. Seeing her confidence grow week after week is a powerful reminder of why this work matters."</p>
-            <p class="author">- Alex Johnson, Virtual Mentor</p>
+    <section class="section cta-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Ready to Make Your Mark?</h2>
+            <a href="get-involved.html" class="btn btn-primary">Explore All Roles</a>
         </div>
-    </div>
-</section>
+    </section>
+</main>
 
-<section class="getting-started-guide">
-    <h2 class="section-title" data-aos="fade-up">Your Journey Starts Here</h2>
-    <div class="steps-grid">
-        <div class="step-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="step-icon"><i class="fas fa-search"></i></div>
-            <h3>1. Explore Opportunities</h3>
-            <p>Discover the roles that match your skills and passion.</p>
-        </div>
-        <div class="step-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="step-icon"><i class="fas fa-paper-plane"></i></div>
-            <h3>2. Submit Your Application</h3>
-            <p>Let us know you're interested by filling out our simple online form.</p>
-        </div>
-        <div class="step-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="step-icon"><i class="fas fa-user-friends"></i></div>
-            <h3>3. Connect with Our Team</h3>
-            <p>We’ll schedule a brief chat to get to know you and find the best fit.</p>
-        </div>
-        <div class="step-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="step-icon"><i class="fas fa-hands-helping"></i></div>
-            <h3>4. Start Making an Impact</h3>
-            <p>Receive your orientation and begin your volunteer journey with us.</p>
-        </div>
-    </div>
-</section>
-
-<section class="cta-section" data-aos="zoom-in">
-    <h2>Ready to Make Your Mark?</h2>
-    <p>The first step is always the most powerful. Join our global family and start your journey today.</p>
-    <a href="#" class="btn btn-accent">Explore All Roles</a>
-</section>
-
-<footer>
+<footer class="main-footer">
     <div class="footer-container">
         <div class="footer-about">
             <h4>About GlobalConnect</h4>
-            <p>A non-profit organization building systems that ripple into real life. We empower communities through hands-on programs and digital inclusion.</p>
+            <p>A non-profit organization building systems that ripple into real life, empowering communities through hands-on programs and digital inclusion.</p>
         </div>
         <div class="footer-links">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="programs.html">Programs</a></li>
                 <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="events.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="footer-social">
             <h4>Follow Us</h4>
             <div class="social-icons">
-                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>
@@ -183,65 +138,13 @@
     </div>
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true, offset: 150 });
-
-    document.addEventListener('DOMContentLoaded', function () {
-        // Number Animation
-        const counters = document.querySelectorAll('.stat-number');
-        const speed = 200;
-
-        const animateNumbers = (timestamp) => {
-            counters.forEach(counter => {
-                const updateCount = () => {
-                    const target = +counter.getAttribute('data-target');
-                    const count = +counter.innerText;
-                    const increment = target / speed;
-
-                    if (count < target) {
-                        counter.innerText = Math.ceil(count + increment);
-                        setTimeout(updateCount, 1);
-                    } else {
-                        counter.innerText = target;
-                    }
-                };
-                updateCount();
-            });
-        };
-        
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateNumbers();
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        const impactSection = document.querySelector('.volunteer-impact-section');
-        if(impactSection) observer.observe(impactSection);
-
-        // Find Your Fit Quiz
-        const quizOptions = document.querySelectorAll('.quiz-options .btn');
-        const quizResultContainer = document.getElementById('quiz-results-container');
-        const quizQuestionContainer = document.getElementById('quiz-question-container');
-
-        const results = {
-            'hands-on': 'Great! A <strong>Field Project Assistant</strong> role sounds like a perfect match for you. You\'ll get to see the impact of your work up close.',
-            'remote': 'Excellent! Our <strong>Virtual Digital Mentor</strong> program allows you to share your skills from anywhere in the world.',
-            'advocacy': 'Fantastic! Becoming a <strong>Community Fundraiser</strong> or advocate is a powerful way to spread the word and generate support.'
-        };
-
-        quizOptions.forEach(option => {
-            option.addEventListener('click', () => {
-                const answer = option.getAttribute('data-answer');
-                quizResultContainer.innerHTML = `<p>${results[answer]}</p><a href='#' class='btn btn-primary'>Learn More</a>`;
-                quizResultContainer.style.display = 'block';
-                quizQuestionContainer.style.display = 'none';
-            });
-        });
-    });
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-in-out'
+  });
 </script>
 
 </body>

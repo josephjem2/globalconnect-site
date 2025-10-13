@@ -1,17 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Our Programs | GlobalConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/our-work.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=1.3">
+    <link rel="stylesheet" href="css/our-work.css?v=1.3">
 </head>
 <body>
 
-<header>
+<header class="main-header">
     <nav class="main-nav">
         <a href="index.html" class="logo">
             <img src="images/logo.png" alt="GlobalConnect Logo">
@@ -20,8 +21,6 @@
                 <span class="tagline">Empower to Inspire</span>
             </div>
         </a>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <div class="nav-links">
             <a href="about.html">About</a>
             <a href="programs.html" class="active">Programs</a>
@@ -35,163 +34,75 @@
     </nav>
 </header>
 
-<section class="hero-banner" style="background-image: url('images/programs.jpg');">
-    <div class="overlay" data-aos="fade-up">
+<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 80, 158, 0.7), rgba(0, 80, 158, 0.7)), url('images/programs.jpg');">
+    <div class="hero-content" data-aos="fade-up">
         <h1>Empowering Through Action</h1>
         <p>Our programs are strategically designed to create sustainable, scalable, and life-changing impact.</p>
     </div>
 </section>
 
-<section class="program-overview-section">
-    <h2 class="section-title" data-aos="fade-up">Our Core Initiatives</h2>
-    <p class="program-intro-text" data-aos="fade-up" data-aos-delay="100">
-        At GlobalConnect, we believe in targeted action. Our programs are the lifeblood of our mission, each one crafted to address critical needs and empower communities from the ground up. From digital literacy to youth leadership, we are building systems that create lasting change.
-    </p>
-</section>
-
 <main>
-    <section id="digital-literacy" class="program-detail-section">
-        <div class="program-description" data-aos="fade-right">
-            <h2>Digital Literacy & Empowerment</h2>
-            <p class="program-meta">Category: Education & Skills | Reach: Global (Virtual & In-Person)</p>
-            <p>In a world driven by technology, digital literacy is not a luxury—it's a fundamental right. This program provides essential tech skills to underserved populations, opening doors to education, employment, and economic independence.</p>
-            <a href="#" class="btn btn-primary">Learn More & Get Involved</a>
+    <section class="section program-overview-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Core Initiatives</h2>
+            <p class="program-intro-text">At GlobalConnect, we believe in targeted action. Our programs are the lifeblood of our mission, each one crafted to address critical needs and empower communities from the ground up.</p>
         </div>
-        <div class="program-image" data-aos="fade-left" data-aos-delay="150">
-            <img src="images/digital-literacy.jpg" alt="Digital Literacy Program">
+        <div class="programs-grid">
+            <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/program-education.jpg" alt="Digital Literacy">
+                <div class="program-card-content">
+                    <h3>Digital Literacy & Empowerment</h3>
+                    <p>Providing essential tech skills to open doors to education, employment, and economic independence.</p>
+                </div>
+            </div>
+            <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/program-outreach.jpg" alt="Youth Leadership">
+                <div class="program-card-content">
+                    <h3>Youth Leadership & Mentorship</h3>
+                    <p>Pairing young, aspiring leaders with experienced professionals to foster growth and confidence.</p>
+                </div>
+            </div>
+            <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/program-collaboration.jpg" alt="Community Health">
+                <div class="program-card-content">
+                    <h3>Community Health & Wellness</h3>
+                    <p>Improving quality of life through access to health education, hygiene resources, and wellness workshops.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="youth-leadership" class="program-detail-section">
-        <div class="program-image" data-aos="fade-right" data-aos-delay="150">
-            <img src="images/youth-mentorship.jpg" alt="Youth Leadership Program">
-        </div>
-        <div class="program-description" data-aos="fade-left">
-            <h2>Youth Leadership & Mentorship</h2>
-            <p class="program-meta">Category: Youth Development | Reach: 20+ Countries</p>
-            <p>The leaders of tomorrow need guidance today. Our mentorship program pairs young, aspiring leaders with experienced professionals to foster personal growth, build confidence, and cultivate the skills needed to drive positive change in their communities.</p>
-            <a href="volunteer.html" class="btn btn-primary">Become a Mentor</a>
-        </div>
-    </section>
-
-    <section id="community-health" class="program-detail-section">
-        <div class="program-description" data-aos="fade-right">
-            <h2>Community Health & Wellness</h2>
-            <p class="program-meta">Category: Health & Sanitation | Reach: 150+ Communities</p>
-            <p>We believe that a healthy community is an empowered one. This initiative focuses on providing access to basic health education, hygiene resources (like our Care Kits), and wellness workshops to improve the overall quality of life.</p>
-            <a href="donate.html" class="btn btn-primary">Support This Initiative</a>
-        </div>
-        <div class="program-image" data-aos="fade-left" data-aos-delay="150">
-            <img src="images/our-work-2.jpg" alt="Community Health & Wellness Program">
+    <section class="section cta-section bg-light">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Be a Part of the Change</h2>
+            <p>Your support helps us create and sustain programs that transform lives.</p>
+            <a href="donate.html" class="btn btn-primary">Donate Now</a>
         </div>
     </section>
 </main>
 
-<section class="process-timeline-section">
-    <h2 class="section-title" data-aos="fade-up">Our Process for Creating Change</h2>
-    <div class="timeline">
-        <div class="timeline-container left" data-aos="fade-right">
-            <div class="timeline-content">
-                <h3>1. Listen & Identify</h3>
-                <p>We start by listening to community needs, not prescribing solutions. This ensures our work is relevant and respectful.</p>
-            </div>
-        </div>
-        <div class="timeline-container right" data-aos="fade-left">
-            <div class="timeline-content">
-                <h3>2. Collaborate & Design</h3>
-                <p>We partner with local stakeholders to co-design programs that are culturally appropriate and sustainable.</p>
-            </div>
-        </div>
-        <div class="timeline-container left" data-aos="fade-right">
-            <div class="timeline-content">
-                <h3>3. Implement & Empower</h3>
-                <p>Our teams on the ground, often led by local volunteers, implement the programs with a focus on empowerment, not dependency.</p>
-            </div>
-        </div>
-        <div class="timeline-container right" data-aos="fade-left">
-            <div class="timeline-content">
-                <h3>4. Measure & Scale</h3>
-                <p>We constantly measure our impact and refine our approach, allowing us to scale successful initiatives to new communities.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="success-stories-section">
-    <h2 class="section-title" data-aos="fade-up">Stories of Transformation</h2>
-    <div class="stories-grid">
-        <div class="story-card" data-aos="fade-up" data-aos-delay="100">
-            <img class="story-card-image" src="images/success-story-1.jpg" alt="Fatima, Program Graduate">
-            <div class="story-card-content">
-                <p class="quote">"The digital literacy course changed my life. I went from being unemployed to starting my own online business."</p>
-                <p class="author">- Fatima, Program Graduate</p>
-            </div>
-        </div>
-        <div class="story-card" data-aos="fade-up" data-aos-delay="200">
-            <img class="story-card-image" src="images/success-story-2.jpg" alt="Javier, Youth Mentee">
-            <div class="story-card-content">
-                <p class="quote">"The mentorship program gave me the confidence to lead. I organized a clean-up drive in my neighborhood and now I'm inspiring others to join."</p>
-                <p class="author">- Javier, Youth Mentee</p>
-            </div>
-        </div>
-        <div class="story-card" data-aos="fade-up" data-aos-delay="300">
-            <img class="story-card-image" src="images/success-story-3.jpg" alt="Community in Kenya">
-            <div class="story-card-content">
-                <p class="quote">"The Care Kits were more than just supplies; they were a symbol of hope. It showed us that someone out there cares."</p>
-                <p class="author">- Village Elder, Kenya</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="program-gallery-section">
-    <h2 class="section-title" data-aos="fade-up">Glimpses of Our Work</h2>
-    <div class="gallery-grid">
-        <div class="gallery-item" data-aos="zoom-in">
-            <img src="images/gallery-1.jpg" alt="Gallery Image 1">
-        </div>
-        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
-            <img src="images/gallery-2.jpg" alt="Gallery Image 2">
-        </div>
-        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
-            <img src="images/gallery-3.jpg" alt="Gallery Image 3">
-        </div>
-        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
-            <img src="images/gallery-4.jpg" alt="Gallery Image 4">
-        </div>
-    </div>
-</section>
-
-<section class="cta-section program-cta" data-aos="zoom-in">
-    <h2>Join Our Mission of Empowerment</h2>
-    <p>Your support can help us launch new programs and scale our existing ones to reach even more people.</p>
-    <a href="get-involved.html" class="btn btn-accent">Support Our Work</a>
-</section>
-
-<footer>
+<footer class="main-footer">
     <div class="footer-container">
         <div class="footer-about">
             <h4>About GlobalConnect</h4>
-            <p>A non-profit organization building systems that ripple into real life. We empower communities through hands-on programs and digital inclusion.</p>
+            <p>A non-profit organization building systems that ripple into real life, empowering communities through hands-on programs and digital inclusion.</p>
         </div>
         <div class="footer-links">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="programs.html">Programs</a></li>
                 <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="events.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="footer-social">
             <h4>Follow Us</h4>
             <div class="social-icons">
-                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>
@@ -200,9 +111,13 @@
     </div>
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true, offset: 150 });
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-in-out'
+  });
 </script>
 
 </body>

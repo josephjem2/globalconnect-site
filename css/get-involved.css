@@ -1,258 +1,86 @@
-/* === Hero Banner === */
-.hero-banner .overlay h1 {
-    font-size: 3.8rem;
-    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-}
-
-/* === Involvement Section: Ways to Engage === */
-.ways-to-engage-section {
-    padding: 6rem 2rem;
-    background-color: #fdfdfd;
-}
-
-.engage-grid {
+/* Get Involved Page Specifics */
+.ways-to-engage-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 3rem;
-    margin-top: 3.5rem;
-}
-
-.engage-card {
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
-
-.engage-card:hover {
-    transform: translateY(-20px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-}
-
-.engage-card .card-banner {
-    height: 220px;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: #fff;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-}
-
-.engage-card .card-content {
-    padding: 2rem;
-}
-
-.engage-card h3 {
-    font-size: 1.8rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
-
-/* === Impact Spotlight Section === */
-.impact-spotlight-section {
-    padding: 6rem 2rem;
-    background: var(--bg-light);
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    align-items: center;
-    gap: 4rem;
-}
-
-.impact-spotlight-section .spotlight-image img {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-}
-
-.spotlight-content h2 {
-    font-size: 2.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--primary-color);
-}
-
-.spotlight-content .quote {
-    font-style: italic;
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 2rem;
-    border-left: 4px solid var(--accent-color);
-    padding-left: 1.5rem;
-}
-
-/* === Vertical Journey Section === */
-.journey-section-vertical {
-    padding: 6rem 2rem;
-    text-align: center;
-}
-
-.journey-timeline-vertical {
-    position: relative;
-    max-width: 800px;
-    margin: 4rem auto 0;
-}
-
-.journey-timeline-vertical::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    background-color: var(--accent-color);
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -2px;
-    z-index: 1;
-}
-
-.journey-container {
-    padding: 10px 40px;
-    position: relative;
-    width: 50%;
-}
-
-.journey-container.left {
-    left: -25%;
-}
-
-.journey-container.right {
-    left: 25%;
-}
-
-.journey-container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -12px;
-    background-color: white;
-    border: 4px solid var(--secondary-color);
-    top: 15px;
-    border-radius: 50%;
-    z-index: 2;
-}
-
-.journey-container.right::after { left: -13px; }
-
-.journey-content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-}
-
-/* === Community Voices Section === */
-.community-voices-section {
-    padding: 6rem 2rem;
-    background-color: #fdfdfd;
-}
-
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     margin-top: 3rem;
 }
 
-.testimonial-card-voice {
-    background-color: #fff;
-    padding: 2.5rem;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.engage-card {
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
     text-align: center;
 }
 
-.testimonial-card-voice img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1.5rem;
-    border: 4px solid var(--accent-color);
+.engage-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 80, 158, 0.15);
 }
 
-.testimonial-card-voice .quote-text {
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #555;
+.engage-card-icon {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    padding: 2rem 0;
+}
+
+.engage-card-content {
+    padding: 0 2rem 2.5rem;
+}
+
+.engage-card h3 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.testimonial-card-voice .quote-author {
-    font-weight: bold;
-    color: var(--primary-color);
-}
-
-/* === FAQ Section === */
-.faq-section {
-    padding: 6rem 2rem;
-    background-color: var(--bg-light);
-}
-
-.faq-container {
-    max-width: 900px;
-    margin: 0 auto;
+/* FAQ Section */
+.faq-accordion {
+    max-width: 800px;
+    margin: 3rem auto 0;
 }
 
 .faq-item {
-    background-color: #fff;
+    background: var(--white);
+    border-radius: 10px;
     margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
 
 .faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
     padding: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--primary-color);
 }
 
 .faq-question::after {
-    content: '+';
-    font-size: 1.8rem;
-    color: var(--accent-color);
+    content: '\f078'; /* FontAwesome angle-down */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
     transition: transform 0.3s ease;
 }
 
-.faq-item.active .faq-question {
-    color: var(--secondary-color);
-}
-
 .faq-item.active .faq-question::after {
-    transform: rotate(45deg);
+    transform: rotate(180deg);
 }
 
 .faq-answer {
     max-height: 0;
-    transition: max-height 0.4s ease-out, padding 0.3s ease-out;
-    padding: 0 1.5rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
-.faq-item.active .faq-answer {
-    padding-bottom: 1.5rem;
-    max-height: 200px; /* Adjust as needed */
-}
-
-@media (max-width: 992px) {
-    .impact-spotlight-section { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 768px) {
-    .journey-timeline-vertical::after { left: 31px; }
-    .journey-container { width: 100%; padding-left: 70px; padding-right: 15px; }
-    .journey-container.left, .journey-container.right { left: 0%; }
-    .journey-container.right::after, .journey-container.left::after { left: 19px; }
+.faq-answer p {
+    padding: 0 1.5rem 1.5rem;
+    margin: 0;
+    line-height: 1.6;
 }

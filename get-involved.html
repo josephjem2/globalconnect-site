@@ -1,16 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Get Involved | GlobalConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/get-involved.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=1.3">
+    <link rel="stylesheet" href="css/get-involved.css?v=1.3">
 </head>
 <body>
 
-<header>
+<header class="main-header">
     <nav class="main-nav">
         <a href="index.html" class="logo">
             <img src="images/logo.png" alt="GlobalConnect Logo">
@@ -19,8 +21,6 @@
                 <span class="tagline">Empower to Inspire</span>
             </div>
         </a>
-        <input type="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
         <div class="nav-links">
             <a href="about.html">About</a>
             <a href="programs.html">Programs</a>
@@ -34,160 +34,102 @@
     </nav>
 </header>
 
-<section class="hero-banner" style="background-image: url('images/get-involved-hero.jpg');">
-    <div class="overlay" data-aos="fade-up">
+<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 80, 158, 0.7), rgba(0, 80, 158, 0.7)), url('images/get-involved.jpg');">
+    <div class="hero-content" data-aos="fade-up">
         <h1>Ignite Change, Transform Lives</h1>
         <p>Your journey to making a global impact starts here. Join us.</p>
     </div>
 </section>
 
-<section class="ways-to-engage-section">
-    <h2 class="section-title" data-aos="fade-up">Ways to Engage</h2>
-    <div class="engage-grid">
-        <div class="engage-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-banner" style="background-image: url('images/volunteer-banner.jpg');"></div>
-            <div class="card-content">
-                <h3>Volunteer Your Expertise</h3>
-                <p>From virtual mentorship to on-the-ground support, your skills can create powerful, positive change.</p>
-                <a href="volunteer.html" class="btn btn-primary">Find a Role</a>
+<main>
+    <section class="section ways-to-engage-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Ways to Make a Difference</h2>
+        </div>
+        <div class="ways-to-engage-grid">
+            <div class="engage-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="engage-card-icon"><i class="fas fa-hands-helping"></i></div>
+                <div class="engage-card-content">
+                    <h3>Volunteer</h3>
+                    <p>Use your skills to create powerful, positive change, from virtual mentorship to on-the-ground support.</p>
+                    <a href="volunteer.html" class="btn btn-primary">Find a Role</a>
+                </div>
+            </div>
+            <div class="engage-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="engage-card-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                <div class="engage-card-content">
+                    <h3>Donate</h3>
+                    <p>Your contribution directly funds our educational and empowerment initiatives across the globe.</p>
+                    <a href="donate.html" class="btn btn-primary">Give Today</a>
+                </div>
+            </div>
+            <div class="engage-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="engage-card-icon"><i class="fas fa-bullhorn"></i></div>
+                <div class="engage-card-content">
+                    <h3>Advocate</h3>
+                    <p>Be a voice for our mission. Share our story, start a fundraiser, or partner with us to amplify our impact.</p>
+                    <a href="contact.html" class="btn btn-primary">Partner Up</a>
+                </div>
             </div>
         </div>
-        <div class="engage-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-banner" style="background-image: url('images/donate-banner.jpg');"></div>
-            <div class="card-content">
-                <h3>Power Our Programs</h3>
-                <p>Your financial contribution directly funds our educational and empowerment initiatives across the globe.</p>
-                <a href="donate.html" class="btn btn-primary">Donate Today</a>
-            </div>
-        </div>
-        <div class="engage-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-banner" style="background-image: url('images/advocate-banner.jpg');"></div>
-            <div class="card-content">
-                <h3>Champion the Cause</h3>
-                <p>Be a voice for GlobalConnect. Share our mission, start a fundraiser, or partner with us to amplify our impact.</p>
-                <a href="contact.html" class="btn btn-primary">Advocate</a>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-<section class="impact-spotlight-section">
-    <div class="spotlight-content" data-aos="fade-right">
-        <h2>Real-World Impact Spotlight</h2>
-        <p class="quote">“Volunteering with GlobalConnect allowed me to use my professional skills to help a community thousands of miles away. It was a profoundly rewarding experience.”</p>
-        <p>Your involvement has tangible results. We've empowered over 5,000 individuals last year through digital literacy programs, thanks to supporters like you. Join us to be a part of these success stories.</p>
-        <a href="testimonials.html" class="btn btn-secondary">More Stories</a>
-    </div>
-    <div class="spotlight-image" data-aos="fade-left" data-aos-delay="100">
-        <img src="images/impact-story.jpg" alt="A volunteer teaching a student">
-    </div>
-</section>
+    <section class="section faq-section bg-light">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-accordion" data-aos="fade-up" data-aos-delay="100">
+            <div class="faq-item">
+                <button class="faq-question">What is the time commitment for volunteering?</button>
+                <div class="faq-answer">
+                    <p>Time commitments vary by role, from a few hours a month to project-based work. We offer flexible options to match your availability.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Can I volunteer remotely?</button>
+                <div class="faq-answer">
+                    <p>Yes! Many of our opportunities are fully remote, allowing you to contribute your skills from anywhere in the world. Check our volunteer page for specific roles.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How are donations used?</button>
+                <div class="faq-answer">
+                    <p>We are committed to financial transparency. A minimum of 85% of all donations goes directly to our programs. You can find detailed financial reports in our annual statements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="journey-section-vertical">
-    <h2 class="section-title" data-aos="fade-up">Your Journey to Making an Impact</h2>
-    <div class="journey-timeline-vertical">
-        <div class="journey-container left" data-aos="fade-right">
-            <div class="journey-content">
-                <h3>Step 1: Discover Your Passion</h3>
-                <p>Browse our diverse range of programs and find the initiative that speaks to you.</p>
-            </div>
+    <section class="section cta-section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Ready to Join Our Global Family?</h2>
+            <a href="volunteer.html" class="btn btn-primary">Start Your Journey</a>
         </div>
-        <div class="journey-container right" data-aos="fade-left">
-            <div class="journey-content">
-                <h3>Step 2: Reach Out & Connect</h3>
-                <p>Have questions? Our team is ready to provide the information you need to get started.</p>
-            </div>
-        </div>
-        <div class="journey-container left" data-aos="fade-right">
-            <div class="journey-content">
-                <h3>Step 3: Choose Your Path</h3>
-                <p>Decide how you'll contribute—by volunteering, donating, or becoming an advocate.</p>
-            </div>
-        </div>
-        <div class="journey-container right" data-aos="fade-left">
-            <div class="journey-content">
-                <h3>Step 4: Make Your Mark</h3>
-                <p>Engage with our community, see the immediate impact of your contribution, and help shape a better future.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+</main>
 
-<section class="community-voices-section">
-    <h2 class="section-title" data-aos="fade-up">Voices of Our Community</h2>
-    <div class="testimonial-grid">
-        <div class="testimonial-card-voice" data-aos="fade-up" data-aos-delay="100">
-            <img src="images/community-voice-1.jpg" alt="Community Member">
-            <p class="quote-text">“Being a part of this community has been life-changing. I've connected with people from all over the world.”</p>
-            <p class="quote-author">- Maria S., Volunteer</p>
-        </div>
-        <div class="testimonial-card-voice" data-aos="fade-up" data-aos-delay="200">
-            <img src="images/community-voice-2.jpg" alt="Community Member">
-            <p class="quote-text">“The support from GlobalConnect has been instrumental in our local project's success. They truly empower from within.”</p>
-            <p class="quote-author">- David L., Partner Organization</p>
-        </div>
-        <div class="testimonial-card-voice" data-aos="fade-up" data-aos-delay="300">
-            <img src="images/community-voice-3.jpg" alt="Community Member">
-            <p class="quote-text">“As a donor, seeing the direct impact of my contributions has been incredibly fulfilling. I know my support matters.”</p>
-            <p class="quote-author">- Sarah K., Donor</p>
-        </div>
-    </div>
-</section>
-
-<section class="faq-section">
-    <h2 class="section-title" data-aos="fade-up">Frequently Asked Questions</h2>
-    <div class="faq-container" data-aos="fade-up" data-aos-delay="100">
-        <div class="faq-item">
-            <div class="faq-question">What is the time commitment for volunteering?</div>
-            <div class="faq-answer">
-                <p>Time commitments vary depending on the role. We have opportunities ranging from a few hours a month to more intensive, project-based work. We are flexible and work to match your availability.</p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">Can I volunteer remotely?</div>
-            <div class="faq-answer">
-                <p>Yes! Many of our volunteer opportunities are fully remote, allowing you to contribute from anywhere in the world. Check our volunteer page for specific remote roles.</p>
-            </div>
-        </div>
-        <div class="faq-item">
-            <div class="faq-question">How are donations used?</div>
-            <div class="faq-answer">
-                <p>We are committed to financial transparency. 85% of all donations go directly to program services. You can find detailed financial reports in our annual statements.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="cta-section" data-aos="zoom-in">
-    <h2>Ready to Make a Difference?</h2>
-    <p>Your journey of a thousand miles begins with a single step. Take that step with us today.</p>
-    <a href="volunteer.html" class="btn btn-accent">Start Your Journey</a>
-</section>
-
-<footer>
+<footer class="main-footer">
     <div class="footer-container">
         <div class="footer-about">
             <h4>About GlobalConnect</h4>
-            <p>A non-profit organization building systems that ripple into real life. We empower communities through hands-on programs and digital inclusion.</p>
+            <p>A non-profit organization building systems that ripple into real life, empowering communities through hands-on programs and digital inclusion.</p>
         </div>
         <div class="footer-links">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="programs.html">Programs</a></li>
                 <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="events.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="footer-social">
             <h4>Follow Us</h4>
             <div class="social-icons">
-                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>
@@ -196,27 +138,43 @@
     </div>
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
-    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true, offset: 150 });
+  AOS.init({
+    duration: 1000,
+    once: true,
+    easing: 'ease-in-out'
+  });
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const faqItems = document.querySelectorAll('.faq-item');
+  document.addEventListener('DOMContentLoaded', function () {
+    const faqItems = document.querySelectorAll('.faq-item');
 
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
 
-            question.addEventListener('click', () => {
-                const isActive = item.classList.contains('active');
+        question.addEventListener('click', () => {
+            const parentItem = question.parentElement;
+            const isActive = parentItem.classList.contains('active');
+            const answer = parentItem.querySelector('.faq-answer');
 
-                faqItems.forEach(i => i.classList.remove('active'));
-
-                if (!isActive) {
-                    item.classList.add('active');
+            faqItems.forEach(i => {
+                if (i !== parentItem) {
+                    i.classList.remove('active');
+                    i.querySelector('.faq-answer'.style.maxHeight = 0;
                 }
             });
+
+            if (!isActive) {
+                parentItem.classList.add('active');
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            } else {
+                parentItem.classList.remove('active');
+                answer.style.maxHeight = 0;
+            }
         });
     });
+});
+
 </script>
 
 </body>
