@@ -1,8 +1,8 @@
-
+/* Global Styles */
 :root {
-    --primary-color: #00509E;
-    --secondary-color: #28A745;
-    --accent-color: #FFC72C;
+    --primary-color: #004080; /* Dark Blue */
+    --secondary-color: #28A745; /* Green */
+    --accent-color: #FFC72C; /* Yellow */
     --light-gray: #f4f4f4;
     --dark-gray: #333;
     --white: #fff;
@@ -31,7 +31,7 @@ a:hover {
 }
 
 .main-header {
-    background-color: var(--white);
+    background-color: var(--primary-color);
     padding: 1rem 2rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -63,18 +63,19 @@ a:hover {
 .logo-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--white);
 }
 
 .tagline {
     font-size: 0.9rem;
-    color: var(--dark-gray);
+    color: var(--light-gray);
 }
 
 .nav-links a {
     margin: 0 1rem;
     font-weight: bold;
     font-size: 1rem;
+    color: var(--white);
 }
 
 .nav-links a.active {
@@ -100,7 +101,7 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 80, 158, 0.5), rgba(0, 80, 158, 0.5));
+    background: linear-gradient(rgba(0, 64, 128, 0.5), rgba(0, 64, 128, 0.5));
 }
 
 .hero-content {
@@ -377,7 +378,7 @@ main {
 }
 
 .main-footer {
-    background-color: var(--dark-gray);
+    background-color: var(--primary-color);
     color: var(--white);
     padding: 2rem 0;
 }
