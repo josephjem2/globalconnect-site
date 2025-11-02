@@ -30,8 +30,8 @@
 
 .amount-selector .amount-btn {
     background: var(--white);
-    border: 2px solid var(--medium-gray);
-    color: var(--primary-blue);
+    border: 2px solid var(--light-gray);
+    color: var(--primary-color);
     padding: 1rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -41,9 +41,9 @@
 }
 
 .amount-selector .amount-btn.selected, .amount-selector .amount-btn:hover {
-    background: var(--primary-blue);
+    background: var(--primary-color);
     color: var(--white);
-    border-color: var(--primary-blue);
+    border-color: var(--primary-color);
 }
 
 .custom-amount-input {
@@ -51,7 +51,7 @@
     padding: 1rem;
     font-size: 1.1rem;
     border-radius: 8px;
-    border: 2px solid var(--medium-gray);
+    border: 2px solid var(--light-gray);
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -70,11 +70,11 @@
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    border-top: 5px solid var(--accent-red);
+    border-top: 5px solid var(--accent-color);
 }
 
 .impact-tier-card h3 {
-    color: var(--primary-blue);
+    color: var(--primary-color);
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }

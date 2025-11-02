@@ -1,115 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>News | GlobalConnect</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/our-work.css">
-  <link rel="stylesheet" href="css/footer.css">
+    <meta charset="UTF-8">
+    <title>News | GlobalConnect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css?v=2.1">
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
+<header class="main-header">
     <nav class="main-nav">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="GlobalConnect Logo">
-        <div class="logo-text">
-          <span class="logo-title">GlobalConnect</span>
-          <span class="tagline">Empower to Inspire</span>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="GlobalConnect Logo">
+            <div class="logo-text">
+                <span class="logo-title">GlobalConnect</span>
+                <span class="tagline">Empower to Inspire</span>
+            </div>
+        </a>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
-      </a>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <div class="nav-links">
-        <a href="about.html">About</a>
-        <a href="programs.html">Programs</a>
-        <a href="volunteer.html">Volunteer</a>
-        <a href="events.html">Events</a>
-        <a href="get-involved.html">Get Involved</a>
-        <a href="donate.html">Donate</a>
-        <a href="testimonials.html">Testimonials</a>
-        <a href="contact.html">Contact</a>
-        <a href="news.html" class="active">News</a>
-      </div>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="programs.html">Programs</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="events.html">Events</a>
+            <a href="get-involved.html">Get Involved</a>
+            <a href="donate.html">Donate</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+            <a href="news.html" class="active">News</a>
+        </div>
     </nav>
-  </header>
+</header>
 
-  <main>
-    <!-- News Hero Section -->
-    <section class="hero-banner" style="background-image: url('images/news-hero.jpg');" data-aos="fade-up">
-      <div class="overlay">
-        <h1>Latest News</h1>
-        <p>Stories of impact, community, and forward momentum.</p>
-      </div>
+<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 80, 158, 0.7), rgba(0, 80, 158, 0.7)), url('images/news.jpg');">
+    <div class="hero-content" data-aos="fade-up">
+        <h1>Latest News & Updates</h1>
+        <p>Stay informed about our latest activities, stories, and achievements.</p>
+    </div>
+</section>
+
+<main>
+    <section class="section">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Recent News</h2>
+        </div>
+        <div class="news-grid-page">
+            <div class="news-card" data-aos="fade-up">
+                <img src="images/featured-news.jpg" alt="Youth Summit 2025">
+                <div class="news-details">
+                    <span class="news-date">June 15, 2025</span>
+                    <h3>Youth Summit 2025: A Resounding Success</h3>
+                    <p>This year’s Youth Summit brought together over 100 young leaders for a day of mentorship and skill-building. The event featured workshops on leadership, innovation, and social entrepreneurship, as well as a keynote address from a renowned motivational speaker. The summit was a great success, and we are excited to see the impact that these young leaders will have on their communities.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+            </div>
+            <div class="news-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/news-1.jpg" alt="Winter Warmth Drive">
+                <div class="news-details">
+                    <span class="news-date">May 28, 2025</span>
+                    <h3>Winter Warmth Drive Exceeds Goals</h3>
+                    <p>We are thrilled to announce that our Winter Warmth Drive was a huge success. Thanks to the generosity of our donors and volunteers, we were able to distribute over 1,000 care kits to local shelters, providing essential warmth to our neighbors in need. The kits included blankets, warm clothing, and hygiene products, and they were distributed to homeless shelters and other organizations that serve vulnerable populations.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+            </div>
+            <div class="news-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/news-2.jpg" alt="New School Build">
+                <div class="news-details">
+                    <span class="news-date">April 12, 2025</span>
+                    <h3>New School Build in Rural Community</h3>
+                    <p>We are excited to announce that we have broken ground on a new school in a rural community in a developing country. The school will provide access to quality education for over 200 children who currently have to walk several miles to attend the nearest school. The project is a partnership with the local community, and it is being funded by a generous grant from a corporate sponsor.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
+            </div>
+        </div>
     </section>
+</main>
 
-    <!-- Featured Article -->
-    <section class="news-featured" data-aos="fade-up">
-      <h2>Featured Story</h2>
-      <div class="featured-article">
-        <img src="images/featured-news.jpg" alt="Featured News Story">
-        <div class="article-content">
-          <h3>Youth Summit 2025: A Resounding Success</h3>
-          <p class="article-meta">Published on October 28, 2025</p>
-          <p>This year’s Youth Summit brought together over 100 young leaders for a day of mentorship, skill-building, and powerful storytelling. The energy was electric as participants connected with mentors from leading tech companies, honed their public speaking skills, and shared their visions for a more equitable future...</p>
-          <a href="#" class="btn btn-secondary">Read More</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Recent News Grid -->
-    <section class="news-grid" data-aos="fade-up">
-      <h2>Recent News</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="images/news-1.jpg" alt="Care Kit Drive">
-          <div class="card-content">
-            <h4>Winter Warmth Drive Exceeds Goals</h4>
-            <p class="article-meta">October 15, 2025</p>
-            <p>Thanks to our incredible volunteers and donors, we distributed over 1,000 care kits to local shelters, providing essential warmth and hygiene supplies to our neighbors in need.</p>
-            <a href="#" class="btn-link">Read More</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/news-2.jpg" alt="Digital Literacy Program">
-          <div class="card-content">
-            <h4>Digital Literacy Program Launches in Partnership with TechForward</h4>
-            <p class="article-meta">September 20, 2025</p>
-            <p>We are thrilled to announce our partnership with TechForward to launch a new digital literacy program, offering free workshops on coding, online safety, and career skills.</p>
-            <a href="#" class="btn-link">Read More</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/news-3.jpg" alt="Volunteer Spotlight">
-          <div class="card-content">
-            <h4>Volunteer Spotlight: Meet Maria</h4>
-            <p class="article-meta">September 5, 2025</p>
-            <p>Maria, a dedicated mentor and volunteer, shares her journey with GlobalConnect and the profound impact of co-creating opportunities with young leaders in her community.</p>
-            <a href="#" class="btn-link">Read More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-    <!-- Footer -->
-<footer>
+<footer class="main-footer">
     <div class="footer-container">
         <div class="footer-about">
             <h4>About GlobalConnect</h4>
-            <p>A non-profit organization building systems that ripple into real life. We empower communities through hands-on programs and digital inclusion.</p>
+            <p>A non-profit organization building systems that ripple into real life, empowering communities through hands-on programs and digital inclusion.</p>
         </div>
         <div class="footer-links">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="programs.html">Programs</a></li>
                 <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="events.html">Events</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -128,14 +113,21 @@
     </div>
 </footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-      easing: 'ease-in-out',
-      once: true,
-      offset: 100
-    });
-  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true,
+    easing: 'ease-in-out-cubic'
+  });
+
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>

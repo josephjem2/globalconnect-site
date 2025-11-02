@@ -22,7 +22,7 @@
 }
 
 .event-card-header {
-    background: var(--primary-blue);
+    background: var(--primary-color);
     color: var(--white);
     padding: 1rem 1.5rem;
     font-size: 1.2rem;
@@ -38,7 +38,7 @@
 
 .event-date {
     font-weight: 600;
-    color: var(--accent-red);
+    color: var(--accent-color);
     margin-bottom: 0.5rem;
 }
 

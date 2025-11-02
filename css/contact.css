@@ -21,7 +21,7 @@
 
 .contact-info-item .icon {
     font-size: 1.8rem;
-    color: var(--primary-blue);
+    color: var(--primary-color);
     margin-right: 1.5rem;
     margin-top: 0.3rem;
 }
@@ -29,7 +29,7 @@
 .contact-info-item h4 {
     margin: 0 0 0.5rem;
     font-size: 1.4rem;
-    color: var(--primary-blue);
+    color: var(--primary-color);
 }
 
 .contact-info-item p, .contact-info-item a {
@@ -60,7 +60,7 @@
     width: 100%;
     padding: 1rem;
     border-radius: 8px;
-    border: 2px solid var(--medium-gray);
+    border: 2px solid var(--light-gray);
     font-size: 1rem;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -68,7 +68,7 @@
 .contact-form input:focus,
 .contact-form textarea:focus {
     outline: none;
-    border-color: var(--primary-blue);
+    border-color: var(--primary-color);
     box-shadow: 0 0 10px rgba(0, 80, 158, 0.1);
 }
 
