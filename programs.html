@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>Our Programs | GlobalConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=2.2">
+    <link rel="stylesheet" href="css/style.css?v=2.3">
 </head>
 <body>
 
@@ -32,14 +33,12 @@
             <a href="events.html">Events</a>
             <a href="get-involved.html">Get Involved</a>
             <a href="donate.html">Donate</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="contact.html">Contact</a>
             <a href="news.html">News</a>
         </div>
     </nav>
 </header>
 
-<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 80, 158, 0.7), rgba(0, 80, 158, 0.7)), url('images/programs.jpg');">
+<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('images/programs.jpg');">
     <div class="hero-content" data-aos="fade-up">
         <h1>Our Programs</h1>
         <p>Discover how we are making a difference through our innovative and impactful programs.</p>
@@ -51,51 +50,34 @@
         <div class="section-header" data-aos="fade-up">
             <h2>What We Do</h2>
         </div>
-        <div class="program-grid">
+        <div class="programs-grid">
             <div class="program-card" data-aos="fade-up">
                 <img src="images/program-education.jpg" alt="Education Program">
-                <h3>Education & Mentorship</h3>
-                <p>Our flagship program provides access to quality education and mentorship opportunities. We build and support schools, offer scholarships, and run digital literacy workshops. Our mentorship program connects students with professionals who can guide them in their academic and career journeys. By investing in education, we are investing in the leaders of tomorrow.</p>
+                <div class="program-details">
+                    <h3>Education & Mentorship</h3>
+                    <p>Our flagship program provides access to quality education and mentorship opportunities. We build and support schools, offer scholarships, and run digital literacy workshops.</p>
+                </div>
             </div>
             <div class="program-card" data-aos="fade-up" data-aos-delay="100">
                 <img src="images/program-outreach.jpg" alt="Community Outreach">
-                <h3>Community Health & Wellness</h3>
-                <p>We work directly with communities to identify their most pressing health needs and develop sustainable solutions. Our health and wellness programs include establishing local health clinics, providing essential medical supplies, and conducting preventative health campaigns. We focus on maternal and child health, as well as disease prevention, to ensure that communities can thrive.</p>
+                <div class="program-details">
+                    <h3>Community Health & Wellness</h3>
+                    <p>We work directly with communities to identify their most pressing health needs and develop sustainable solutions, from local health clinics to preventative health campaigns.</p>
+                </div>
             </div>
             <div class="program-card" data-aos="fade-up" data-aos-delay="200">
                 <img src="images/program-collaboration.jpg" alt="Collaboration Program">
-                <h3>Economic Empowerment & Innovation</h3>
-                <p>We partner with local entrepreneurs and small businesses to create economic opportunities and foster innovation. Through micro-loans, business training, and access to technology, we help individuals build sustainable livelihoods. Our goal is to create a thriving ecosystem of innovation that can drive long-term economic growth and social progress.</p>
+                <div class="program-details">
+                    <h3>Economic Empowerment</h3>
+                    <p>We partner with local entrepreneurs and small businesses to create economic opportunities through micro-loans, business training, and access to technology.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section program-highlights" style="background-color: var(--light-gray);">
+    <section class="section get-involved-cta" style="background-color: var(--light-gray);">
         <div class="section-header" data-aos="fade-up">
-            <h2>Program Highlights</h2>
-        </div>
-        <div class="highlight-grid">
-            <div class="highlight-item" data-aos="fade-up">
-                <div class="highlight-icon"><i class="fas fa-child"></i></div>
-                <h3>10,000+</h3>
-                <p>Children and youth have been served through our comprehensive education and mentorship programs, gaining skills and confidence for a brighter future.</p>
-            </div>
-            <div class="highlight-item" data-aos="fade-up" data-aos-delay="100">
-                <div class="highlight-icon"><i class="fas fa-hands-helping"></i></div>
-                <h3>5,000+</h3>
-                <p>Volunteers have been engaged in our community outreach initiatives, contributing their time and skills to make a tangible impact.</p>
-            </div>
-            <div class="highlight-item" data-aos="fade-up" data-aos-delay="200">
-                <div class="highlight-icon"><i class="fas fa-globe"></i></div>
-                <h3>20+</h3>
-                <p>Countries have been reached through our global collaboration efforts, creating a network of changemakers dedicated to building a better world.</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section get-involved-cta">
-        <div class="section-header" data-aos="fade-up">
-            <h2>Get Involved with Our Programs</h2>
+            <h2>Get Involved</h2>
             <p>You have the power to make a real difference. Whether you choose to donate, volunteer, or become a partner, your contribution will help us continue our vital work.</p>
             <a href="get-involved.html" class="btn btn-primary">Join Us Now</a>
         </div>
@@ -136,9 +118,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1200,
+    duration: 1000,
     once: true,
-    easing: 'ease-in-out-cubic'
+    easing: 'ease-in-out'
   });
 
   const hamburger = document.querySelector('.hamburger');

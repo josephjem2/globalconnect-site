@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>Get Involved | GlobalConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=2.2">
+    <link rel="stylesheet" href="css/style.css?v=2.3">
 </head>
 <body>
 
@@ -32,14 +33,12 @@
             <a href="events.html">Events</a>
             <a href="get-involved.html" class="active">Get Involved</a>
             <a href="donate.html">Donate</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="contact.html">Contact</a>
             <a href="news.html">News</a>
         </div>
     </nav>
 </header>
 
-<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 80, 158, 0.7), rgba(0, 80, 158, 0.7)), url('images/hero.jpg');">
+<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('images/hero.jpg');">
     <div class="hero-content" data-aos="fade-up">
         <h1>Get Involved</h1>
         <p>There are many ways to support our mission. Find the one that's right for you.</p>
@@ -51,24 +50,24 @@
         <div class="section-header" data-aos="fade-up">
             <h2>Ways to Give</h2>
         </div>
-        <div class="give-grid">
-            <div class="give-card" data-aos="fade-up">
-                <div class="give-icon"><i class="fas fa-donate"></i></div>
+        <div class="stats-grid">
+            <div class="stat-item" data-aos="fade-up">
+                <i class="fas fa-donate"></i>
                 <h3>Donate</h3>
                 <p>Your financial support helps us fund our programs and reach more people.</p>
-                <a href="donate.html" class="btn btn-secondary">Donate Now</a>
+                 <a href="donate.html" class="btn btn-primary">Donate Now</a>
             </div>
-            <div class="give-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="give-icon"><i class="fas fa-hand-holding-heart"></i></div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-hand-holding-heart"></i>
                 <h3>Volunteer</h3>
                 <p>Give the gift of your time and skills to make a direct impact.</p>
-                <a href="volunteer.html" class="btn btn-secondary">Become a Volunteer</a>
+                <a href="volunteer.html" class="btn btn-primary">Join Us</a>
             </div>
-            <div class="give-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="give-icon"><i class="fas fa-bullhorn"></i></div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-bullhorn"></i>
                 <h3>Advocate</h3>
                 <p>Spread the word about our mission and help us grow our community.</p>
-                <a href="#" class="btn btn-secondary">Learn More</a>
+                <a href="#" class="btn btn-primary">Learn How</a>
             </div>
         </div>
     </section>
@@ -77,16 +76,17 @@
         <div class="section-header" data-aos="fade-up">
             <h2>Corporate Sponsorship</h2>
         </div>
-        <div class="content-grid">
+        <div class="mission-section">
             <div class="text" data-aos="fade-right">
                 <p>Partner with us to create a lasting impact. We offer a variety of sponsorship opportunities for businesses of all sizes. By becoming a corporate sponsor, you can demonstrate your commitment to social responsibility and make a meaningful difference in the communities we serve.</p>
-                <a href="contact.html" class="btn btn-primary">Become a Sponsor</a>
+                <a href="contact.html" class="btn btn-secondary">Become a Sponsor</a>
             </div>
             <div class="image" data-aos="fade-left">
                 <img src="images/more-children-and-woman.jpg" alt="Corporate Sponsorship">
             </div>
         </div>
     </section>
+
 </main>
 
 <footer class="main-footer">
@@ -122,9 +122,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1200,
+    duration: 1000,
     once: true,
-    easing: 'ease-in-out-cubic'
+    easing: 'ease-in-out'
   });
 
   const hamburger = document.querySelector('.hamburger');

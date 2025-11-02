@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>GlobalConnect - Empowering Communities</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=2.2">
+    <link rel="stylesheet" href="css/style.css?v=2.3">
 </head>
 <body>
 
@@ -31,7 +32,7 @@
             <a href="volunteer.html">Volunteer</a>
             <a href="events.html">Events</a>
             <a href="get-involved.html">Get Involved</a>
-            <a href="donate.html" class="btn btn-primary">Donate</a>
+            <a href="donate.html">Donate</a>
             <a href="news.html">News</a>
         </div>
     </nav>
@@ -49,91 +50,113 @@
 </section>
 
 <main>
-    <section class="section about-us">
-        <div class="section-header" data-aos="fade-up">
-            <h2>Who We Are</h2>
-        </div>
-        <div class="content-grid">
-            <div class="text" data-aos="fade-right">
-                <h3>Connecting Communities, Creating Opportunities</h3>
-                <p>GlobalConnect is a non-profit organization born from the belief that collective action can create a more equitable world. We are dedicated to empowering underserved communities by tackling the root causes of poverty and inequality. Our approach is holistic, focusing on three pillars of sustainable development: education, healthcare, and economic empowerment. We don’t just provide aid; we partner with communities to build local capacity, foster self-reliance, and create lasting change from the ground up. By connecting people and resources, we create a network of support that allows individuals to not only survive but thrive.</p>
-                 <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
+    <section class="section mission-section">
+        <div class="text" data-aos="fade-right">
+            <div class="section-header" style="text-align:left;">
+                 <h2>Our Mission</h2>
             </div>
-            <div class="image" data-aos="fade-left">
-                <img src="images/what-we-do.jpg" alt="Who We Are">
+            <p>GlobalConnect is a non-profit organization dedicated to empowering underserved communities by tackling the root causes of poverty and inequality. We partner with communities to build local capacity, foster self-reliance, and create lasting change from the ground up.</p>
+            <a href="about.html" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="image" data-aos="fade-left">
+            <img src="images/what-we-do.jpg" alt="Our Mission">
+        </div>
+    </section>
+
+    <section class="section" style="background-color: var(--light-gray);">
+        <div class="section-header" data-aos="fade-up">
+            <h2>Our Impact</h2>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-item" data-aos="fade-up">
+                <i class="fas fa-users"></i>
+                <h3>10,000+</h3>
+                <p>Lives Impacted</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-globe-americas"></i>
+                <h3>15</h3>
+                <p>Countries Reached</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-hands-helping"></i>
+                <h3>50+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-hand-holding-heart"></i>
+                <h3>1,000+</h3>
+                <p>Volunteers</p>
             </div>
         </div>
     </section>
 
-    <section class="section our-work" style="background-color: var(--light-gray);">
+    <section class="section">
         <div class="section-header" data-aos="fade-up">
-            <h2>Our Work</h2>
-            <p>We focus on creating sustainable solutions in three key areas:</p>
+            <h2>Latest News</h2>
         </div>
-        <div class="work-grid">
-            <div class="work-item" data-aos="fade-up">
-                <img src="images/our-work-1.jpg" alt="Education Programs">
-                <h3>Education</h3>
-                <p>Our educational initiatives range from building schools and providing scholarships to implementing digital literacy programs. We believe that education is the a to unlocking a brighter future, offering children and adults the tools they need to break the cycle of poverty.</p>
+        <div class="news-grid">
+            <div class="news-card" data-aos="fade-up">
+                <img src="images/featured-news.jpg" alt="News 1">
+                <div class="news-details">
+                    <span class="news-date">June 15, 2025</span>
+                    <h3>Youth Summit 2025: A Resounding Success</h3>
+                    <p>This year's Youth Summit brought together over 100 young leaders for a day of mentorship and skill-building.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
             </div>
-            <div class="work-item" data-aos="fade-up" data-aos-delay="100">
-                <img src="images/our-work-2.jpg" alt="Healthcare Initiatives">
-                <h3>Healthcare</h3>
-                <p>We establish and support local health clinics, deliver essential medical supplies, and run preventative health campaigns. Our focus is on ensuring that even the most remote communities have access to quality healthcare, from maternal and child health to disease prevention.</p>
+            <div class="news-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/news-1.jpg" alt="News 2">
+                <div class="news-details">
+                    <span class="news-date">May 28, 2025</span>
+                    <h3>Winter Warmth Drive Exceeds Goals</h3>
+                    <p>Thanks to the generosity of our donors, we were able to distribute over 1,000 care kits to local shelters.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
             </div>
-            <div class="work-item" data-aos="fade-up" data-aos-delay="200">
-                <img src="images/our-work-3.jpg" alt="Economic Empowerment">
-                <h3>Economic Empowerment</h3>
-                <p>Through micro-loans, business training, and agricultural support, we help individuals create sustainable livelihoods. We empower entrepreneurs and small-scale farmers to build businesses, create jobs, and contribute to their local economies, fostering a sense of ownership and pride.</p>
+            <div class="news-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/news-2.jpg" alt="News 3">
+                <div class="news-details">
+                    <span class="news-date">April 12, 2025</span>
+                    <h3>New School Build in Rural Community</h3>
+                    <p>We have broken ground on a new school that will provide quality education for over 200 children.</p>
+                    <a href="#" class="btn btn-secondary">Read More</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section ways-to-give">
+    <section class="section" style="background-color: var(--light-gray);">
         <div class="section-header" data-aos="fade-up">
-            <h2>Ways to Give</h2>
-            <p>Your support, in any form, makes a world of difference.</p>
-        </div>
-        <div class="give-grid">
-            <div class="give-card" data-aos="fade-up">
-                <div class="give-icon"><i class="fas fa-donate"></i></div>
-                <h3>One-Time Donation</h3>
-                <p>A single gift can provide immediate support for our ongoing projects.</p>
-                <a href="donate.html" class="btn btn-primary">Donate Now</a>
-            </div>
-            <div class="give-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="give-icon"><i class="fas fa-calendar-alt"></i></div>
-                <h3>Monthly Giving</h3>
-                <p>Become a sustaining partner with a recurring monthly donation.</p>
-                <a href="donate.html" class="btn btn-secondary">Give Monthly</a>
-            </div>
-            <div class="give-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="give-icon"><i class="fas fa-hand-holding-heart"></i></div>
-                <h3>Sponsor a Project</h3>
-                <p>Fund a specific program or initiative that aligns with your passion.</p>
-                <a href="programs.html" class="btn btn-tertiary">Sponsor Now</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section success-stories" style="background-color: var(--light-gray);">
-        <div class="section-header" data-aos="fade-up">
-            <h2>Success Stories</h2>
+            <h2>Voices of Our Community</h2>
         </div>
         <div class="testimonial-grid">
-            <div class="testimonial" data-aos="fade-up">
-                 <img src="images/woman-and-child.jpg" alt="Success Story 1" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 1rem;">
-                <blockquote>
-                    <p>"When we first met Maria, she was worried about her daughter’s future. With no school in their village, the opportunities were limited. Through our remote learning program, her daughter not only learned to read and write but also discovered a passion for science. Today, she dreams of becoming a doctor, and we are committed to helping her get there."</p>
-                    <footer>- Maria, Mother of a Student</footer>
-                </blockquote>
+            <div class="testimonial-card" data-aos="fade-up">
+                <img src="images/woman-and-child.jpg" alt="Testimonial 1">
+                <div class="testimonial-content">
+                    <blockquote>
+                        <p>"GlobalConnect's digital literacy program has been a game-changer for my family. My daughter is now one of the top students in her class."</p>
+                        <footer>- Maria S., Mother</footer>
+                    </blockquote>
+                </div>
             </div>
-            <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
-                <img src="images/smiling-boy.jpg" alt="Success Story 2" style="width: 120px; height: 120px; object-fit: cover; border-radius: 50%; margin-bottom: 1rem;">
-                <blockquote>
-                    <p>"David joined our volunteer program looking to make a difference. He spent six months in a rural community, helping to build a new health clinic. 'It was more than just construction,' he says. 'It was about building relationships and sharing a common goal. I saw firsthand how a simple building could become a beacon of hope for an entire community.'"</p>
-                    <footer>- David, Volunteer</footer>
-                </blockquote>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="images/smiling-boy.jpg" alt="Testimonial 2">
+                <div class="testimonial-content">
+                    <blockquote>
+                        <p>"The mentorship program has been an incredible experience. My mentor has not only helped me with my coding skills but has also taught me so much about life."</p>
+                        <footer>- David L., Mentee</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="images/volunteer-advocate.jpg" alt="Testimonial 3">
+                <div class="testimonial-content">
+                    <blockquote>
+                        <p>"Volunteering with GlobalConnect has been one of the most rewarding experiences of my life. I am proud to be part of such a dedicated team."</p>
+                        <footer>- Sarah K., Volunteer</footer>
+                    </blockquote>
+                </div>
             </div>
         </div>
     </section>
@@ -155,7 +178,7 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
-        <div class.="footer-social">
+        <div class="footer-social">
             <h4>Follow Us</h4>
             <div class="social-icons">
                 <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
@@ -173,9 +196,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1200,
+    duration: 1000,
     once: true,
-    easing: 'ease-in-out-cubic'
+    easing: 'ease-in-out'
   });
 
   const hamburger = document.querySelector('.hamburger');

@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>Donate | GlobalConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=2.2">
+    <link rel="stylesheet" href="css/style.css?v=2.3">
 </head>
 <body>
 
@@ -32,14 +33,12 @@
             <a href="events.html">Events</a>
             <a href="get-involved.html">Get Involved</a>
             <a href="donate.html" class="active">Donate</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="contact.html">Contact</a>
             <a href="news.html">News</a>
         </div>
     </nav>
 </header>
 
-<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 80, 158, 0.7), rgba(0, 80, 158, 0.7)), url('images/donate.jpg');">
+<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('images/donate.jpg');">
     <div class="hero-content" data-aos="fade-up">
         <h1>Support Our Mission</h1>
         <p>Your donation can change lives and empower communities.</p>
@@ -51,11 +50,11 @@
         <div class="section-header" data-aos="fade-up">
             <h2>Make a Donation</h2>
         </div>
-        <div class="donation-container">
-            <div class="donation-form" data-aos="fade-right">
+        <div class="mission-section">
+            <div class="text" data-aos="fade-right">
                 <h3>Choose an Amount</h3>
-                <form>
-                    <div class="donation-amount">
+                <form class="donation-form">
+                    <div class="form-group donation-amount">
                         <button type="button" class="btn btn-secondary">$25</button>
                         <button type="button" class="btn btn-secondary">$50</button>
                         <button type="button" class="btn btn-secondary">$100</button>
@@ -64,7 +63,7 @@
                     <button type="submit" class="btn btn-primary">Donate Now</button>
                 </form>
             </div>
-            <div class="donation-impact" data-aos="fade-left">
+            <div class="image" data-aos="fade-left">
                 <h3>Your Impact</h3>
                 <p><strong>$25</strong> can provide a student with school supplies for a year.</p>
                 <p><strong>$50</strong> can provide a family with a care kit of essential supplies.</p>
@@ -72,6 +71,7 @@
             </div>
         </div>
     </section>
+
 </main>
 
 <footer class="main-footer">
@@ -107,9 +107,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1200,
+    duration: 1000,
     once: true,
-    easing: 'ease-in-out-cubic'
+    easing: 'ease-in-out'
   });
 
   const hamburger = document.querySelector('.hamburger');

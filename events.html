@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <title>Events | GlobalConnect</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css?v=2.2">
+    <link rel="stylesheet" href="css/style.css?v=2.3">
 </head>
 <body>
 
@@ -32,14 +33,12 @@
             <a href="events.html" class="active">Events</a>
             <a href="get-involved.html">Get Involved</a>
             <a href="donate.html">Donate</a>
-            <a href="testimonials.html">Testimonials</a>
-            <a href="contact.html">Contact</a>
             <a href="news.html">News</a>
         </div>
     </nav>
 </header>
 
-<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 80, 158, 0.7), rgba(0, 80, 158, 0.7)), url('images/events.jpg');">
+<section class="hero-banner" style="background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('images/events.jpg');">
     <div class="hero-content" data-aos="fade-up">
         <h1>Our Events</h1>
         <p>Join us for our upcoming events and be part of the change.</p>
@@ -53,61 +52,35 @@
         </div>
         <div class="events-grid">
             <div class="event-card" data-aos="fade-up">
-                <div class="event-date"><span>15</span>JUL</div>
+                <img src="images/charity-gala.jpg" alt="Annual Charity Gala">
                 <div class="event-details">
+                    <span class="event-date">July 15, 2025</span>
                     <h3>Annual Charity Gala</h3>
-                    <p>Join us for an evening of celebration, inspiration, and fundraising for our programs. This year's gala will feature a keynote address from a renowned humanitarian, a silent auction with exclusive items, and live entertainment. It is a night to celebrate our collective achievements and raise vital funds for the year ahead.</p>
+                    <p>An evening of celebration, inspiration, and fundraising for our programs.</p>
                     <a href="#" class="btn btn-secondary">Register Now</a>
                 </div>
             </div>
             <div class="event-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="event-date"><span>22</span>AUG</div>
+                 <img src="images/community-event.jpg" alt="Community Fun Day">
                 <div class="event-details">
-                    <h3>Community Fun Day & Health Fair</h3>
-                    <p>A day of games, activities, and fun for the whole family. This event is a great opportunity to learn more about our work and get involved. We will have free health screenings, workshops on nutrition and wellness, and a variety of activities for all ages. Come and join us for a day of community building and fun.</p>
+                    <span class="event-date">August 22, 2025</span>
+                    <h3>Community Fun Day</h3>
+                    <p>A day of games, activities, and fun for the whole family.</p>
                     <a href="#" class="btn btn-secondary">Learn More</a>
                 </div>
             </div>
             <div class="event-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="event-date"><span>10</span>SEP</div>
+                <img src="images/volunteer-appreciation.jpg" alt="Volunteer Appreciation">
                 <div class="event-details">
-                    <h3>Volunteer Appreciation & Awards Ceremony</h3>
-                    <p>A special day to celebrate and thank our amazing volunteers for their dedication and hard work. We will be recognizing our most outstanding volunteers and celebrating the collective impact of our volunteer community. This is a day to honor the people who make our work possible.</p>
+                    <span class="event-date">September 10, 2025</span>
+                    <h3>Volunteer Appreciation</h3>
+                    <p>A special day to celebrate and thank our amazing volunteers.</p>
                     <a href="#" class="btn btn-secondary">RSVP Now</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section past-events" style="background-color: var(--light-gray);">
-        <div class="section-header" data-aos="fade-up">
-            <h2>A Look Back at Our Past Events</h2>
-            <p>Our events are more than just gatherings; they are opportunities for connection, inspiration, and action. Here is a glimpse of what we have achieved together.</p>
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item" data-aos="fade-up">
-                <img src="images/group-of-children.jpg" alt="Past Event 1">
-                <div class="gallery-caption">
-                    <h4>Literacy Drive 2024</h4>
-                    <p>Our annual literacy drive provided over 5,000 books to children in remote communities.</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="100">
-                <img src="images/excited-child.jpg" alt="Past Event 2">
-                <div class="gallery-caption">
-                    <h4>Coding Bootcamp Showcase</h4>
-                    <p>Students from our coding bootcamp showcased their final projects to a panel of industry experts.</p>
-                </div>
-            </div>
-            <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
-                <img src="images/children-being-taught.jpg" alt="Past Event 3">
-                <div class="gallery-caption">
-                    <h4>Community Health Fair</h4>
-                    <p>We provided free health screenings and wellness workshops to over 1,000 community members.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 </main>
 
 <footer class="main-footer">
@@ -143,9 +116,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   AOS.init({
-    duration: 1200,
+    duration: 1000,
     once: true,
-    easing: 'ease-in-out-cubic'
+    easing: 'ease-in-out'
   });
 
   const hamburger = document.querySelector('.hamburger');
